@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_18-13-04",
+            "content": "@@ -41,148 +41,28 @@\n     \n-var numbombons, numcriancas int%0A    fmt.Scan(&numbombons , &numcriancas)%0A    fmt.Println(numbombons / numcriancas , numbombons %25 numcriancas\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        }
+    ]
+}

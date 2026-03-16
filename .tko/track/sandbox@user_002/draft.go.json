@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-13-19",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,9 +37,12 @@\n ) %7B%0A\n-%09\n+    \n fmt.\n@@ -54,33 +54,14 @@\n ln(%22\n-PALMEIRAS N%C3%83O TEM MUNDIAL\n+qxcode\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-14-18",
+            "content": "@@ -53,21 +53,34 @@\n ln(%22\n-Hello World\n+PALMEIRAS N%C3%83O TEM MUNDIAL\n %22)%0A\n-%0A\n %7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-31-56",
+            "content": "@@ -39,32 +39,8 @@\n ) %7B%0A\n-    var num1, num2 int %0A\n %09fmt\n@@ -65,20 +65,8 @@\n rld%22\n-, num1, num2\n )%0A%0A%7D\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-10_17-40-02",
+            "content": "@@ -58,15 +58,11 @@\n um2 \n-float64\n+int\n  %0A%09f\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-10_17-41-31",
+            "content": "@@ -1,133 +1,59 @@\n-package main%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A    var num1, num2 float64 %0A    fmt.Scan(&num1)%0A%09fmt.Println(%22Hello World%22, num1, num2)%0A%0A%7D\n+@@ -67,28 +67,8 @@%0A 64 %250A%0A-    fmt.Scan(&num1)%250A%0A %2509fmt\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-10_17-44-05",
+            "content": "@@ -87,28 +87,8 @@\n m1)%0A\n-    fmt.Scan(&num2)%0A\n %09fmt\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-44-28",
+            "content": "@@ -66,18 +66,8 @@\n t64 \n-//variavel\n %0A   \n@@ -86,209 +86,63 @@\n um1)\n- //comando que l%C3%AA e escreve em numero 1 (&)%0A    fmt.Scan(&num2) //comando que l%C3%AA e escreve em numero 2 (&)%0A%09fmt.Println(%22Hello World%22)  //pede o valor da vari%C3%A1vel%0A    fmt.Println(num1)%0A    fmt.Println(\n+%0A    fmt.Scan(&num2)%0A%09fmt.Println(%22Hello World%22, num1, \n num2\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-10_17-49-27",
+            "content": "@@ -279,20 +279,31 @@\n num1\n-, num2\n )%0A    \n+fmt.Println(num2)\n %0A%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-53-35",
+            "content": "@@ -95,16 +95,8 @@\n num1\n- , &num2\n ) //\n@@ -124,24 +124,76 @@\n eve \n-EM n%C3%BA\n+em nu\n mero 1 \n-e n%C3%BA\n+(&)%0A    fmt.Scan(&num2) //comando que l%C3%AA e escreve em nu\n mero\n@@ -195,28 +195,25 @@\n umero 2 (&)%0A\n-    \n+%09\n fmt.Println(\n@@ -217,43 +217,29 @@\n ln(%22\n-Palmeiras N%C3%A3o Tem Mundial%22)//mostra\n+Hello World%22)  //pede\n  o v\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-10_17-57-03",
+            "content": "@@ -175,21 +175,64 @@\n tln(\n- num1 + num2)\n+%22Palmeiras N%C3%A3o Tem Mundial%22)//mostra o valor da vari%C3%A1vel\n %0A   \n@@ -248,15 +248,13 @@\n tln(\n- \n num1\n- -\n+,\n  num\n",
+            "lines": "12"
+        }
+    ]
+}
