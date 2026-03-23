@@ -13,12 +13,12 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@jogos-em-modo-texto
 - sandbox@sandbox:00_rascunhos
-- sandbox@sandbox
 - fup@missão-operações
-- fup@campanha-principal
+- fup@jogos-em-modo-texto
+- sandbox@sandbox
 - fup@missão-seleção-1
+- fup@campanha-principal
 tasks:
   sandbox@user_002: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:10}'
@@ -34,6 +34,7 @@ tasks:
   fup@ou: '{self:1, rate:100, study:6}'
   fup@positivo: '{self:1, rate:100, study:3}'
   fup@multiplo: '{self:1, rate:100, study:2}'
+  fup@calc: '{self:1, rate:100, study:20, friend:David Mesquita, concept:1}'
   fup@guarda: '{self:1, rate:100, study:7, concept:1}'
   fup@quantos: '{self:1, rate:100, study:9, concept:1}'
 flags:
@@ -44,4 +45,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@calc
+selected: fup@impar

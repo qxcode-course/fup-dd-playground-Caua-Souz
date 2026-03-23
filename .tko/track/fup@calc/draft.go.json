@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-03-23_18-01-12",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int\n    var operador string\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -55,471 +55,36 @@\n num2\n-, soma, subt, multi, divisao int%0A    var operador string%0A%0A    fmt.Scan(&num1)%0A    fmt.Scan(&num2)%0A    fmt.Scan(&operador)%0A%0A    if operador == %22+%22 %7B%0A        soma:= (num1 + num2)%0A        fmt.Println(soma)%0A    %7D else if operador == %22-%22 %7B%0A        subt:= (num1 - num2)%0A        fmt.Println(subt)%0A    %7D else if operador == %22*%22 %7B%0A        multi:= (num1 * num2)%0A        fmt.Println(multi)        %0A    %7D else if operador == %22/%22 %7B%0A        divisao = (num1 / num2)%0A    %7D else %7B\n+ int%0A    var operador string\n %0A   \n",
             "lines": "7"
+        },
+        {
+            "label": "2026-03-23_18-13-59",
+            "content": "@@ -550,9 +550,8 @@\n ld!%22)%0A%7D%0A\n-%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-23_18-14-06",
+            "content": "@@ -211,17 +211,17 @@\n     soma\n- \n+:\n = (num1 \n@@ -298,17 +298,17 @@\n     subt\n- \n+:\n = (num1 \n@@ -386,17 +386,17 @@\n    multi\n- \n+:\n = (num1 \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_18-14-23",
+            "content": "@@ -506,34 +506,8 @@\n m2)%0A\n-        fmt.Println(divi)%0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-23_18-14-44",
+            "content": "@@ -526,19 +526,16 @@\n tln(divi\n-sao\n )%0A    %7D \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_18-14-48",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2, soma, subt, multi, divisao int\n    var operador string\n\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Scan(&operador)\n\n    if operador == \"+\" {\n        soma = (num1 + num2)\n        fmt.Println(soma)\n    } else if operador == \"-\" {\n        subt = (num1 - num2)\n        fmt.Println(subt)\n    } else if operador == \"*\" {\n        multi = (num1 * num2)\n        fmt.Println(multi)        \n    } else if operador == \"/\" {\n        divisao = (num1 / num2)\n        fmt.Println(divisao)\n    } else {\n    fmt.Println(\"Hello, World!\")\n}\n}",
+            "lines": "26"
         }
     ]
 }
