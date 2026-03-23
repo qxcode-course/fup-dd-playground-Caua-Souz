@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-03-43",
+            "content": "@@ -146,24 +146,28 @@\n (num1)%0A    %7D\n+%0A   \n  else if num\n@@ -208,16 +208,20 @@\n 1)%0A    %7D\n+%0A   \n  else %7B%0A\n@@ -244,16 +244,20 @@\n tln(num2\n+num2\n )%0A    %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_17-04-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 int\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n\n    if num1 == num2 {\n        fmt.Println(num1)\n    } else if num1 > num2 {\n        fmt.Println(num1)\n    } else {\n        fmt.Println(num2)\n    }\n\n}\n",
+            "lines": "16"
+        }
+    ]
+}

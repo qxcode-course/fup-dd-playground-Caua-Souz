@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-41-16",
+            "content": "@@ -325,11 +325,39 @@\n   %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_17-41-23",
+            "content": "@@ -169,41 +169,8 @@\n m3 %7B\n- //verificar se todos sa%C3%A3o iguais\n %0A   \n@@ -255,39 +255,8 @@\n m3 %7B\n- // verificar se h%C3%A1 dois iguais\n %0A   \n@@ -318,33 +318,8 @@\n %220%22)\n- // nenhum igual%0A        \n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_17-42-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2, num3 int\n    \n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Scan(&num3)\n\n    if num1 == num2 && num2 == num3 { //verificar se todos sa\u00e3o iguais\n        fmt.Println(\"3\")\n    } else if num1 == num2 || num2 == num3 || num1 == num3 { // verificar se h\u00e1 dois iguais\n        fmt.Println(\"2\")\n    } else {\n        fmt.Println(\"0\") // nenhum igual\n        \n    }\n    \n}\n",
+            "lines": "19"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-07-26",
+            "content": "@@ -267,17 +267,16 @@\n ath.Sqrt\n-2\n (semi_pe\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-07-50",
+            "content": "@@ -267,16 +267,17 @@\n ath.Sqrt\n+2\n (semi_pe\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-08-05",
+            "content": "@@ -283,24 +283,16 @@\n rimetro)\n- float64\n %0A    fmt\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-10-30",
+            "content": "@@ -267,17 +267,16 @@\n ath.Sqrt\n-2\n (semi_pe\n@@ -295,13 +295,8 @@\n at64\n-const\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-10-56",
+            "content": "@@ -284,32 +284,37 @@\n rimetro) float64\n+const\n %0A    fmt.Printf(\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-10-57",
+            "content": "@@ -267,16 +267,17 @@\n ath.Sqrt\n+2\n (semi_pe\n@@ -284,16 +284,24 @@\n rimetro)\n+ float64\n %0A    fmt\n@@ -311,17 +311,17 @@\n intf(%22%25.\n-6\n+2\n f%5Cn%22, ar\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-13-20",
+            "content": "@@ -19,16 +19,29 @@\n t %22fmt%22%0A\n+import %22math%22\n %0Afunc ma\n@@ -90,16 +90,22 @@\n erimetro\n+, area\n  float64\n@@ -247,16 +247,53 @@\n do3)/ 2%0A\n+    area = math.Sqrt(semi_perimetro)%0A\n     fmt.\n@@ -306,29 +306,19 @@\n (%22%25.\n-2\n+6\n f%5Cn%22, \n-semi_perimetro\n+area\n )%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_17-14-30",
+            "content": "@@ -22,22 +22,8 @@\n fmt%22\n-%0Aimport %22math%22\n %0A%0Afu\n@@ -77,22 +77,16 @@\n erimetro\n-, area\n  float64\n@@ -232,46 +232,8 @@\n / 2%0A\n-    area = math.Sqrt(semi_perimetro)%0A%0A\n     \n@@ -257,12 +257,22 @@\n n%22, \n-area\n+semi_perimetro\n )%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-17_17-15-35",
+            "content": "@@ -78,17 +78,29 @@\n lado3, s\n-p\n+emi_perimetro\n , area f\n@@ -188,18 +188,42 @@\n n(&s\n-p)%0A%0A    sp\n+emi_perimetro)%0A%0A    semi_perimetro\n  = (\n@@ -274,49 +274,21 @@\n rt(s\n-p*(sp - lado1)*(sp - lado2)* (sp - lado3)\n+emi_perimetro\n )%0A%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-17_17-17-43",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var lado1, lado2, lado3, sp, area float64\n    fmt.Scan(&lado1)\n    fmt.Scan(&lado2)\n    fmt.Scan(&lado3)\n    fmt.Scan(&sp)\n\n    sp = (lado1 + lado2 + lado3)/ 2\n    area = math.Sqrt(sp*(sp - lado1)*(sp - lado2)* (sp - lado3))\n\n    fmt.Printf(\"%.2f\\n\", area)\n    \n\n}\n",
+            "lines": "18"
+        }
+    ]
+}

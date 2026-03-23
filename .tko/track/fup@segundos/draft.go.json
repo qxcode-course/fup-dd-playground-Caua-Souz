@@ -2,8 +2,73 @@
     "patches": [
         {
             "label": "2026-03-16_18-05-20",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -41,190 +41,28 @@\n     \n-var tempo , horas, minutos, segundos int%0A    %0A    horas = (tempo/3600)%0A    minutos = (tempo%253600)/ 60%0A    segundos = (minutos%2560)%0A%0A    fmt.Printf(%22%25d:%25d:%25d%22, horas, minutos, segundos\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-17_16-42-59",
+            "content": "@@ -123,21 +123,21 @@\n utos = (\n-horas\n+tempo\n %253600)/ \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_16-43-38",
+            "content": "@@ -189,17 +189,15 @@\n f(%22%25\n-v:%25v:%25v%5Cn\n+d:%25d:%25d\n %22, h\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_16-44-15",
+            "content": "@@ -189,15 +189,15 @@\n f(%22%25\n-d:%25d:%25d\n+v:%25v:%25v\n %5Cn%22,\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_16-46-11",
+            "content": "@@ -172,77 +172,8 @@\n 0)%0A%0A\n-    fmt.Scan(&horas)%0A    fmt.Scan(&minutos)%0A    fmt.Scan(&segundos)%0A%0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-17_16-46-59",
+            "content": "@@ -123,21 +123,21 @@\n utos = (\n-tempo\n+horas\n %253600)/ \n@@ -155,21 +155,23 @@\n ndos = (\n-tempo\n+minutos\n %2560)%0A%0A  \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-17_16-47-28",
+            "content": "@@ -81,77 +81,8 @@\n  int\n-%0A%0A    fmt.Scan(&horas)%0A    fmt.Scan(&minutos)%0A    fmt.Scan(&segundos)\n %0A   \n@@ -165,16 +165,86 @@\n mpo%2560)%0A\n+%0A    fmt.Scan(&horas)%0A    fmt.Scan(&minutos)%0A    fmt.Scan(&segundos)%0A%0A\n     fmt.\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-17_16-47-52",
+            "content": "@@ -234,17 +234,11 @@\n mpo%25\n-3600)/%25\n 60\n+)\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-17_16-50-01",
+            "content": "@@ -236,17 +236,16 @@\n o%253600)/\n- \n %2560%0A    \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-17_16-50-02",
+            "content": "@@ -82,33 +82,8 @@\n int%0A\n-    %0A    fmt.Scan(&tempo)\n %0A   \n@@ -236,16 +236,20 @@\n o%253600)/\n+ %2560\n %0A    fmt\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-17_16-50-57",
+            "content": "@@ -256,24 +256,25 @@\n (tempo%253600)\n+/\n %0A    fmt.Pri\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-17_16-51-03",
+            "content": "@@ -253,17 +253,17 @@\n  = (\n-minutos%256\n+tempo%25360\n 0)%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-17_16-51-56",
+            "content": "@@ -253,22 +253,19 @@\n  = (\n-tempo%253600)%2560\n+minutos%2560)\n %0A   \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-17_16-52-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo , horas, minutos, segundos int\n    \n    fmt.Scan(&tempo)\n    fmt.Scan(&horas)\n    fmt.Scan(&minutos)\n    fmt.Scan(&segundos)\n    \n    horas = (tempo/3600)\n    minutos = (tempo%3600)/ 60\n    segundos = (tempo%3600)%60\n    fmt.Printf(\"%d:%d:%d\\n\", horas, minutos, segundos)\n}\n",
+            "lines": "15"
         }
     ]
 }

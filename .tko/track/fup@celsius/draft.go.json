@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_16-59-31",
+            "content": "@@ -111,17 +111,17 @@\n eit = (1\n-.\n+,\n 8 * cels\n@@ -127,14 +127,14 @@\n sius\n+)\n  + 32\n-)\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_16-59-47",
+            "content": "@@ -127,14 +127,14 @@\n sius\n-)\n  + 32\n+)\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_17-00-11",
+            "content": "@@ -152,9 +152,9 @@\n (%22%25.\n-7\n+6\n f%5Cn%22\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_17-00-51",
+            "content": "@@ -148,17 +148,17 @@\n intf(%22%25.\n-g\n+7\n f%5Cn%22, fa\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_17-00-56",
+            "content": "@@ -70,10 +70,10 @@\n loat\n-64\n+32\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_17-01-04",
+            "content": "@@ -148,17 +148,17 @@\n intf(%22%25.\n-6\n+g\n f%5Cn%22, fa\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-17_17-01-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var celsius, fahrenheit float64\n    fmt.Scan(&celsius)\n    fahrenheit = (1.8 * celsius) + 32\n    fmt.Printf(\"%.6f\\n\", fahrenheit)\n}\n",
+            "lines": "8"
+        }
+    ]
+}

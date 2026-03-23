@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_16-35-38",
+            "content": "@@ -84,10 +84,10 @@\n loat\n-64\n+32\n %0A   \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_16-35-59",
+            "content": "@@ -273,37 +273,8 @@\n  pt%0A\n-    fmt.Printf(%22%25.2f%5Cn%22, tr)%0A\n     \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-17_16-37-31",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var q1, q2, q3, v1, v2, v3, d, pt, tr float64\n    fmt.Scan(&q1)\n    fmt.Scan(&q2)\n    fmt.Scan(&q3)\n    fmt.Scan(&v1)\n    fmt.Scan(&v2)\n    fmt.Scan(&v3)\n    fmt.Scan(&d)\n\n    pt = (q1 * v1) + (q2 * v2 ) + (q3 * v3)\n    tr = d - pt\n    fmt.Printf(\"%.2f\\n\", tr)\n    \n}\n",
+            "lines": "17"
+        }
+    ]
+}

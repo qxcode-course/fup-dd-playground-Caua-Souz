@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_17-32-10",
+            "content": "@@ -144,18 +144,18 @@\n t.Scan(&\n-y1\n+x2\n )%0A    fm\n@@ -154,34 +154,34 @@\n )%0A    fmt.Scan(&\n-x2\n+y1\n )%0A    fmt.Scan(&\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-17_17-33-07",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var x1, y1, x2, y2, sub1, sub2, po1, po2 ,distancia float64\n    fmt.Scan(&x1)\n    fmt.Scan(&y1)\n    fmt.Scan(&x2)\n    fmt.Scan(&y2)\n\n    sub1 = (x2 - x1)\n    sub2 = (y2 - y1)\n    po1 = math.Pow(sub1, 2)\n    po2 = math.Pow(sub2, 2)\n    distancia = math.Sqrt(po1 + po2)\n\n    fmt.Printf(\"%.2f\\n\", distancia)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
