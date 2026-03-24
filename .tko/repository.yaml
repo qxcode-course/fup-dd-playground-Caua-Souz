@@ -13,12 +13,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@sandbox:00_rascunhos
-- fup@missão-operações
-- fup@jogos-em-modo-texto
-- sandbox@sandbox
-- fup@missão-seleção-1
-- fup@campanha-principal
+- fup@games
+- fup@base
 tasks:
   sandbox@user_002: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:10}'
@@ -38,11 +34,11 @@ tasks:
   fup@guarda: '{self:1, rate:100, study:7, concept:1}'
   fup@quantos: '{self:1, rate:100, study:9, concept:1}'
 flags:
-  painel: 0
-  quests: 2
-  tracks: 0
+  panel: 0
+  inbox: 0
+  show_panel: 0
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@impar
+selected: fup@quebrada

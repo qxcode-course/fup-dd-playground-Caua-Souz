@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_15-13-46",
+            "content": "@@ -117,54 +117,8 @@\n um2)\n-%0A    fmt.Scan(&resultado)%0A    fmt.Scan(&resto)\n %0A%0A  \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_15-14-35",
+            "content": "@@ -41,33 +41,219 @@\n     \n-fmt.Println(%22Hello World!\n+var num1, num2, resultado, resto int%0A    fmt.Scan(&num1)%0A    fmt.Scan(&num2)%0A    fmt.Scan(&resultado)%0A    fmt.Scan(&resto)%0A%0A    resultado = (num1 / num2)%0A    resto = (num1 %25 num2)%0A    fmt.Println(%22resultado=%25.2d\n %22)%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-24_15-15-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello World!\")\n}\n",
+            "lines": "5"
+        }
+    ]
+}
