@@ -12,8 +12,48 @@
         },
         {
             "label": "2026-03-24_15-15-25",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello World!\")\n}\n",
+            "content": "@@ -41,138 +41,34 @@\n     \n-var n1, n2, resultado, resto float64%0A    fmt.Scan(&n1)%0A    fmt.Scan(&n2)%0A%0A    resultado = (n1 / n2)%0A    %0A    fmt.Println(resultado\n+fmt.Println(%22Hello World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-24_16-28-18",
+            "content": "@@ -59,16 +59,22 @@\n sultado,\n+ resto\n  float64\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_16-28-25",
+            "content": "@@ -58,16 +58,17 @@\n esultado\n+,\n  float64\n@@ -107,33 +107,8 @@\n &n2)\n-%0A    fmt.Scan(&resultado)\n %0A%0A  \n@@ -131,16 +131,21 @@\n 1 / n2)%0A\n+    %0A\n     fmt.\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_16-28-58",
+            "content": "@@ -59,19 +59,23 @@\n sultado \n-int\n+float64\n %0A    fmt\n@@ -159,31 +159,8 @@\n n2)%0A\n-    resto := (n1 %25 n2)%0A\n     \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-24_16-30-55",
+            "content": "@@ -62,15 +62,8 @@\n tado\n-, resto\n  int\n@@ -161,16 +161,17 @@\n   resto \n+:\n = (n1 %25 \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-31-08",
+            "content": "@@ -61,16 +61,20 @@\n ltado, r\n+esto\n  int%0A   \n@@ -167,18 +167,24 @@\n    r\n+esto\n  = \n+(\n n1 %25 n2\n+)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-31-35",
+            "content": "@@ -59,21 +59,18 @@\n sultado,\n+ \n r\n-esto\n  int%0A   \n@@ -163,13 +163,8 @@\n    r\n-esto \n  = n\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-32-07",
+            "content": "@@ -59,17 +59,16 @@\n sultado,\n- \n resto in\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-24_16-32-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, resultado, resto int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&resultado)\n\n    resultado = (n1 / n2)\n    resto  = n1 % n2\n    fmt.Println(resultado)\n}\n",
+            "lines": "12"
         }
     ]
 }

@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_17-40-23",
+            "content": "@@ -267,17 +267,28 @@\n Println(\n-num3\n+%22Hello, World!%22\n )%0A%7D%0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-40-25",
+            "content": "@@ -140,16 +140,8 @@\n m1 %3C\n- num2 &&\n  num\n@@ -201,16 +201,8 @@\n m2 %3C\n- num1 &&\n  num\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-41-18",
+            "content": "@@ -198,32 +198,32 @@\n  else if num\n-1\n+2\n  %3C num\n-2\n+1\n  && num1 %3C n\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-42-11",
+            "content": "@@ -206,31 +206,31 @@\n  num\n-2\n+1\n  %3C num\n-1\n+2\n  && num\n-3\n+1\n  %3C num\n-1\n+3\n  %7B%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-43-04",
+            "content": "@@ -221,16 +221,16 @@\n  num\n-1\n+3\n  %3C num\n-3\n+1\n  %7B%0A \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-44-01",
+            "content": "@@ -251,17 +251,17 @@\n ntln(num\n-3\n+1\n )%0A    %7D \n@@ -286,14 +286,14 @@\n ntln(num\n-1\n+3\n )%0A%7D%0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-44-13",
+            "content": "@@ -251,17 +251,17 @@\n ntln(num\n-1\n+3\n )%0A    %7D \n@@ -286,14 +286,14 @@\n ntln(num\n-3\n+1\n )%0A%7D%0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-44-19",
+            "content": "@@ -269,90 +269,31 @@\n lse \n-if num1 %3E num3 && num3 %3C num2 %7B%0A    fmt.Println(num3)%0A    %7D else%0A    fmt.Println('')\n+%7B%0A    fmt.Println(num3)%0A%7D\n %0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-45-59",
+            "content": "@@ -329,18 +329,16 @@\n   %7D else\n- %7B\n %0A    fmt\n@@ -350,11 +350,9 @@\n tln(\n-%22%22\n+''\n )%0A%7D\n-%0A%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-24_17-46-25",
+            "content": "@@ -205,25 +205,25 @@\n f num2 %3C num\n-2\n+1\n  && num1 %3C n\n@@ -269,30 +269,93 @@\n lse \n-%7B%0A    fmt.Println(num3\n+if num1 %3E num3 && num3 %3C num2 %7B%0A    fmt.Println(num3)%0A    %7D else %7B%0A    fmt.Println(%22%22\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-24_17-46-37",
+            "content": "@@ -209,17 +209,17 @@\n m2 %3C num\n-1\n+2\n  && num1\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-24_17-47-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2, num3 int\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Scan(&num3)\n\n    if num1 < num2 && num2 < num3 {\n        fmt.Println(num2)\n    } else if num2 < num1 && num1 < num3 {\n        fmt.Println(num1)\n    } else {\n    fmt.Println(num3)\n}\n}",
+            "lines": "16"
+        }
+    ]
+}

@@ -13,8 +13,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@games
 - fup@base
+- fup@if1
 tasks:
   sandbox@user_002: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:10}'
@@ -33,12 +33,15 @@ tasks:
   fup@calc: '{self:1, rate:100, study:20, friend:David Mesquita, concept:1}'
   fup@guarda: '{self:1, rate:100, study:7, concept:1}'
   fup@quantos: '{self:1, rate:100, study:9, concept:1}'
+  fup@mumia: '{self:1, rate:100, study:23, friend:David Mesquita, concept:1}'
+  fup@meio: '{rate:80}'
+  fup@final: '{rate:80}'
 flags:
-  panel: 0
+  panel: 3
   inbox: 0
-  show_panel: 0
+  show_panel: 1
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@quebrada
+selected: fup@meio
