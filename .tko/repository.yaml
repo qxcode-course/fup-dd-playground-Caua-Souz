@@ -13,9 +13,9 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@if2
 - fup@base
 - fup@if1
-- fup@if2
 tasks:
   sandbox@user_002: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:10}'
