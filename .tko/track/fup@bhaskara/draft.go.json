@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-53-20",
+            "content": "@@ -82,29 +82,16 @@\n esultado\n-1, resultado2\n  float64\n@@ -146,298 +146,45 @@\n &c)%0A\n-    fmt.Scan(&delta)%0A    fmt.Scan(&resultado1)%0A    fmt.Scan(&resultado2)%0A%0A    delta = (math.Pow(b, 2)) - 4*a*c%0A%0A    if delta %3E 0 %7B%0A        resultado1 = ((b*-1) + (math.Sqrt(delta)))/ (2*a)%0A        resultado2 = ((b*-1) - (math.Sqrt(delta)))/ (2*a)%0A        fmt.Println(resultado1, resultado2)\n+%0A    delta = (math.Pow(b, 2)) - 4*a*c\n %0A%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_18-01-33",
+            "content": "@@ -482,9 +482,8 @@\n ld!%22)%0A%7D%0A\n-%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-30_18-01-42",
+            "content": "@@ -99,20 +99,8 @@\n ado2\n-, arr1, arr2\n  flo\n@@ -104,16 +104,16 @@\n float64%0A\n+\n     fmt.\n@@ -169,20 +169,21 @@\n t.Scan(&\n-arr1\n+delta\n )%0A    fm\n@@ -194,18 +194,45 @@\n an(&\n-arr2)%0A   %0A\n+resultado1)%0A    fmt.Scan(&resultado2)\n %0A%0A  \n@@ -414,105 +414,41 @@\n     \n-arr1 = math.Round(resultado1)%0A        arr2 = math.Round(resultado2)%0A        fmt.Println(arr1, arr\n+fmt.Println(resultado1, resultado\n 2)%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-30_18-05-41",
+            "content": "@@ -1,135 +1,226 @@\n-package main%0A%0Aimport (%0A%09%22fmt%22%0A%09%22math%22%0A)%0A%0Afunc main() %7B%0A    var a, b, c, delta, resultado1, resultado2 float64%0A    fmt.Scan(&a)%0A\n+@@ -10,41 +10,35 @@%0A ain%250A%0A-%250A%0A import %0A-(%250A%2509%0A %2522fmt%2522%250A%0A-%2509%2522math%2522%250A%2509%2522net%2522%250A)%0A+import  %2522math%2522%0A %250A%250Afu%0A@@ -95,16 +95,28 @@%0A sultado2%0A+, arr1, arr2%0A  float64%0A@@ -167,24 +167,59 @@%0A can(&c)%250A\n     \n+%0A+\n fmt.\n@@ -229,11 +229,16 @@\n an(&\n-b)%0A\n+arr1)%250A\n     \n@@ -251,271 +251,314 @@\n an(&\n-c)%0A    %0A   %0A%0A%0A    delta = (math.Pow(b, 2)) - 4*a*c%0A%0A    if delta %3E 0 %7B%0A        resultado1 = ((b*-1) + (math.Sqrt(delta)))/ (2*a)%0A        resultado2 = ((b*-1) - (math.Sqrt(delta)))/ (2*a)%0A   \n+arr2)%0A %250A   %250A%250A%250A    d%0A@@ -398,76 +398,141 @@%0A     %0A-%250A        fmt.Println(%2522%2525.2f%255Cn%2522, resultado1,%2522%2525.2f%255Cn%2522,resultado2)%250A%250A    %0A+arr1 = math.Round(resultado1)%250A        arr2 = math.Round(resultado2)%250A\n      \n-%0A\n    \n-     fmt.Println(%22%25.2f%5Cn%22, resultado1,%22%25.2f%5Cn%22,resultado2)%0A%0A    %0A%7D%0A%7D\n+fmt.Println(arr1, arr2)%250A%250A    fmt.Println(%2522Hello, World!%2522)%0A %250A%257D%250A%257D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-30_18-07-22",
+            "content": "@@ -364,17 +364,18 @@\n mt.Print\n-f\n+ln\n (%22%25.2f%5Cn\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-30_18-07-36",
+            "content": "@@ -387,16 +387,25 @@\n ultado1,\n+%22%25.2f%5Cn%22,\n resultad\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-30_18-07-46",
+            "content": "@@ -390,39 +390,9 @@\n ado1\n-)%0A        fmt.Printf(%22%25.2f%5Cn%22, \n+,\n resu\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-03-30_18-08-13",
+            "content": "@@ -433,136 +433,13 @@\n o2)%0A\n-    %7D else if delta = 0 %7B%0A        resultado1 = ((b*-1) + (math.Sqrt(delta)))/ (2*a)%0A        fmt.Printf(%22%25.2f%5Cn%22, resultado1)\n %0A    \n+%0A\n %7D%0A%7D\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-03-30_18-11-34",
+            "content": "@@ -450,17 +450,16 @@\n  delta =\n-=\n  0 %7B%0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-30_18-11-41",
+            "content": "@@ -559,61 +559,8 @@\n o1)%0A\n-    %7D else %7B%0A        fmt.Println(%22nao ha raiz real%22)%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-30_18-12-01",
+            "content": "@@ -205,37 +205,8 @@\n *a*c\n- //equa%C3%A7%C3%A3o para achar o delta\n %0A%0A  \n@@ -283,36 +283,8 @@\n 2*a)\n- //bhaskara da primeira ra%C3%ADz\n %0A   \n@@ -341,35 +341,8 @@\n 2*a)\n- //bhaskara da segunda ra%C3%ADz\n %0A   \n@@ -391,52 +391,8 @@\n do1)\n- //printar as ra%C3%ADzes com duas casas decimais\n %0A   \n@@ -517,33 +517,8 @@\n 2*a)\n- //bhaskara da %C3%BAnica ra%C3%ADz\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-03-30_18-13-19",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc main() {\n    var a, b, c, delta, resultado1, resultado2 float64\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n    fmt.Scan(&c)\n    \n   \n\n\n    delta = (math.Pow(b, 2)) - 4*a*c //equa\u00e7\u00e3o para achar o delta\n\n    if delta > 0 {\n        resultado1 = ((b*-1) + (math.Sqrt(delta)))/ (2*a) //bhaskara da primeira ra\u00edz\n        resultado2 = ((b*-1) - (math.Sqrt(delta)))/ (2*a) //bhaskara da segunda ra\u00edz\n        \n        fmt.Printf(\"%.2f\\n\", resultado1) //printar as ra\u00edzes com duas casas decimais\n        fmt.Printf(\"%.2f\\n\", resultado2)\n    } else if delta == 0 {\n        resultado1 = ((b*-1) + (math.Sqrt(delta)))/ (2*a) //bhaskara da \u00fanica ra\u00edz\n        fmt.Printf(\"%.2f\\n\", resultado1)\n    } else {\n        fmt.Println(\"nao ha raiz real\")\n    }\n}",
+            "lines": "31"
+        }
+    ]
+}

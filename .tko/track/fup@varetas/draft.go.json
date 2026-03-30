@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_17-39-48",
+            "content": "@@ -41,201 +41,35 @@\n     \n-var n1, n2, n3 int%0A    fmt.Scan(&n1)%0A    fmt.Scan(&n2)%0A    fmt.Scan(&n3)%0A%0A    if n1 %3E (n2+n3) %7C%7C n2 %3E (n1+n3) %7C%7C n3 %3E (n1+n2) %7B%0A        fmt.Println(%22False%22)%0A    %7D else %7B%0A    fmt.Println(%22True\n+fmt.Println(%22Hello, World!\n %22)%0A%7D%0A\n-%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-30_17-44-04",
+            "content": "@@ -122,17 +122,16 @@\n  if n1 %3E\n-=\n  (n2+n3)\n@@ -138,17 +138,16 @@\n  %7C%7C n2 %3E\n-=\n  (n1+n3)\n@@ -158,9 +158,8 @@\n n3 %3E\n-=\n  (n1\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-30_17-44-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3 int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&n3)\n\n    if n1 >= (n2+n3) || n2 >= (n1+n3) || n3 >= (n1+n2) {\n        fmt.Println(\"False\")\n    } else {\n    fmt.Println(\"True\")\n}\n}",
+            "lines": "14"
+        }
+    ]
+}

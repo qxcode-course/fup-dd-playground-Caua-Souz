@@ -13,15 +13,15 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@if2
 - fup@base
+- fup@if2
 - fup@if1
 tasks:
   sandbox@user_002: '{rate:100}'
   fup@tres: '{self:1, rate:100, study:10}'
-  fup@resto: '{self:1, rate:100, study:10, guided:1}'
-  fup@media: '{self:1, rate:100, study:38, friend:Hanna, guided:1}'
-  fup@sobrou: '{self:1, rate:100, study:24, friend:David Mesquita, guided:1}'
+  fup@resto: '{self:1, rate:100, study:10}'
+  fup@media: '{self:1, rate:100, study:38, friend:Hanna}'
+  fup@sobrou: '{self:1, rate:100, study:24, friend:David Mesquita}'
   fup@segundos: '{self:1, rate:100, study:21}'
   fup@celsius: '{self:1, rate:100, study:8}'
   fup@pintando: '{self:1, rate:100, study:16}'
@@ -39,13 +39,15 @@ tasks:
   fup@mumia: '{self:1, rate:100, study:23, friend:David Mesquita, concept:1}'
   fup@meio: '{self:1, rate:100, study:23, concept:1}'
   fup@jokenpo: '{self:1, rate:100, study:25, friend:Monitora Hannah}'
-  fup@final: '{self:1, rate:80, study:41, friend:Monitores Amelia e Cesario}'
-  fup@semana: '{rate:100}'
+  fup@final: '{self:1, rate:80, study:41}'
+  fup@semana: '{self:1, rate:100, study:41, friend:Monitores Amelia e Cesario, concept:1}'
+  fup@varetas: '{self:1, rate:100, study:6}'
+  fup@bhaskara: '{self:1, rate:100, study:25}'
 flags:
   panel: 3
-  inbox: 0
+  inbox: 1
   show_panel: 1
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@final
+selected: fup@cortada
