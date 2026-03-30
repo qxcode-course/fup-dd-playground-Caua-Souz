@@ -17,8 +17,33 @@
         },
         {
             "label": "2026-03-24_16-52-55",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello World!\")\n        }\n    \n   \n    \n\n",
+            "content": "@@ -37,13 +37,8 @@\n ) %7B%0A\n-  %0A%0A%0A\n     \n",
             "lines": "9"
+        },
+        {
+            "label": "2026-03-30_15-57-39",
+            "content": "@@ -39,194 +39,11 @@\n %7B%0A  \n-    var p, d1, d2, dt int%0A    fmt.Scan(&p)%0A    fmt.Scan(&d1)%0A    fmt.Scan(&d2)%0A    fmt.Scan(&dt)%0A%0A    dt = (d1+d2)%0A    if p == 0 && dt%252 == 0 %7B%0A        fmt.Println(%220%22)%0A    %7D else %7B%0A    \n+%0A%0A%0A\n     \n@@ -74,18 +74,8 @@\n !%22)%0A\n-    %7D%0A%0A  %0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-30_16-03-15",
+            "content": "@@ -219,30 +219,8 @@\n lse \n-if p == 1 && dt%252 == 0\n %7B%0A  \n@@ -242,47 +242,20 @@\n ln(%22\n-0%22)%0A    %7D else %7B%0A        fmt.Println(%221\n+Hello World!\n %22)%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-30_16-04-21",
+            "content": "@@ -236,17 +236,17 @@\n dt%252 == \n-1\n+0\n %7B%0A      \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_16-06-23",
+            "content": "@@ -163,12 +163,12 @@\n f p \n-!= 1\n+== 0\n  && \n@@ -224,12 +224,12 @@\n f p \n-!= 0\n+== 1\n  && \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_16-07-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n      var p, d1, d2, dt int\n    fmt.Scan(&p)\n    fmt.Scan(&d1)\n    fmt.Scan(&d2)\n    fmt.Scan(&dt)\n\n    dt = (d1+d2)\n    if p != 1 && dt%2 == 0 {\n        fmt.Println(\"0\")\n    } else if p != 0 && dt%2 == 1{\n        fmt.Println(\"0\")\n    } else {\n        fmt.Println(\"1\")\n    }\n\n  \n        }\n    \n   \n    \n\n",
+            "lines": "24"
         }
     ]
 }
