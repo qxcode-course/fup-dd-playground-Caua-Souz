@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-30_16-38-10",
+            "content": "@@ -344,16 +344,17 @@\n %7D else %7B\n+%7D\n %0A    fmt\n@@ -372,9 +372,8 @@\n og2%22)%0A%7D%0A\n-%7D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-30_16-38-31",
+            "content": "@@ -174,79 +174,17 @@\n  jog\n-2 == R && jog1 == S %7C%7C jog2 == S && jog1 == P %7C%7C jog2 == P && jog1 == R\n+1 == jog2\n  %7B%0A \n@@ -362,20 +362,18 @@\n rintln(%22\n-empate\n+jog2\n %22)%0A%7D%0A%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-40-44",
+            "content": "@@ -265,20 +265,22 @@\n rintln(%22\n-jog2\n+empate\n %22)%0A    %7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-41-06",
+            "content": "@@ -174,17 +174,79 @@\n  jog\n-1 == jog2\n+2 == R && jog1 == S %7C%7C jog2 == S && jog1 == P %7C%7C jog2 == P && jog1 == R\n  %7B%0A \n@@ -269,14 +269,12 @@\n ln(%22\n-empate\n+jog2\n %22)%0A \n@@ -401,103 +401,20 @@\n    %7D\n- \n  else \n-if jog2 == R && jog1 == S %7C%7C jog2 == S && jog1 == P %7C%7C jog2 == P && jog1 == R %7B%0A   \n+%7B%0A\n     \n- \n fmt.\n@@ -422,18 +422,20 @@\n rintln(%22\n-jog2\n+empate\n %22)%0A%7D%0A%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-42-32",
+            "content": "@@ -226,17 +226,16 @@\n else if \n-(\n jog1 == \n@@ -248,22 +248,20 @@\n og2 == S\n-)\n  %7C%7C \n-(\n jog1 == \n@@ -278,14 +278,12 @@\n == R\n-)\n  %7C%7C \n-(\n jog1\n@@ -301,17 +301,16 @@\n g2 ==  P\n-)\n  %7B%0A     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-43-15",
+            "content": "@@ -226,17 +226,16 @@\n else if \n-(\n (jog1 ==\n@@ -307,17 +307,16 @@\n 2 ==  P)\n-)\n  %7B%0A     \n@@ -353,17 +353,16 @@\n else if \n-(\n jog2 == \n@@ -375,22 +375,20 @@\n og1 == S\n-)\n  %7C%7C \n-(\n jog2 == \n@@ -401,22 +401,20 @@\n og1 == P\n-)\n  %7C%7C \n-(\n jog2 == \n@@ -427,17 +427,16 @@\n og1 == R\n-)\n  %7B%0A     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-43-45",
+            "content": "@@ -351,16 +351,100 @@\n  %7D  else\n+ if (jog2 == R && jog1 == S) %7C%7C (jog2 == S && jog1 == P) %7C%7C (jog2 == P && jog1 == R)\n  %7B%0A     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-44-02",
+            "content": "@@ -226,16 +226,17 @@\n else if \n+(\n (jog1 ==\n@@ -308,16 +308,17 @@\n 2 ==  P)\n+)\n  %7B%0A     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-45-29",
+            "content": "@@ -278,16 +278,45 @@\n g2 == R)\n+ %7C%7C (jog1 == S && jog2 ==  P)\n  %7B%0A     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-46-27",
+            "content": "@@ -319,78 +319,8 @@\n   %7D \n- else if (jog1 == S && jog2 ==  P) %7B%0A        fmt.Println(%22jog1%22)%0A    %7D\n  els\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-47-09",
+            "content": "@@ -279,18 +279,60 @@\n 2 == R) \n-&&\n+%7B%0A        fmt.Println(%22jog1%22)%0A    %7D  else if\n  (jog1 =\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-30_16-49-15",
+            "content": "@@ -167,16 +167,75 @@\n %0A    if \n+jog1 == jog2 %7B%0A        fmt.Println(%22empate%22)%0A    %7D else if \n (jog1 ==\n@@ -342,67 +342,8 @@\n 1%22)%0A\n-    %7D else if jog1 == jog2 %7B%0A        fmt.Println(%22empate%22)%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-50-37",
+            "content": "@@ -220,18 +220,18 @@\n 2 == R) \n-%7C%7C\n+&&\n  (jog1 =\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-51-45",
+            "content": "@@ -111,16 +111,63 @@\n og2)%0A   \n+ fmt.Scan(&R)%0A    fmt.Scan(&P)%0A    fmt.Scan(&S)\n %0A%0A    if\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-30_16-53-06",
+            "content": "@@ -55,16 +55,25 @@\n jog2\n+, R, P, S\n  string%0A\n     \n@@ -68,16 +68,16 @@\n  string%0A\n-\n     fmt.\n@@ -129,19 +129,17 @@\n jog1 == \n-%22R%22\n+R\n  && jog2\n@@ -142,19 +142,17 @@\n jog2 == \n-%22S%22\n+S\n ) %7C%7C (jo\n@@ -157,19 +157,17 @@\n jog1 == \n-%22P%22\n+P\n  && jog2\n@@ -174,11 +174,9 @@\n  == \n-%22R%22\n+R\n ) %7C%7C\n@@ -189,11 +189,9 @@\n  == \n-%22S%22\n+S\n  && \n@@ -203,11 +203,9 @@\n ==  \n-%22P%22\n+P\n ) %7B%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_16-54-26",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var jog1, jog2 string\n    fmt.Scan(&jog1)\n    fmt.Scan(&jog2)\n   \n\n    if (jog1 == \"R\" && jog2 == \"S\") || (jog1 == \"P\" && jog2 == \"R\") || (jog1 == \"S\" && jog2 ==  \"P\") {\n        fmt.Println(\"jog1\")\n    } else if jog1 == jog2 {\n        fmt.Println(\"empate\")\n    } else {\n        fmt.Println(\"jog2\")\n}\n}",
+            "lines": "16"
+        }
+    ]
+}

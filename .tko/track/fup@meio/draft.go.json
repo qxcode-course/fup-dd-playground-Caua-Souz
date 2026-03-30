@@ -57,7 +57,37 @@
         },
         {
             "label": "2026-03-24_17-47-38",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2, num3 int\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Scan(&num3)\n\n    if num1 < num2 && num2 < num3 {\n        fmt.Println(num2)\n    } else if num2 < num1 && num1 < num3 {\n        fmt.Println(num1)\n    } else {\n    fmt.Println(num3)\n}\n}",
+            "content": "@@ -139,17 +139,17 @@\n um1 \n-%3E\n+%3C\n  num2 &&\n  num\n@@ -144,16 +144,85 @@\n  num2 &&\n+ num2 %3C num3 %7B%0A        fmt.Println(num2)%0A    %7D else if num2 %3C num1 &&\n  num1 %3C \n@@ -257,16 +257,43 @@\n um1)%0A   \n-%0A    \n+ %7D else %7B%0A    fmt.Println(num3)%0A\n %7D%0A%7D\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_17-15-03",
+            "content": "@@ -146,10 +146,10 @@\n um2 \n-%7C%7C\n+&&\n  num\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_17-15-16",
+            "content": "@@ -138,26 +138,26 @@\n num1 %3E num2 \n-&&\n+%7C%7C\n  num1 %3C num3\n@@ -188,117 +188,12 @@\n um1)\n- \n %0A   \n- %7D else if num1 %3C num2 && num2 %3C num3 %7B%0A        fmt.Println(num2)%0A    %7D else %7B%0A        fmt.Println(num3)\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-30_17-16-20",
+            "content": "@@ -225,38 +225,8 @@\n m2 %3C\n- num3 %7C%7C num1 %3E num2 && num2 %3E\n  num\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_17-18-34",
+            "content": "@@ -161,38 +161,8 @@\n um3 \n-%7C%7C num2 %3C num1 && num3 %3E num1 \n %7B%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_17-19-28",
+            "content": "@@ -137,16 +137,16 @@\n  num\n-2\n+1\n  %3E num\n-1\n+2\n  && \n@@ -150,23 +150,53 @@\n && num1 \n-%3E\n+%3C\n  num3 \n+%7C%7C num2 %3C num1 && num3 %3E num1 \n %7B%0A      \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-03-30_17-20-47",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2, num3 int\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Scan(&num3)\n\n    if num2 > num1 && num1 > num3 {\n        fmt.Println(num1) \n    } else if num1 < num2 && num2 < num3 || num1 > num2 && num2 > num3 {\n        fmt.Println(num2)\n    } else {\n        fmt.Println(num3)\n    }\n}",
             "lines": "16"
         }
     ]

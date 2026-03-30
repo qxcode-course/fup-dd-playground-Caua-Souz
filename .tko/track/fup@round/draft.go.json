@@ -2,8 +2,98 @@
     "patches": [
         {
             "label": "2026-03-24_16-46-59",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\n)\nfunc main() {\n   fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -40,18 +40,16 @@\n ain() %7B%0A\n-%0A%0A\n    fmt.P\n",
             "lines": "9"
+        },
+        {
+            "label": "2026-03-30_16-25-33",
+            "content": "@@ -27,18 +27,8 @@\n mt%22%0A\n-%09%22reflect%22\n %0A)%0Af\n@@ -40,16 +40,18 @@\n ain() %7B%0A\n+%0A%0A\n    fmt.P\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-30_16-28-52",
+            "content": "@@ -23,16 +23,27 @@\n %0A%09%22fmt%22%0A\n+%09%22reflect%22%0A\n )%0Afunc m\n@@ -84,9 +84,8 @@\n ld!%22)%0A%7D%0A\n-%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-30_16-29-01",
+            "content": "@@ -27,16 +27,8 @@\n mt%22%0A\n-%09%22math%22%0A\n )%0Afu\n@@ -43,262 +43,39 @@\n ) %7B%0A\n-%09var op string%0A%09var num float64%0A%09fmt.Scan(&op)%0A%09fmt.Scan(&num)%0A%0A%09if op == %22r%22 %7B%0A%09math.Round(num)%0A%09fmt.Println(num)%0A%7D else if op == %22f%22 %7B%0A%09math.Floor(num)%0A%09fmt.Println(num)%0A%7D else if op == %22c%22 %7B%0A%09math.Ceil(num)%0A%09fmt.Println(num)%0A%7D else %7B%0A%09f,t.Println(%22\n+   fmt.Println(%22Hello, World!\n %22)%0A%7D%0A\n-%7D\n %0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-30_17-00-15",
+            "content": "@@ -286,17 +286,17 @@\n lse %7B%0A%09f\n-m\n+,\n t.Printl\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-30_17-00-21",
+            "content": "@@ -139,29 +139,20 @@\n h.Round(\n-float64(\n num)\n-)\n %0A%09fmt.Pr\n@@ -196,29 +196,20 @@\n h.Floor(\n-float64(\n num)\n-)\n %0A%09fmt.Pr\n@@ -256,21 +256,12 @@\n eil(\n-float64(\n num)\n-)\n %0A%09fm\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-30_17-01-53",
+            "content": "@@ -243,16 +243,29 @@\n )%0A%7D else\n+ if op == %22c%22\n  %7B%0A%09math\n@@ -302,12 +302,38 @@\n ln(num)%0A\n+%7D else %7B%0A%09fmt.Println(%22%22)%0A\n %7D%0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-03-30_17-02-34",
+            "content": "@@ -74,17 +74,8 @@\n  num\n-, pracima\n  flo\n@@ -113,28 +113,8 @@\n num)\n-%0A%09fmt.Scan(&pracima)\n %0A%0A%09i\n@@ -132,18 +132,8 @@\n  %7B%0A%09\n-pracima = \n math\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-03-30_17-04-31",
+            "content": "@@ -178,20 +178,29 @@\n h.Round(\n+float64(\n num)\n+)\n %0A%09fmt.Pr\n@@ -244,20 +244,29 @@\n h.Floor(\n+float64(\n num)\n+)\n %0A%09fmt.Pr\n@@ -296,20 +296,29 @@\n th.Ceil(\n+float64(\n num)\n+)\n %0A%09fmt.Pr\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_17-05-25",
+            "content": "@@ -220,34 +220,24 @@\n p == %22f%22 %7B%0A%09\n-pracima = \n math.Floor(n\n@@ -253,23 +253,19 @@\n Println(\n-pracima\n+num\n )%0A%7D else\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_17-06-09",
+            "content": "@@ -83,27 +83,8 @@\n cima\n-, prabaixo, fracion\n  flo\n@@ -142,45 +142,8 @@\n ima)\n-%0A%09fmt.Scan(&prabaixo)%0A%09fmt.Scan(&fra)\n %0A%0A%09i\n@@ -161,15 +161,15 @@\n  %7B%0A%09\n-f\n+p\n raci\n-on\n+ma\n  = m\n@@ -231,13 +231,12 @@\n %09pra\n-baixo\n+cima\n  = m\n@@ -278,34 +278,24 @@\n )%0A%7D else %7B%0A%09\n-pracima = \n math.Ceil(nu\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_17-07-23",
+            "content": "@@ -193,20 +193,16 @@\n can(&fra\n-cion\n )%0A%0A%09if o\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-30_17-07-34",
+            "content": "@@ -157,16 +157,57 @@\n pracima)\n+%0A%09fmt.Scan(&prabaixo)%0A%09fmt.Scan(&fracion)\n %0A%0A%09if op\n@@ -213,31 +213,31 @@\n p == %22r%22 %7B%0A%09\n-p\n+f\n raci\n-ma\n+on\n  = math.Roun\n@@ -287,20 +287,21 @@\n %22 %7B%0A%09pra\n-cima\n+baixo\n  = math.\n@@ -343,16 +343,26 @@\n else %7B%0A%09\n+pracima = \n math.Cei\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-30_17-07-59",
+            "content": "@@ -79,16 +79,35 @@\n  pracima\n+, prabaixo, fracion\n  float64\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_17-08-12",
+            "content": "@@ -278,34 +278,24 @@\n )%0A%7D else %7B%0A%09\n-pracima = \n math.Ceil(nu\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_17-08-33",
+            "content": "@@ -188,39 +188,35 @@\n m)%0A%09fmt.Println(\n-pracima\n+num\n )%0A%7D else if op =\n@@ -320,21 +320,17 @@\n Println(\n-pracima\n+num\n )%0A%7D%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_17-09-01",
+            "content": "@@ -72,19 +72,23 @@\n ar num, \n-res\n+pracima\n  float64\n@@ -130,19 +130,23 @@\n t.Scan(&\n-res\n+pracima\n )%0A%0A%09if o\n@@ -153,27 +153,31 @@\n p == %22r%22 %7B%0A%09\n-res\n+pracima\n  = math.Roun\n@@ -188,35 +188,39 @@\n m)%0A%09fmt.Println(\n-res\n+pracima\n )%0A%7D else if op =\n@@ -224,27 +224,31 @@\n p == %22f%22 %7B%0A%09\n-res\n+pracima\n  = math.Floo\n@@ -267,19 +267,23 @@\n Println(\n-res\n+pracima\n )%0A%7D else\n@@ -286,19 +286,23 @@\n else %7B%0A%09\n-res\n+pracima\n  = math.\n@@ -328,11 +328,15 @@\n tln(\n-res\n+pracima\n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_17-10-07",
+            "content": "@@ -151,315 +151,161 @@\n r%22 %7B\n- //ler se a opera%C3%A7%C3%A3o %C3%A9 round%0A%09res = math.Round(num) //usando a fun%C3%A7%C3%A3o round%0A%09fmt.Println(res)%0A%7D else if op == %22f%22 %7B //ler se a opera%C3%A7%C3%A3o %C3%A9 floor%0A%09res = math.Floor(num) //usando a fun%C3%A7%C3%A3o floor%0A%09fmt.Println(res)%0A%7D else %7B%0A%09res = math.Ceil(num) //ler se a opera%C3%A7%C3%A3o %C3%A9 ceil%0A%09fmt.Println(res) //usando a fun%C3%A7%C3%A3o ceil\n+%0A%09res = math.Round(num)%0A%09fmt.Println(res)%0A%7D else if op == %22f%22 %7B%0A%09res = math.Floor(num)%0A%09fmt.Println(res)%0A%7D else %7B%0A%09res = math.Ceil(num)%0A%09fmt.Println(res)\n %0A%7D%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-03-30_17-11-22",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n\tvar op string\n\tvar num, res float64\n\tfmt.Scan(&op)\n\tfmt.Scan(&num)\n\tfmt.Scan(&res)\n\n\tif op == \"r\" { //ler se a opera\u00e7\u00e3o \u00e9 round\n\tres = math.Round(num) //usando a fun\u00e7\u00e3o round\n\tfmt.Println(res)\n} else if op == \"f\" { //ler se a opera\u00e7\u00e3o \u00e9 floor\n\tres = math.Floor(num) //usando a fun\u00e7\u00e3o floor\n\tfmt.Println(res)\n} else {\n\tres = math.Ceil(num) //ler se a opera\u00e7\u00e3o \u00e9 ceil\n\tfmt.Println(res) //usando a fun\u00e7\u00e3o ceil\n}\n}\n",
+            "lines": "24"
         }
     ]
 }
