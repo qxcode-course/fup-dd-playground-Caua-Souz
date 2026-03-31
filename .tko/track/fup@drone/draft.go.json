@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-40-50",
+            "content": "@@ -223,31 +223,25 @@\n 2 * \n-(\n (A*B\n-)\n  + \n-(\n A*C\n-)\n  + \n-(\n B*C)\n-)\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-31_17-42-13",
+            "content": "@@ -211,150 +211,85 @@\n     \n-janela = (H*L)%0A%0A    if A*B && A*C %3C janela %7C%7C B*A && B*C %3C janela %7B%0A         fmt.Println(%22S%22)%0A    %7D else %7B%0A        fmt.Println(%22N%22)%0A    %7D%0A%0A    \n+caixa = 2 * ((A*B) + (A*C) + (B*C))%0A    janela = (H*L)%0A%0A    fmt.Println(caixa)\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-31_17-46-31",
+            "content": "@@ -234,16 +234,23 @@\n  if A*B \n+&& A*C \n %3C janela\n@@ -252,16 +252,24 @@\n anela %7C%7C\n+ B*A && \n B*C %3C ja\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-46-53",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B, C, H, L, caixa, janela int\n    fmt.Scan(&A)\n    fmt.Scan(&B)\n    fmt.Scan(&C)\n    fmt.Scan(&H)\n    fmt.Scan(&L)\n    fmt.Scan(&caixa)\n    fmt.Scan(&janela)\n\n    janela = (H*L)\n\n    if A*B < janela ||B*C < janela {\n         fmt.Println(\"S\")\n    } else {\n        fmt.Println(\"N\")\n    }\n\n    \n}\n",
+            "lines": "22"
+        }
+    ]
+}

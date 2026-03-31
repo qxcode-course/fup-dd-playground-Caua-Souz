@@ -10,13 +10,13 @@ func main() {
         fmt.Println("aprovado")
     } else if media < 4 {
         fmt.Println("reprovado")
-    } else if 4 > media && media < 7 {
+    } else if 4 < media && media < 7 {
         fmt.Scan(&nf)
         mediafinal = (media + nf)/2
         if mediafinal >= 5 {
             fmt.Println("aprovado na final")
-        } 
         } else {
         fmt.Println("reprovado na final")
     }
+}
 }

@@ -67,7 +67,27 @@
         },
         {
             "label": "2026-03-24_17-27-34",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, nf, media, mediafinal float64\n  \n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    media = (n1 + n2)/2\n    if media >= 7 {\n        fmt.Println(\"aprovado\")\n    } else if media < 4 {\n        fmt.Println(\"reprovado\")\n    } else if 4 > media && media < 7 {\n        fmt.Scan(&nf)\n        mediafinal = (media + nf)/2\n        if mediafinal >= 5 {\n            fmt.Println(\"aprovado na final\")\n        } \n        } else {\n        fmt.Println(\"reprovado na final\")\n    }\n}\n",
+            "content": "@@ -216,17 +216,17 @@\n media %3C \n-5\n+4\n  %7B%0A     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-54-25",
+            "content": "@@ -269,17 +269,17 @@\n se if 4 \n-%3C\n+%3E\n  media &\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-57-06",
+            "content": "@@ -216,17 +216,17 @@\n media %3C \n-4\n+5\n  %7B%0A     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-57-13",
+            "content": "@@ -420,24 +420,35 @@\n  na final%22)%0A\n+        %7D %0A\n         %7D el\n@@ -502,9 +502,8 @@\n     %7D%0A%7D%0A\n-%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-31_17-58-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, nf, media, mediafinal float64\n  \n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    media = (n1 + n2)/2\n    if media >= 7 {\n        fmt.Println(\"aprovado\")\n    } else if media < 4 {\n        fmt.Println(\"reprovado\")\n    } else if 4 < media && media < 7 {\n        fmt.Scan(&nf)\n        mediafinal = (media + nf)/2\n        if mediafinal >= 5 {\n            fmt.Println(\"aprovado na final\")\n        } else {\n        fmt.Println(\"reprovado na final\")\n    }\n}\n}",
             "lines": "22"
         }
     ]

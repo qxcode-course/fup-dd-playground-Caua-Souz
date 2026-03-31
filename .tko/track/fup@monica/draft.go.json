@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-12-56",
+            "content": "@@ -133,23 +133,9 @@\n     \n-V = (A + B) - M\n+%0A\n %0A   \n@@ -147,13 +147,27 @@\n Println(\n-V\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-16-17",
+            "content": "@@ -149,24 +149,8 @@\n - M%0A\n-    V = (V * 1)%0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_17-16-54",
+            "content": "@@ -55,12 +55,8 @@\n B, V\n-, V1\n  int\n@@ -127,26 +127,8 @@\n (&V)\n-%0A    fmt.Scan(&V1)\n %0A%0A  \n@@ -150,17 +150,16 @@\n  M%0A    V\n-1\n  = (V * \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-17-42",
+            "content": "@@ -201,13 +201,12 @@\n rintln(V\n-1\n )%0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-17-51",
+            "content": "@@ -182,9 +182,11 @@\n = (V\n-*\n+ * \n 1)%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-18-17",
+            "content": "@@ -22,23 +22,8 @@\n fmt%22\n- %0Aimport %22math%22\n %0Afun\n@@ -60,15 +60,11 @@\n  V1 \n-float64\n+int\n %0A   \n@@ -180,18 +180,11 @@\n 1 = \n-math.Abs\n (V\n+*\n 1)%0A \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-03-31_17-20-35",
+            "content": "@@ -18,16 +18,31 @@\n rt %22fmt%22\n+ %0Aimport %22math%22\n %0Afunc ma\n@@ -71,19 +71,23 @@\n , V, V1 \n-int\n+float64\n %0A    fmt\n@@ -177,12 +177,8 @@\n  V =\n- M -\n  (A \n@@ -182,16 +182,41 @@\n (A + B) \n+- M%0A    V1 = math.Abs(V1)\n %0A    fmt\n@@ -225,12 +225,13 @@\n rintln(V\n+1\n )%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_17-21-32",
+            "content": "@@ -54,12 +54,13 @@\n  B, \n-C, R\n+V, V1\n  int\n@@ -125,17 +125,17 @@\n t.Scan(&\n-C\n+V\n )%0A    fm\n@@ -146,17 +146,18 @@\n an(&\n-R\n+V1\n )%0A%0A    \n-C\n+V\n  = M\n@@ -188,9 +188,9 @@\n tln(\n-C\n+V\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-23-30",
+            "content": "@@ -173,83 +173,22 @@\n %0A   \n-if A %3E B && B %3E C%7B%0A    fmt.Println(C)%0A   %7D else %7B%0A    fmt.Println(%22%22)%0A   %7D%0A%0A%7D \n+ fmt.Println(C)%0A%7D\n %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_17-25-20",
+            "content": "@@ -204,17 +204,17 @@\n Println(\n-A\n+C\n )%0A   %7D e\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_17-25-42",
+            "content": "@@ -221,26 +221,8 @@\n lse \n-if A %3C B && C %3C B \n %7B%0A  \n@@ -235,17 +235,18 @@\n Println(\n-B\n+%22%22\n )%0A   %7D%0A%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_17-26-55",
+            "content": "@@ -264,39 +264,8 @@\n    %7D\n- else %7B%0A    fmt.Println(C)%0A   %7D\n %0A%0A%7D \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_17-27-16",
+            "content": "@@ -185,32 +185,13 @@\n  && \n-A\n+B\n  %3E C\n- %7C%7C A %3C B && A %3C C \n %7B%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_17-28-42",
+            "content": "@@ -194,22 +194,22 @@\n  %7C%7C \n-B %3C A\n+A %3C B\n  && \n-C %3C A\n+A %3C C\n  %7B%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_17-29-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var M, A, B, C, R int\n    fmt.Scan(&M)\n    fmt.Scan(&A)\n    fmt.Scan(&B)\n    fmt.Scan(&C)\n    fmt.Scan(&R)\n\n    C = M - (A + B) \n   if A > B && A > C || B < A && C < A {\n    fmt.Println(A)\n   } else if A < B && C < B {\n    fmt.Println(B)\n   } else {\n    fmt.Println(C)\n   }\n\n} \n",
+            "lines": "20"
+        }
+    ]
+}

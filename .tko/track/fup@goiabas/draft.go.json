@@ -7,8 +7,33 @@
         },
         {
             "label": "2026-03-31_15-08-27",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var cesta, bananas, goiabas, mangas int\n    \n    fmt.Scan(&cesta)\n    fmt.Scan(&bananas)\n    fmt.Scan(&goiabas)\n    fmt.Scan(&mangas)\n\n\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -77,16 +77,21 @@\n gas int%0A\n+    %0A\n     fmt.\n",
             "lines": "13"
+        },
+        {
+            "label": "2026-03-31_16-36-40",
+            "content": "@@ -23,23 +23,8 @@\n mt%22%0A\n-import %22math%22%0A%0A\n func\n@@ -77,54 +77,11 @@\n gas \n-float64%0A    var resultadop, resultadof float64\n+int\n %0A   \n@@ -170,182 +170,41 @@\n as)%0A\n-    fmt.Scan(&resultadop)%0A    fmt.Scan(&resultadof)%0A%0A    resultadop = (bananas + goiabas + mangas ) / cesta%0A    resultadof = math.Round(resultadop)%0A    fmt.Println(resultadof\n+%0A%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_16-51-51",
+            "content": "@@ -404,50 +404,6 @@\n of)%0A\n-%7D if resultado == 1.2 %7B%0A    fmt.Println(%22%22)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-31_16-55-13",
+            "content": "@@ -400,19 +400,17 @@\n ltadof)%0A\n-   \n+%7D\n  if resu\n@@ -414,17 +414,16 @@\n esultado\n-p\n  == 1.2 \n@@ -445,11 +445,9 @@\n ln(%22\n-2\n %22)%0A%7D%0A\n-%7D\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_16-55-32",
+            "content": "@@ -335,151 +335,103 @@\n esta\n- //somar a quantidade das frutas e dividir com a capacidade da cesta%0A    resultadof = math.Ceil(resultadop) //arrendondar para cima o resultado\n+%0A    resultadof = math.Round(resultadop)%0A    fmt.Println(resultadof)%0A    if resultadop == 1.2 %7B\n %0A   \n@@ -447,23 +447,12 @@\n tln(\n-resultadof)%0A    \n+%222%22)\n %0A%7D%0A\n+%7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-31_17-03-33",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\n\nfunc main() {\n    var cesta, bananas, goiabas, mangas float64\n    var resultadop, resultadof float64\n    fmt.Scan(&cesta)\n    fmt.Scan(&bananas)\n    fmt.Scan(&goiabas)\n    fmt.Scan(&mangas)\n    fmt.Scan(&resultadop)\n    fmt.Scan(&resultadof)\n\n    resultadop = (bananas + goiabas + mangas ) / cesta //somar a quantidade das frutas e dividir com a capacidade da cesta\n    resultadof = math.Ceil(resultadop) //arrendondar para cima o resultado\n    fmt.Println(resultadof)\n    \n}\n",
+            "lines": "19"
         }
     ]
 }
