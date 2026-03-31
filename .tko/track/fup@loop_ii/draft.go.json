@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_16-07-58",
+            "content": "@@ -79,52 +79,40 @@\n     \n-for a := a; a %3C b; a++ %7B%0A    fmt.Printf(%22a\n+%0A    fmt.Println(%22Hello, World!\n %22)%0A%7D%0A\n-%7D\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_16-09-54",
+            "content": "@@ -117,12 +117,13 @@\n rint\n-ln(a\n+f(%22a%22\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_16-10-07",
+            "content": "@@ -113,15 +113,17 @@\n mt.Print\n+ln\n (a)%0A%7D%0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_16-10-14",
+            "content": "@@ -117,26 +117,11 @@\n rint\n-f(%22%5B%25v%5D%5Cn%22, a)%0A    \n+(a)%0A\n %7D%0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_16-11-30",
+            "content": "@@ -117,10 +117,9 @@\n rint\n-ln\n+f\n (%22%5B%25\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_16-11-41",
+            "content": "@@ -116,16 +116,26 @@\n Println(\n+%22%5B%25v%5D%5Cn%22, \n a)%0A    %7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_16-11-54",
+            "content": "@@ -117,15 +117,12 @@\n rint\n-f(%22%5Ba%5D%22\n+ln(a\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_16-12-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    for a := a; a < b; a++ {\n    fmt.Printf(\"[a]\")\n    }\n}",
+            "lines": "9"
+        }
+    ]
+}

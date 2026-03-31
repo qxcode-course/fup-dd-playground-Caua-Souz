@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_15-08-12",
+            "content": "@@ -81,13 +81,8 @@\n int%0A\n-    %0A\n     \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_15-08-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var cesta, bananas, goiabas, mangas int\n    \n    fmt.Scan(&cesta)\n    fmt.Scan(&bananas)\n    fmt.Scan(&goiabas)\n    fmt.Scan(&mangas)\n\n\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "13"
+        }
+    ]
+}

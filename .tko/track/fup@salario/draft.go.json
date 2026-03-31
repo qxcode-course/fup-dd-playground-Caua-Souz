@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_15-17-51",
+            "content": "@@ -53,16 +53,33 @@\n a, aum1,\n+ aum2, aum3, aum4\n  sal_f f\n@@ -124,10 +124,10 @@\n l_a \n-%3C\n =\n+%3C\n  100\n@@ -192,16 +192,19 @@\n .2f%5Cn%22, \n+aum\n aum1)%0A  \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_15-18-23",
+            "content": "@@ -52,16 +52,23 @@\n _a, aum1\n+, sal_f\n  float64\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_15-18-27",
+            "content": "@@ -51,16 +51,17 @@\n l_a, aum\n+1\n  float64\n@@ -61,16 +61,16 @@\n float64%0A\n-\n     fmt.\n@@ -121,235 +121,64 @@\n  aum\n+1\n  = (\n-sal_a * 0.2) + sal_a%0A        fmt.Printf(%22%25.2f%5Cn%22, aum)%0A    %7D else if sal_a %3C=\n+20 / sal_a)*\n  1\n-5\n 00\n- %7B%0A        aum = (sal_a * 0.15 ) + sal_a%0A        fmt.Printf(%22%25.2f%5Cn%22, aum)%0A    %7D else if sal_a %3C= 2000 %7B%0A        aum = (sal_a * 0.10) + sal_a\n+%0A        fmt.Printf(%22%25.2f%5Cn%22, aum1)\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-31_15-25-09",
+            "content": "@@ -342,24 +342,28 @@\n ) + sal_a%0A  \n+  %7D%0A\n     fmt.Prin\n@@ -367,117 +367,26 @@\n rint\n-f(%22%25.2f%5Cn%22, aum)%0A    %7D else %7B%0A        aum = (sal_a * 0.5) + sal_a%0A        fmt.Printf(%22%25.2f%5Cn%22, aum)%0A    %7D%0A    \n+ln(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-31_15-26-36",
+            "content": "@@ -391,24 +391,8 @@\n lse \n-if sal_a %3E 2000 \n %7B%0A  \n@@ -465,10 +465,15 @@\n )%0A    %7D%0A\n+    %0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-03-31_15-27-31",
+            "content": "@@ -430,17 +430,16 @@\n l_a * 0.\n-0\n 5) + sal\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-03-31_15-27-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var sal_a, aum float64\n    fmt.Scan(&sal_a)\n\n    if sal_a <= 1000 {\n        aum = (sal_a * 0.2) + sal_a\n        fmt.Printf(\"%.2f\\n\", aum)\n    } else if sal_a <= 1500 {\n        aum = (sal_a * 0.15 ) + sal_a\n        fmt.Printf(\"%.2f\\n\", aum)\n    } else if sal_a <= 2000 {\n        aum = (sal_a * 0.10) + sal_a\n      fmt.Printf(\"%.2f\\n\", aum)\n    } else if sal_a > 2000 {\n        aum = (sal_a * 0.05) + sal_a\n        fmt.Printf(\"%.2f\\n\", aum)\n    }\n}\n",
+            "lines": "20"
+        }
+    ]
+}
