@@ -3,7 +3,11 @@ import "fmt"
 func main() {
     var a, b int
     fmt.Scan(&a, &b)
-    for a := a; a < b; a++ {
-    fmt.Println(a)
+
+fmt.Print("[", " ")
+    for a := a; a <  b; a++ {
+    fmt.Print(a , " ")
     }
+    fmt.Println("]")
+
 }

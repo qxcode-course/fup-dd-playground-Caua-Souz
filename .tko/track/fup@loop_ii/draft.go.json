@@ -67,8 +67,68 @@
         },
         {
             "label": "2026-03-31_16-28-52",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n    for a := a; a < b; a++ {\n    fmt.Println(a)\n    }\n}",
+            "content": "@@ -90,18 +90,16 @@\n = a; a %3C\n-= \n  b; a++ \n",
             "lines": "9"
+        },
+        {
+            "label": "2026-04-01_16-17-44",
+            "content": "@@ -90,16 +90,17 @@\n = a; a %3C\n+=\n   b; a++\n@@ -123,12 +123,8 @@\n ln(a\n-, %22%22\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-01_16-22-17",
+            "content": "@@ -114,16 +114,18 @@\n mt.Print\n+ln\n (a, %22%22)%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-01_16-22-54",
+            "content": "@@ -116,17 +116,16 @@\n .Print(a\n- \n , %22%22)%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-01_16-23-37",
+            "content": "@@ -120,17 +120,16 @@\n nt(a , %22\n- \n %22)%0A    %7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-01_16-23-54",
+            "content": "@@ -74,24 +74,8 @@\n  &b)\n-%0A%0Afmt.Print(%22%5B%22)\n %0A   \n@@ -134,25 +134,5 @@\n   %7D%0A\n-    fmt.Print(%22%5D%22)%0A%0A\n %7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-01_16-25-43",
+            "content": "@@ -83,17 +83,16 @@\n .Print(%22\n- \n %5B%22)%0A    \n@@ -163,10 +163,8 @@\n rint\n-ln\n (%22%5D%22\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_16-26-22",
+            "content": "@@ -82,18 +82,18 @@\n t.Print(\n- \n %22\n+ \n %5B%22)%0A    \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_16-27-21",
+            "content": "@@ -86,11 +86,11 @@\n int(\n+ \n %22%5B\n- \n %22)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_16-27-39",
+            "content": "@@ -0,0 +1,177 @@\n+package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var a, b int%0A    fmt.Scan(&a, &b)%0A%0Afmt.Print(%22%5B %22)%0A    for a := a; a %3C  b; a++ %7B%0A    fmt.Print(a , %22 %22)%0A    %7D%0A    fmt.Println(%22%5D%22)%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_16-28-04",
+            "content": "@@ -1,180 +0,0 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var a, b int%0A    fmt.Scan(&a, &b)%0A%0Afmt.Print(%22%5B%22, %22 %22)%0A    for a := a; a %3C  b; a++ %7B%0A    fmt.Print(a, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D%22)%0A%0A%7D\n",
+            "lines": "0"
+        },
+        {
+            "label": "2026-04-01_16-28-46",
+            "content": "@@ -137,17 +137,16 @@\n .Print(a\n- \n , %22 %22)%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_16-29-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\nfmt.Print(\"[\", \" \")\n    for a := a; a <  b; a++ {\n    fmt.Print(a , \" \")\n    }\n    fmt.Println(\"]\")\n\n}",
+            "lines": "13"
         }
     ]
 }

@@ -14,7 +14,8 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded: []
+expanded:
+- fup@for1
 tasks:
   fup@tres: '{self:1, rate:100, study:10}'
   fup@resto: '{self:1, rate:100, study:10}'
@@ -41,29 +42,30 @@ tasks:
   fup@semana: '{self:1, rate:100, study:41, friend:Monitores Amelia e Cesario, concept:1}'
   fup@varetas: '{self:1, rate:100, study:6}'
   fup@bhaskara: '{self:1, rate:100, study:25}'
+  fup@cortada: '{self:1, rate:100, study:8, friend:Monitor Matheus}'
   fup@monica: '{self:1, rate:100, study:15, concept:1}'
   fup@drone: '{self:1, rate:100, study:16}'
   fup@goiabas: '{self:1, rate:100, study:25}'
   fup@salario: '{self:1, rate:100, study:21, concept:1}'
+  fup@impedido: '{self:1, rate:100, study:2}'
+  fup@maximo: '{self:1, rate:100, study:2}'
+  fup@chaves: '{self:1, rate:100, study:2}'
+  fup@chute: '{self:1, rate:100, study:19}'
+  fup@zerinho: '{self:1, rate:100, study:5}'
+  fup@par: '{rate:42}'
   fup@loop_i: '{self:1, rate:100, study:6, concept:1}'
+  fup@loop_ii: '{self:1, rate:100, study:10, friend:Monitor Joao David}'
   fup@quebrada: '{}'
   fup@operacoes: '{}'
   fup@data: '{}'
   fup@opala: '{}'
   fup@tv: '{}'
-  fup@cortada: '{}'
   fup@teleferico: '{}'
   fup@cobra: '{}'
   fup@game10: '{}'
-  fup@impedido: '{}'
-  fup@maximo: '{}'
-  fup@chaves: '{}'
-  fup@chute: '{}'
   fup@maior: '{}'
   fup@morangos: '{}'
   fup@taxi: '{}'
-  fup@zerinho: '{}'
-  fup@par: '{}'
   fup@divisiveis: '{}'
   fup@xadrez: '{}'
   fup@americano: '{}'
@@ -78,7 +80,6 @@ tasks:
   fup@segundo: '{}'
   fup@adedonha: '{}'
   fup@sono: '{}'
-  fup@loop_ii: '{}'
   fup@loop_iii: '{}'
   fup@loop_iv: '{}'
   fup@loop_v: '{}'
@@ -247,4 +248,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@if_extra
+selected: fup@loop_ii

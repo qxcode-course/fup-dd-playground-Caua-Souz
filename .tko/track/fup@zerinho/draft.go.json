@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-01_16-12-38",
+            "content": "@@ -125,75 +125,8 @@\n  d1 \n-== d2 && d2 == d3 %7B%0A        fmt.Println(%22empate%22)%0A    %7D else if d1 \n != d\n@@ -178,49 +178,13 @@\n    %7D\n-  else if d2 != d1 && d2 == d3 %7B%0A   \n+%0A\n     \n- \n fmt.\n@@ -196,51 +196,22 @@\n ln(%22\n-jog2%22)%0A    %7D else %7B%0A    fmt.Println(%22jog3\n+Hello, World!\n %22)%0A%7D%0A\n-%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-01_16-14-58",
+            "content": "@@ -266,17 +266,17 @@\n 1 && d2 \n-!\n+=\n = d3 %7B%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-01_16-15-12",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var d1, d2, d3 int\n    fmt.Scan(&d1)\n    fmt.Scan(&d2)\n    fmt.Scan(&d3)\n\n    if d1 == d2 && d2 == d3 {\n        fmt.Println(\"empate\")\n    } else if d1 != d2 && d1 != d3 {\n        fmt.Println(\"jog1\")\n    }  else if d2 != d1 && d2 != d3 {\n        fmt.Println(\"jog2\")\n    } else {\n    fmt.Println(\"jog3\")\n}\n}",
+            "lines": "18"
+        }
+    ]
+}
