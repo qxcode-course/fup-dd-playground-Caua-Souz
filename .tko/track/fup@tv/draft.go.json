@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_17-09-47",
+            "content": "@@ -166,25 +166,25 @@\n .Printf(%22.2f\n-/\n+%5C\n n%22, res)%0A   \n@@ -199,17 +199,17 @@\n ntf(%22.2f\n-/\n+%5C\n n%22, valo\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-06_17-10-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor float64\n    var parcelas float64\n\n    valor *= (1 + 0.05 * parcelas - 1 )\n    res := (valor / parcelas)\n    fmt.Printf(\".2f/n\", res)\n    fmt.Printf(\".2f/n\", valor)\n}\n",
+            "lines": "11"
+        }
+    ]
+}
