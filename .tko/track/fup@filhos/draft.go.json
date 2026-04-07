@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_15-28-25",
+            "content": "@@ -38,115 +38,8 @@\n ) %7B%0A\n-    var novo, qfilhos int%0A    fmt.Scan(&novo)%0A    fmt.Scan(&qfilhos)%0A %0A%0A    for ; novo %3C qfilhos; novo++ %7B%0A\n     \n@@ -71,12 +71,6 @@\n !%22)%0A\n-    %0A\n %7D%0A\n-%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_15-39-09",
+            "content": "@@ -157,20 +157,31 @@\n Println(\n-novo\n+%22Hello, World!%22\n )%0A    %0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_15-39-37",
+            "content": "@@ -171,45 +171,8 @@\n     \n-if novo == 11 %7B%0A        continu%0A    %7D\n %0A%7D%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_15-40-22",
+            "content": "@@ -198,17 +198,16 @@\n  continu\n-e\n %0A    %7D%0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_15-40-27",
+            "content": "@@ -171,15 +171,40 @@\n     \n+if \n novo \n-++\n+== 11 %7B%0A        continue\n %0A   \n@@ -208,8 +208,9 @@\n     %7D%0A%7D%0A\n+%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_15-42-47",
+            "content": "@@ -59,11 +59,8 @@\n lhos\n-, i\n  int\n@@ -108,16 +108,8 @@\n s)%0A \n-   i = 0\n %0A%0A  \n@@ -117,11 +117,15 @@\n  for\n+ \n ; \n-i\n+novo\n  %3C q\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_15-49-12",
+            "content": "@@ -174,17 +174,20 @@\n vo)%0A    \n-i\n+novo\n  ++%0A    \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_15-49-53",
+            "content": "@@ -139,17 +139,20 @@\n filhos; \n-i\n+novo\n ++ %7B%0A   \n@@ -178,17 +178,12 @@\n     \n-novo += 2\n+i ++\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-07_15-50-25",
+            "content": " package main\nimport \"fmt\"\nfunc main() {\n    var novo, qfilhos, i int\n    fmt.Scan(&novo)\n    fmt.Scan(&qfilhos)\n    i = 0\n\n    for; i < qfilhos; i++ {\n    fmt.Println(novo)\n    novo += 2\n    }\n}\n",
+            "lines": "13"
+        }
+    ]
+}
