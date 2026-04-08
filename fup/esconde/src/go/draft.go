@@ -1,19 +1,26 @@
 package main
 import "fmt"
 func main() {
-    var num, i int
+    var num int
     fmt.Scan(&num)
 
    
 
 
-    for i = 1 ; i <= num; i+= 2 {
+    for i := 1 ; i <= num; i+= 2 {
+        if i%2 == 0 {
+            continue
+        }
      fmt.Println(i)
          }
-    for i = 1 ; num > i ; i-= 2 {
-        fmt.Println(i)
-          
+    for i2 := num; i2 >= 0 ; i2-- {
+        if i2%2 != 0 {      
+            continue
+        }
+     fmt.Println(i2)
+    }
           
         }
-    }
+    
+
 

@@ -1,0 +1,179 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-08_15-18-23",
+            "content": "@@ -117,13 +117,8 @@\n nf ;\n- ni++\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_15-18-40",
+            "content": "@@ -189,68 +189,8 @@\n ni)%0A\n-        %7D else if ni%253 ==0 %7B%0A            fmt.Println(%22zig%22)%0A\n     \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-08_15-19-38",
+            "content": "@@ -198,53 +198,13 @@\n    %7D\n-%0A        %7D%0A    for ; ni %3C nf ; ni++ %7B%0A       \n+ else\n  if \n@@ -210,17 +210,16 @@\n  ni%253 ==\n- \n 0 %7B%0A    \n@@ -269,12 +269,35 @@\n     \n-%7D%0A    %0A\n+fmt.Println(%22Hello, World!%22)%0A%7D\n %0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-08_15-21-12",
+            "content": "@@ -259,29 +259,8 @@\n 0 %7B%0A\n-            continue%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-08_15-21-43",
+            "content": "@@ -284,26 +284,47 @@\n             \n-%7D%0A\n+fmt.Println(%22zig%22)%0A    \n     %7D%0A    %0A \n@@ -317,24 +317,25 @@\n       %7D%0A    \n+%7D\n %0A    %7D%0A    %0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-08_15-22-04",
+            "content": "@@ -294,39 +294,8 @@\n   %7D%0A\n-            fmt.Println(%22zig%22)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-08_15-22-24",
+            "content": "@@ -198,13 +198,53 @@\n    %7D\n- else\n+%0A        %7D%0A    for ; ni %3C nf ; ni++ %7B%0A       \n  if \n@@ -271,27 +271,21 @@\n     \n-fmt.Println(%22zig%22)%0A\n+continue%0A    \n     \n@@ -302,16 +302,8 @@\n     \n-%7D%0A    %7D%0A\n     \n@@ -319,22 +319,33 @@\n ln(%22\n-Hello, World!%22)%0A%7D\n+zig%22)%0A    %7D%0A    %0A    %7D%0A    %0A\n %0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-08_15-24-01",
+            "content": "@@ -276,11 +276,39 @@\n   %7D%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_15-24-11",
+            "content": "@@ -277,9 +277,10 @@\n  %7D%0A    %0A\n+%7D\n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_15-24-12",
+            "content": "@@ -258,34 +258,9 @@\n     \n-    continue%0A        %7D els\n+%7D\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-08_15-25-30",
+            "content": "@@ -277,16 +277,19 @@\n       %7D \n+els\n %0A       \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-08_15-25-31",
+            "content": "@@ -204,25 +204,25 @@\n lse if ni%253 \n-!\n+=\n = 0 %7B%0A      \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-08_15-26-07",
+            "content": "@@ -208,16 +208,17 @@\n if ni%253 \n+!\n = 0 %7B%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-08_15-26-18",
+            "content": "@@ -209,17 +209,16 @@\n f ni%253 =\n-=\n  0 %7B%0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-08_15-26-18",
+            "content": "@@ -282,32 +282,8 @@\n  %7D %0A\n-        fmt.Println(ni)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-08_15-26-45",
+            "content": "@@ -281,140 +281,32 @@\n   %7D \n-else if n1%255 == 0 %7B%0A            fmt.Println(%22zag%22)%0A            continue%0A        %7D else %7B%0A            fmt.Println(%22zigzag%22)%0A        %7D\n+%0A        fmt.Println(ni)\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-08_15-28-03",
+            "content": "@@ -286,17 +286,17 @@\n lse if n\n-i\n+1\n %255 == 0 \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-08_15-28-10",
+            "content": "@@ -368,34 +368,8 @@\n lse \n-if ni%253 == 0 && ni%255 == 0 \n %7B%0A  \n@@ -413,15 +413,8 @@\n    %7D\n- return\n %0A   \n@@ -420,17 +420,16 @@\n       %7D%0A\n-%0A\n     %7D%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-08_15-28-55",
+            "content": "@@ -436,16 +436,22 @@\n       %7D \n+return\n %0A       \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-28-56",
+            "content": "@@ -204,25 +204,25 @@\n lse if ni%253 \n-!\n+=\n = 0 %7B%0A      \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-30-16",
+            "content": "@@ -207,25 +207,25 @@\n  if ni%253 != \n-1\n+0\n  %7B%0A         \n@@ -294,12 +294,12 @@\n i%255 \n-!= 1\n+== 0\n  %7B%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-30-29",
+            "content": "@@ -368,25 +368,25 @@\n lse if ni%253 \n-!\n+=\n = 0 && ni%255 \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-30-53",
+            "content": "@@ -208,20 +208,20 @@\n if ni%253 \n-== 0\n+!= 1\n  %7B%0A     \n@@ -286,28 +286,28 @@\n lse if ni%255 \n-== 0\n+!= 1\n  %7B%0A         \n@@ -372,17 +372,17 @@\n if ni%253 \n-=\n+!\n = 0 && n\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-32-23",
+            "content": "@@ -250,24 +250,36 @@\n g%22)%0A        \n+    continue\n %0A        %7D e\n@@ -341,16 +341,23 @@\n        c\n+ontinue\n %0A       \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-32-36",
+            "content": "@@ -320,32 +320,33 @@\n g%22)%0A            \n+c\n %0A        %7D else \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-32-37",
+            "content": "@@ -108,17 +108,16 @@\n r ; ni %3C\n-=\n  nf ; ni\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-32-49",
+            "content": "@@ -192,24 +192,43 @@\n )%0A        %7D \n+else if ni%253 == 0 %7B\n %0A        %7D %0A\n@@ -228,38 +228,113 @@\n     \n-%7D %0A\n     f\n-or ; ni %3C= nf ; ni++ %7B\n+mt.Println(%22zig%22)%0A        %0A        %7D else if ni%255 == 0 %7B%0A            fmt.Println(%22zag%22)%0A            \n %0A   \n@@ -330,32 +330,39 @@\n        %0A        \n+%7D else \n if ni%253 == 0 %7B%0A \n@@ -347,32 +347,45 @@\n  else if ni%253 ==\n+ 0 && ni%255 ==\n  0 %7B%0A           \n@@ -393,32 +393,35 @@\n fmt.Println(%22zig\n+zag\n %22)%0A        %7D%0A   \n@@ -420,14 +420,9 @@\n    %7D\n-%0A    %7D\n+ \n %0A   \n@@ -429,19 +429,20 @@\n      %7D%0A%0A    \n+%7D\n %0A    %0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-08_15-35-41",
+            "content": "@@ -294,29 +294,8 @@\n g%22)%0A\n-            continue%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-08_15-35-52",
+            "content": "@@ -263,40 +263,8 @@\n 0 %7B%0A\n-            continue %0A        %7D%0A\n     \n@@ -298,24 +298,32 @@\n             \n+continue\n %0A        %7D%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-08_15-36-23",
+            "content": "@@ -359,16 +359,17 @@\n         \n+%7D\n %0A%0A    %0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-08_15-36-24",
+            "content": "@@ -258,20 +258,49 @@\n 3 == 0 %7B\n- \n %0A  \n+          continue %0A        %7D%0A\n         \n@@ -293,32 +293,34 @@\n     %7D%0A          \n+  \n fmt.Println(%22zig\n@@ -321,16 +321,22 @@\n n(%22zig%22)\n+%0A     \n        %0A\n@@ -359,17 +359,16 @@\n         \n-%7D\n %0A%0A    %0A \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-08_15-36-48",
+            "content": "@@ -294,29 +294,8 @@\n ig%22)\n-%0A            continue\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-08_15-36-57",
+            "content": "@@ -134,38 +134,38 @@\n     if ni%253 \n-=\n+!\n = 0 \n-&&\n+%7C%7C\n  ni%255 \n-=\n+!\n = 0 %7B%0A      \n@@ -178,32 +178,26 @@\n fmt.Println(\n-%22zigzag%22\n+ni\n )%0A        %7D \n@@ -200,109 +200,71 @@\n   %7D \n-else if ni%253 == 0 %7B%0A            fmt.Println(%22zig%22)%0A            continue%0A        %7D else\n+%0A        %7D %0A    for ; ni %3C= nf ; ni++ %7B%0A       \n  if ni%25\n-5\n+3\n  == 0 %7B\n+ \n %0A   \n@@ -286,17 +286,17 @@\n intln(%22z\n-a\n+i\n g%22)%0A    \n@@ -315,85 +315,15 @@\n inue\n-%0A\n        \n- %7D else if ni%253 == 0 && ni%255 == 0 %7B%0A            fmt.Println(%22zigzag%22)\n %0A   \n@@ -325,24 +325,30 @@\n  %0A        %7D%0A\n+    %7D%0A\n         %7D%0A  \n@@ -341,24 +341,24 @@\n %7D%0A        %7D%0A\n+%0A\n     \n-%7D\n %0A    %0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-08_15-37-48",
+            "content": "@@ -383,22 +383,22 @@\n i%253 \n-!\n+=\n = 0 \n-%7C%7C\n+&&\n  ni%255 \n-!\n+=\n = 0 \n@@ -423,18 +423,24 @@\n Println(\n-ni\n+%22zigzag%22\n )%0A      \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-08_15-38-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var ni, nf int\n    fmt.Scan(&ni)\n    fmt.Scan(&nf)\n\n    \n    for ; ni <= nf ; ni++ {\n        if ni%3 == 0 && ni%5 == 0 {\n            fmt.Println(\"zigzag\")\n        } else if ni%3 == 0 {\n            fmt.Println(\"zig\")\n            continue\n        } else if ni%5 == 0 {\n            fmt.Println(\"zag\")\n            continue\n        } else if ni%3 != 0 || ni%5 != 0 {\n            fmt.Println(ni)\n        }\n        }\n    }\n    \n\n",
+            "lines": "24"
+        }
+    ]
+}
