@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-09_15-54-39",
+            "content": "@@ -37,108 +37,8 @@\n ) %7B%0A\n-    var id int%0A    fmt.Scan(&id)%0A                                                                  %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-09_16-10-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var id int\n    fmt.Scan(&id)\n                                                                  \n    fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "8"
+        }
+    ]
+}

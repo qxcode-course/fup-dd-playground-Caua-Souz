@@ -167,8 +167,23 @@
         },
         {
             "label": "2026-04-08_16-14-30",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n)\nfunc main() {\n    var n, i int\n    var p string\n    fmt.Scan(&n)\n    fmt.Scan(&p)\n\n    fmt.Print(\"[ \")\n    for i = 0 ; i <= n ; i++ {\n        if i == n {\n            continue\n        }\n        if i == 10 {\n            fmt.Print(\"ceu\")\n        } else {\n            fmt.Print(i,p, \" \" )\n        }\n        if p == \"d\" {\n            p = \"e\"\n        } else {\n            p = \"d\"\n        }\n    }\n    fmt.Print(\"]\\n\")\n}\n    \n\n",
+            "content": "@@ -154,11 +154,8 @@\n %3C= n\n-+ 1\n  ; i\n",
             "lines": "31"
+        },
+        {
+            "label": "2026-04-09_16-01-16",
+            "content": "@@ -25,17 +25,16 @@\n %22fmt%22%0A)%0A\n-%0A\n func mai\n@@ -39,17 +39,20 @@\n ain() %7B%0A\n-%09\n+    \n var n, i\n@@ -56,17 +56,20 @@\n , i int%0A\n-%09\n+    \n var p st\n@@ -73,17 +73,20 @@\n  string%0A\n-%09\n+    \n fmt.Scan\n@@ -90,17 +90,20 @@\n can(&n)%0A\n-%09\n+    \n fmt.Scan\n@@ -108,17 +108,20 @@\n an(&p)%0A%0A\n-%09\n+    \n fmt.Prin\n@@ -128,17 +128,20 @@\n t(%22%5B %22)%0A\n-%09\n+    \n for i = \n@@ -145,25 +145,29 @@\n  = 0\n+ \n ; i %3C=\n+ n+\n  1\n-0\n+ \n ; i++ %7B%0A\n %09%09if\n@@ -162,18 +162,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n if i == \n@@ -186,26 +186,47 @@\n n %7B%0A\n-%09%09%09continue%0A%09%09%7D%0A%09%09\n+            continue%0A        %7D%0A        \n if i\n@@ -234,19 +234,28 @@\n == 10 %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -263,18 +263,24 @@\n (%22ceu%22)%0A\n-%09%09\n+        \n %7D else %7B\n@@ -280,19 +280,28 @@\n  else %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -308,78 +308,126 @@\n t(i,\n- \n p, %22 %22\n+ \n )%0A\n-%09%09%7D%0A%09%09if p == %22d%22 %7B%0A%09%09%09p = %22e%22%0A%09%09%7D else %7B%0A%09%09%09p = %22d%22%0A%09%09%7D%0A%09%7D%0A%09\n+        %7D%0A        if p == %22d%22 %7B%0A            p = %22e%22%0A        %7D else %7B%0A            p = %22d%22%0A        %7D%0A    %7D%0A    \n fmt.\n@@ -441,8 +441,14 @@\n %5D%5Cn%22)%0A%7D%0A\n+    %0A%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-04-09_16-06-49",
+            "content": "@@ -203,17 +203,16 @@\n int(%22ceu\n- \n %22)%0A%09%09%7D e\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-09_16-07-03",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc main() {\n\tvar n, i int\n\tvar p string\n\tfmt.Scan(&n)\n\tfmt.Scan(&p)\n\n\tfmt.Print(\"[ \")\n\tfor i = 0; i <= 10; i++ {\n\t\tif i == n {\n\t\t\tcontinue\n\t\t}\n\t\tif i == 10 {\n\t\t\tfmt.Print(\"ceu \")\n\t\t} else {\n\t\t\tfmt.Print(i, p, \" \")\n\t\t}\n\t\tif p == \"d\" {\n\t\t\tp = \"e\"\n\t\t} else {\n\t\t\tp = \"d\"\n\t\t}\n\t}\n\tfmt.Print(\"]\\n\")\n}\n",
+            "lines": "30"
         }
     ]
 }
