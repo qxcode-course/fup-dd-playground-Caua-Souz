@@ -1,6 +1,6 @@
-v# Ingrid quer chegar no céu
+# Ingrid quer chegar no céu
 
-![_](../../.tko/cache/e2bc1de5ac270eaa50476053dc6bb1f9ff79f7ba/base/ceu/cover.jpg)
+![_](../../.tko/cache/28548b64895ab47a764181dae00a2bc45fd735b6/base/ceu/assets/cover.jpg)
 
 ## Contexto
 

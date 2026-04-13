@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-12-08",
+            "content": "@@ -356,17 +356,16 @@\n intf(%22%252\n-.\n f%5Cn%22, re\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-12-34",
+            "content": "@@ -359,10 +359,10 @@\n f(%22%25\n-.\n 2\n+.\n f%5Cn%22\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-12-43",
+            "content": "@@ -307,9 +307,9 @@\n ot1 \n-+\n+-\n  pot\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-13-48",
+            "content": "@@ -102,19 +102,18 @@\n  dist, r\n-aiz\n+es\n  float64\n@@ -316,19 +316,18 @@\n 2)%0A    r\n-aiz\n+es\n  = math.\n@@ -368,11 +368,10 @@\n %22, r\n-aiz\n+es\n )%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-16-27",
+            "content": "@@ -99,16 +99,22 @@\n t2, dist\n+, raiz\n  float64\n@@ -365,16 +365,16 @@\n .2f%5Cn%22, \n-dist\n+raiz\n )%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-19-30",
+            "content": "@@ -310,16 +310,38 @@\n t2)%0A    \n+raiz = math.Sqrt(dist)\n %0A%0A    fm\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-19-32",
+            "content": "@@ -1,380 +1,102 @@\n-package main%0Aimport %22fmt%22%0Aimport %22math%22%0Afunc main() %7B%0A    var x1, x2, y1, y2, sub1, sub2, pot1, pot2,\n+@@ -103,14 +103,8 @@%0A\n  dist\n+%0A-\n , raiz\n- float64%0A    fmt.Scan(&x1)%0A    fmt.Scan(&x2)%0A    fmt.Scan(&y1)%0A    fmt.Scan(&y2)%0A%0A    sub1 = (x2 - x1)%0A    sub2 = (y2 - y1)%0A    pot1 = math.Pow(sub1, 2)%0A    pot2 = math.Pow(sub2, 2)%0A    dist = (pot1 + pot2)%0A    raiz = math.Sqrt(dist)%0A%0A    fmt.Printf(%22%25.2f%5Cn%22, dist)%0A%7D\n+%0A  flo%0A@@ -314,30 +314,8 @@%0A     %0A-raiz = math.Sqrt(dist)%0A %250A%250A  \n %0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-13_17-21-44",
+            "content": "@@ -365,16 +365,16 @@\n .2f%5Cn%22, \n-raiz\n+dist\n )%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-21-46",
+            "content": "@@ -146,18 +146,18 @@\n t.Scan(&\n-y1\n+x2\n )%0A    fm\n@@ -156,34 +156,34 @@\n )%0A    fmt.Scan(&\n-x2\n+y1\n )%0A    fmt.Scan(&\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-22-31",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var x1, x2, y1, y2, sub1, sub2, pot1, pot2, dist, raiz float64\n    fmt.Scan(&x1)\n    fmt.Scan(&y1)\n    fmt.Scan(&x2)\n    fmt.Scan(&y2)\n\n    sub1 = (x2 - x1)\n    sub2 = (y2 - y1)\n    pot1 = math.Pow(sub1, 2)\n    pot2 = math.Pow(sub2, 2)\n    dist = (pot1 + pot2)\n    raiz = math.Sqrt(dist)\n\n    fmt.Printf(\"%.2f\\n\", raiz)\n}\n",
+            "lines": "19"
+        }
+    ]
+}

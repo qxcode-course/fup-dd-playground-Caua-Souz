@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-36-59",
+            "content": "@@ -158,26 +158,8 @@\n %3E c \n-%7C%7C b %3C a && c %3C a \n %7B%0A  \n@@ -220,26 +220,8 @@\n %3E c \n-%7C%7C a %3C b && c %3C b \n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-37-45",
+            "content": "@@ -232,26 +232,26 @@\n  && \n-a %3C\n+b %3E\n  c %7C%7C \n-c\n+a\n  %3C b && \n a %3E \n@@ -246,21 +246,21 @@\n  %3C b && \n-a %3E c\n+c %3C b\n  %7B%0A     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-38-37",
+            "content": "@@ -116,29 +116,23 @@\n     \n-c\n+m\n  =\n- m -\n  (a + b\n-) %0A    \n+ + c)\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-40-12",
+            "content": "@@ -133,28 +133,8 @@\n b) %0A\n-    m = (a + b + c)%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-40-27",
+            "content": "@@ -112,48 +112,8 @@\n b)%0A%0A\n-    a = m - (b + c)%0A    b = m - (a + c)%0A\n     \n@@ -154,21 +154,16 @@\n c)%0A    %0A\n-    %0A\n         \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-41-24",
+            "content": "@@ -108,24 +108,59 @@\n an(&b)%0A%0A    \n+a = m - (b + c)%0A    b = m - (a + c)\n %0A    c = m -\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-41-37",
+            "content": "@@ -264,19 +264,19 @@\n  %3E a && \n-b %3E\n+a %3C\n  c %7C%7C c \n@@ -284,19 +284,19 @@\n  b && a \n-%3C b\n+%3E c\n  %7B%0A     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-13_17-42-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b, c int\n    fmt.Scan(&m)\n    fmt.Scan(&a)\n    fmt.Scan(&b)\n\n    \n    c = m - (a + b) \n    m = (a + b + c)\n    \n    \n        if a > b && a > c || b < a && c < a {\n            fmt.Println(a)\n        } else if b > a && b > c || c < b && a < b {\n            fmt.Println(b)\n        } else {\n            fmt.Println(c)\n        }\n    \n}\n",
+            "lines": "22"
+        }
+    ]
+}

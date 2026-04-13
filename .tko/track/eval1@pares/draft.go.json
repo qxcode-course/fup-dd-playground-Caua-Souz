@@ -1,0 +1,124 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-44-40",
+            "content": "@@ -1,12 +1,8 @@\n-    \n package \n@@ -6,20 +6,16 @@\n ge main%0A\n-    \n import %22\n@@ -19,20 +19,16 @@\n t %22fmt%22%0A\n-    \n func mai\n@@ -37,20 +37,16 @@\n ) %7B%0A    \n-  \n-  \n var a, b\n@@ -50,28 +50,24 @@\n , b int%0A    \n- \n-   \n fmt.Scan(&a)\n@@ -67,28 +67,24 @@\n can(&a)%0A    \n-  \n-  \n fmt.Scan(&b)\n@@ -85,20 +85,16 @@\n an(&b)%0A%0A\n-    \n     for \n@@ -108,70 +108,18 @@\n  ; a\n-++ %7B%0A            if a%252 != 0 %7B%0A            continue%0A%0A        %7D\n+ = a + 2 %7B\n %0A   \n@@ -146,15 +146,11 @@\n     %7D%0A%0A%0A\n-    \n %7D%0A%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_17-45-51",
+            "content": "@@ -65,11 +65,8 @@\n a, b\n-, i\n  int\n@@ -125,25 +125,19 @@\n for \n-i = a \n ; \n-i\n+a\n  %3C b ; \n-i\n+a\n ++ %7B\n@@ -152,17 +152,17 @@\n      if \n-i\n+a\n %252 != 0 \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-46-44",
+            "content": "@@ -224,17 +224,17 @@\n Println(\n-i\n+a\n )%0A    %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-46-56",
+            "content": "@@ -176,23 +176,8 @@\n 0 %7B%0A\n-            i %0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-47-38",
+            "content": "@@ -190,15 +190,8 @@\n   i \n-= i + 2\n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-47-40",
+            "content": "@@ -128,19 +128,25 @@\n for \n-; a\n+i = a ; i\n  %3C b ; \n-a\n+i\n ++ %7B\n@@ -165,13 +165,16 @@\n  if \n-a %3E b\n+i%252 != 0\n  %7B%0A \n@@ -188,35 +188,17 @@\n     \n-    fmt.Println(%22invalido%22)\n+i = i + 2\n %0A   \n@@ -206,17 +206,24 @@\n         \n-%7D\n+continue\n %0A%0A      \n@@ -231,34 +231,41 @@\n  %7D%0A \n-   %7D%0A\n        \n- \n+fmt.Println(i)\n %0A    \n-   \n+%7D\n %0A%0A%0A    \n+%7D\n %0A%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-50-44",
+            "content": "@@ -61,16 +61,19 @@\n var a, b\n+, i\n  int%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-50-48",
+            "content": "@@ -218,26 +218,8 @@\n   %7D%0A\n-            if a%252\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-51-50",
+            "content": "@@ -136,16 +136,10 @@\n  ; a\n- = a + 2\n+++\n  %7B%0A \n@@ -236,81 +236,8 @@\n  a%252\n- != 0 %7B%0A                continue%0A            %7D%0A            fmt.Println(a)\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-13_17-53-18",
+            "content": "@@ -126,17 +126,16 @@\n or ; a %3C\n-=\n  b ; a =\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-53-38",
+            "content": "@@ -65,11 +65,8 @@\n a, b\n-, i\n  int\n@@ -127,17 +127,17 @@\n r ; \n-i\n+a\n  %3C= b ; \n i = \n@@ -136,13 +136,13 @@\n b ; \n-i = i\n+a = a\n  + 2\n@@ -310,17 +310,17 @@\n Println(\n-i\n+a\n )%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-54-37",
+            "content": "@@ -139,11 +139,17 @@\n b ; \n-a++\n+i = i + 2\n  %7B%0A \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-55-15",
+            "content": "@@ -307,17 +307,17 @@\n Println(\n-a\n+i\n )%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-55-22",
+            "content": "@@ -126,17 +126,17 @@\n   for ; \n-a\n+i\n  %3C= b ; \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-55-29",
+            "content": "@@ -61,16 +61,19 @@\n var a, b\n+, i\n  int%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-55-31",
+            "content": "@@ -65,16 +65,13 @@\n a, b\n-, i\n  int%0A\n+\n     \n@@ -125,17 +125,11 @@\n for \n-i = 0 \n ; \n-i\n+a\n  %3C= \n@@ -245,31 +245,8 @@\n 0 %7B%0A\n-                i += 2%0A\n     \n@@ -304,17 +304,17 @@\n Println(\n-i\n+a\n )%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-57-21",
+            "content": "@@ -141,17 +141,17 @@\n  %3C= b ; \n-i\n+a\n ++ %7B%0A   \n@@ -250,16 +250,39 @@\n  != 0 %7B%0A\n+                i += 2%0A\n         \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_17-57-50",
+            "content": "@@ -313,17 +313,17 @@\n Println(\n-a\n+i\n )%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-57-59",
+            "content": "@@ -61,16 +61,19 @@\n var a, b\n+, i\n  int%0A   \n@@ -128,19 +128,25 @@\n for \n+i = 0 \n ; \n-a\n+i\n  %3C= b ; \n a++ \n@@ -141,17 +141,17 @@\n  %3C= b ; \n-a\n+i\n ++ %7B%0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_17-59-21",
+            "content": "@@ -112,22 +112,8 @@\n &b)%0A\n-        i := 0\n %0A   \n@@ -245,31 +245,8 @@\n 0 %7B%0A\n-                i += a%0A\n     \n@@ -304,17 +304,17 @@\n Println(\n-i\n+a\n )%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-13_18-02-26",
+            "content": "@@ -1,16 +1,12 @@\n-    \n     package \n@@ -10,20 +10,16 @@\n ge main%0A\n-    \n     impo\n@@ -27,20 +27,16 @@\n t %22fmt%22%0A\n-    \n     func\n@@ -45,20 +45,16 @@\n ain() %7B%0A\n-    \n         \n@@ -66,36 +66,32 @@\n , b int%0A        \n-    \n fmt.Scan(&a)%0A   \n@@ -87,20 +87,16 @@\n can(&a)%0A\n-    \n         \n@@ -120,18 +120,43 @@\n     \n-    \n i := 0\n+%0A        for ; a %3C= b ; a++ %7B\n %0A   \n@@ -175,16 +175,20 @@\n a %3E b %7B%0A\n+    \n         \n@@ -215,20 +215,16 @@\n alido%22)%0A\n-    \n         \n@@ -232,24 +232,9 @@\n    %7D\n- else %7B%0A        \n+%0A\n     \n@@ -275,31 +275,15 @@\n     \n-        i += a%0A        \n+i += a%0A\n     \n@@ -319,23 +319,10 @@\n     \n-        %7D%0A%0A    \n+%7D%0A\n     \n@@ -356,33 +356,24 @@\n     \n-   \n- \n %7D%0A    \n-   \n- %0A  \n+%7D%0A\n         \n   %0A \n@@ -372,12 +372,9 @@\n     \n-  %0A \n+%0A\n     \n@@ -383,14 +383,10 @@\n  %0A%0A%0A    \n-    \n %0A%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_18-05-21",
+            "content": "@@ -239,53 +239,8 @@\n e %7B%0A\n-                    for ; a %3C= b ; a++ %7B%0A    \n     \n@@ -266,19 +266,15 @@\n a%252 \n-=\n+!\n = 0 %7B%0A\n-    \n     \n@@ -328,98 +328,16 @@\n     \n-%0A                        %7D%0A                    %7D%0A                        %0A                \n+continue\n %0A   \n@@ -387,16 +387,16 @@\n ntln(i)%0A\n+\n         \n@@ -410,25 +410,16 @@\n        %0A\n-        %0A\n         \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-13_18-09-32",
+            "content": "@@ -348,16 +348,40 @@\n   i += a\n+%0A                       \n  %0A      \n@@ -446,23 +446,32 @@\n     \n-fmt.Println(i)%0A\n+    %0A                %0A  \n     \n@@ -492,32 +492,49 @@\n %7D%0A%0A             \n+   fmt.Println(i)\n %0A            %7D%0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-04-13_18-09-59",
+            "content": "        package main\n        import \"fmt\"\n        func main() {\n            var a, b int\n            fmt.Scan(&a)\n            fmt.Scan(&b)\n            i := 0\n            if a > b {\n            fmt.Println(\"invalido\")\n                } else {\n                    for ; a <= b ; a++ {\n                        if a%2 == 0 {\n                            i += a \n                        }\n                    }\n                    fmt.Println(i)\n                  }\n\n             \n            }\n        \n        \n            \n        \n\n\n        \n\n",
+            "lines": "28"
+        }
+    ]
+}
