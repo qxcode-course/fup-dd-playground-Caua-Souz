@@ -142,8 +142,108 @@
         },
         {
             "label": "2026-04-13_16-50-50",
-            "content": "    package main\n    import \"fmt\"\n    func main() {\n        var p, s, e, p1, p2, op1 int\n        fmt.Scan(&p)\n        fmt.Scan(&s)\n        fmt.Scan(&e)\n        p2 = p1 - e\n        op1 = p1\n        for p1 = 0 ; p1 <=  p ; p1 += s {\n            if op1 != p1 {\n                p2 = (p1 - e)\n            fmt.Println(p1, p2)\n            }\n            if p1 >= p {\n                fmt.Println(\"saiu\")\n            }\n\n            \n        }\n    \n    }\n",
+            "content": "@@ -216,16 +216,17 @@\n   p ; p1\n+ \n += s %7B%0A \n",
             "lines": "22"
+        },
+        {
+            "label": "2026-04-14_16-18-23",
+            "content": "@@ -194,16 +194,23 @@\n     for \n+p1 = 0 \n ; p1 %3C= \n@@ -217,17 +217,19 @@\n  p ; p1+\n-+\n+= s\n  %7B%0A     \n@@ -266,47 +266,57 @@\n     \n-fmt.Println(p1, p2)%0A            p1 += s\n+    p2 = (p1 - e)%0A            fmt.Println(p1, p2)\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_16-20-28",
+            "content": "@@ -145,16 +145,36 @@\n can(&e)%0A\n+        p2 = p1 - e%0A\n         \n@@ -297,32 +297,8 @@\n = s%0A\n-            p2 = p1 - e%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_16-20-51",
+            "content": "@@ -178,15 +178,8 @@\n for \n-p1 = 0 \n ; p1\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_16-21-01",
+            "content": "@@ -334,17 +334,17 @@\n     if p\n-2\n+1\n  %3E= p %7B%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_16-21-18",
+            "content": "@@ -337,16 +337,17 @@\n  if p2 %3E\n+=\n  p %7B%0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_16-21-39",
+            "content": "@@ -74,19 +74,15 @@\n p1, \n-op1, saltos\n+p2, op1\n  int\n@@ -166,27 +166,8 @@\n  p1%0A\n-        saltos = 0%0A\n     \n@@ -191,20 +191,17 @@\n p1 %3C\n+=\n   p ; \n-saltos\n+p1\n ++ %7B\n@@ -217,16 +217,22 @@\n     \n+if \n op1 \n-+= s\n+!= p1 %7B\n %0A   \n@@ -244,18 +244,47 @@\n     \n-if s %3C e %7B\n+fmt.Println(p1, p2)%0A            p1 += s\n %0A   \n@@ -296,17 +296,19 @@\n     \n-    break\n+p2 = p1 - e\n %0A   \n@@ -337,14 +337,12 @@\n  if \n-op1\n+p2\n  %3E\n-=\n  p %7B\n@@ -388,24 +388,30 @@\n           %7D%0A\n+%0A     \n        %0A    \n@@ -414,14 +414,21 @@\n     \n+    %7D\n %0A    \n-%7D\n %0A\n+   \n  %7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_16-28-05",
+            "content": "@@ -1,16 +1,12 @@\n-    \n     package \n@@ -14,20 +14,16 @@\n ain%0A    \n-  \n-  \n import %22\n@@ -31,20 +31,16 @@\n mt%22%0A    \n-   \n- \n func mai\n@@ -45,20 +45,16 @@\n ain() %7B%0A\n-    \n         \n@@ -86,36 +86,32 @@\n tos int%0A        \n-    \n fmt.Scan(&p)%0A   \n@@ -107,36 +107,32 @@\n can(&p)%0A        \n- \n-   \n fmt.Scan(&s)%0A   \n@@ -132,28 +132,24 @@\n &s)%0A        \n-  \n-  \n fmt.Scan(&e)\n@@ -153,28 +153,24 @@\n &e)%0A        \n-   \n- \n op1 = p1%0A   \n@@ -166,20 +166,16 @@\n p1 = p1%0A\n-    \n         \n@@ -193,20 +193,16 @@\n         \n-    \n for p1 =\n@@ -210,17 +210,16 @@\n 0 ; p1 %3C\n-=\n   p ; sa\n@@ -235,28 +235,24 @@\n             \n-    \n op1 += s%0A   \n@@ -248,20 +248,16 @@\n p1 += s%0A\n-    \n         \n@@ -287,20 +287,16 @@\n         \n-  \n-  \n break%0A  \n@@ -301,34 +301,26 @@\n             \n-    %7D%0A    \n+%7D%0A\n             \n@@ -345,28 +345,24 @@\n             \n-    \n fmt.Println(\n@@ -373,36 +373,32 @@\n u%22)%0A            \n-    \n %7D%0A        %0A     \n@@ -394,31 +394,19 @@\n     \n- %0A \n+%0A\n     \n-   %0A        %7D\n %0A   \n+ %7D%0A\n  %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_16-28-23",
+            "content": "@@ -257,16 +257,21 @@\n %3C=  p ; \n+salto\n s++ %7B%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_16-28-30",
+            "content": "@@ -89,16 +89,24 @@\n  p1, op1\n+, saltos\n  int%0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_16-28-35",
+            "content": "@@ -194,32 +194,42 @@\n  p1%0A            \n+saltos = 0\n %0A            for\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_16-28-38",
+            "content": "@@ -270,16 +270,87 @@\n p1 += s%0A\n+                if s %3C e %7B%0A                    break%0A                %7D%0A\n         \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_16-29-25",
+            "content": "@@ -239,18 +239,17 @@\n %3C=  p ; \n-p1\n+s\n ++ %7B%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_16-29-46",
+            "content": "@@ -295,16 +295,17 @@\n if op1 %3E\n+=\n  p %7B%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_16-30-09",
+            "content": "@@ -295,17 +295,16 @@\n if op1 %3E\n-=\n  p %7B%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_16-30-14",
+            "content": "@@ -274,85 +274,8 @@\n += s\n-%0A%0A                if op1 %3C p %7B%0A                    op1 -= e%0A                %7D\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_16-31-00",
+            "content": "@@ -1,20 +1,16 @@\n         \n-    \n package \n@@ -14,20 +14,16 @@\n ge main%0A\n-    \n         \n@@ -43,20 +43,16 @@\n         \n-    \n func mai\n@@ -69,20 +69,16 @@\n         \n-   \n- \n var p, s\n@@ -98,36 +98,32 @@\n int%0A            \n-    \n fmt.Scan(&p)%0A   \n@@ -123,36 +123,32 @@\n &p)%0A            \n-   \n- \n fmt.Scan(&s)%0A   \n@@ -144,20 +144,16 @@\n can(&s)%0A\n-    \n         \n@@ -177,28 +177,24 @@\n             \n-  \n-  \n op1 = p1%0A   \n@@ -198,33 +198,25 @@\n             \n-    %0A    \n+%0A\n             \n@@ -258,28 +258,24 @@\n             \n-    \n op1 += s%0A%0A  \n@@ -288,20 +288,16 @@\n         \n- \n-   \n if op1 %3C\n@@ -301,20 +301,16 @@\n 1 %3C p %7B%0A\n-    \n         \n@@ -338,36 +338,32 @@\n                 \n-    \n %7D%0A              \n@@ -368,40 +368,108 @@\n     \n-%0A            %0A            %7D%0A    \n+if op1 %3E= p %7B%0A                    fmt.Println(%22saiu%22)%0A                %7D%0A        %0A        %0A        %7D%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_16-31-13",
+            "content": "@@ -403,17 +403,16 @@\n        %7D\n- \n %0A       \n@@ -424,112 +424,21 @@\n     \n-fmt.Print(p1, op1)          %0A            %7D%0A            if op1 %3E= p %7B%0A                fmt.Println(%22saiu%22)\n+%0A            \n %0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-14_16-33-29",
+            "content": "@@ -430,18 +430,16 @@\n mt.Print\n-ln\n (p1, op1\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_16-33-39",
+            "content": "@@ -197,16 +197,41 @@\n can(&e)%0A\n+                op1 = p1%0A\n         \n@@ -268,17 +268,16 @@\n 1 = 0 ; \n-o\n p1 %3C=  p\n@@ -279,17 +279,16 @@\n %3C=  p ; \n-o\n p1++ %7B%0A \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_16-34-49",
+            "content": "            package main\n            import \"fmt\"\n            func main() {\n                var p, s, e, p1, op1 int\n                fmt.Scan(&p)\n                fmt.Scan(&s)\n                fmt.Scan(&e)\n                \n                for p1 = 0 ; op1 <=  p ; op1++ {\n                    op1 += s\n\n                    if op1 < p {\n                        op1 -= e\n                    } \n                fmt.Println(p1, op1)          \n            }\n            if op1 >= p {\n                fmt.Println(\"saiu\")\n            }\n        }\n",
+            "lines": "20"
         }
     ]
 }

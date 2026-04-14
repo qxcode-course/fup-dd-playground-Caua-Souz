@@ -2,8 +2,158 @@
     "patches": [
         {
             "label": "2026-03-09_18-26-10",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"VAI CORINTHIAAAAAAAAAAAAAAANS\")\n}\n",
+            "content": "@@ -54,21 +54,37 @@\n ln(%22\n-Hello, World!\n+VAI CORINTHIAAAAAAAAAAAAAAANS\n %22)%0A%7D\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-14_16-43-05",
+            "content": "@@ -36,68 +36,8 @@\n () %7B\n- //lista est%C3%A1tica%0A    var lista %5B%5Dint = %5B%5Dint%7B1, 4, 2, 5, 7%7D\n %0A   \n@@ -53,13 +53,23 @@\n tln(\n-lista\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-14_16-45-38",
+            "content": "@@ -70,58 +70,33 @@\n a %5B%5D\n-str\n in\n-g\n+t\n  = %5B%5D\n-string%7B%22banana%22, %22ma%C3%A7%C3%A3%22, %22caqui%22, %22uva%22\n+int%7B1, 4, 2, 5, 7\n %7D%0A  \n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-14_16-46-35",
+            "content": "@@ -58,22 +58,21 @@\n     var \n-fru\n+lis\n ta\n-s\n  %5B%5Dstrin\n@@ -138,14 +138,13 @@\n tln(\n-fru\n+lis\n ta\n-s\n )%0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-14_16-47-13",
+            "content": "@@ -54,51 +54,8 @@\n ica%0A\n-    var lista %5B%5Dint = %5B%5Dint%7B1, 4, 5, 6 ,7%7D%0A\n     \n@@ -123,31 +123,8 @@\n a%22%7D%0A\n-    fmt.Println(lista)%0A\n     \n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-04-14_16-48-05",
+            "content": "@@ -166,46 +166,8 @@\n a%22%7D%0A\n-    frutas = %5B%5Dstring%7B%22p%C3%AAra%22, %22jaca%22%7D%0A\n     \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-14_16-50-14",
+            "content": "@@ -51,18 +51,16 @@\n t%C3%A1tica%0A \n-//\n    var l\n@@ -93,16 +93,16 @@\n , 6 ,7%7D%0A\n+\n     var \n@@ -159,26 +159,24 @@\n i%22, %22uva%22%7D%0A \n-//\n    frutas = \n@@ -201,18 +201,16 @@\n jaca%22%7D%0A \n-//\n    fmt.P\n@@ -224,18 +224,16 @@\n lista)%0A \n-//\n    fmt.P\n@@ -251,35 +251,6 @@\n as)%0A\n-    fmt.Println(frutas%5B0%5D)%0A%0A%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-14_16-51-45",
+            "content": "@@ -1,12 +1,8 @@\n-    \n package \n@@ -6,20 +6,16 @@\n ge main%0A\n-    \n import %22\n@@ -19,20 +19,16 @@\n t %22fmt%22%0A\n-    \n func mai\n@@ -50,19 +50,16 @@\n st%C3%A1tica%0A\n-   \n  //   va\n@@ -95,20 +95,16 @@\n , 6 ,7%7D%0A\n-    \n     var \n@@ -160,27 +160,24 @@\n ui%22, %22uva%22%7D%0A\n-   \n  //   frutas\n@@ -204,19 +204,16 @@\n %22jaca%22%7D%0A\n-   \n  //   fm\n@@ -229,19 +229,16 @@\n (lista)%0A\n-   \n  //   fm\n@@ -263,105 +263,31 @@\n     \n-    frutas%5B0%5D = %22carambola%22%0A        fmt.Println(frutas%5B0%5D) // ler o primeiro da lista frutas%0A%0A%0A    \n+fmt.Println(frutas%5B0%5D)%0A%0A%0A\n %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-14_16-55-25",
+            "content": "@@ -62,24 +62,26 @@\n st%C3%A1tica%0A    \n+//\n    var lista\n@@ -110,16 +110,16 @@\n , 6 ,7%7D%0A\n-\n         \n@@ -183,24 +183,26 @@\n  %22uva%22%7D%0A    \n+//\n    frutas = \n@@ -225,24 +225,27 @@\n  %22jaca%22%7D%0A   \n+ //\n    fmt.Print\n@@ -257,16 +257,19 @@\n sta)%0A   \n+ //\n    fmt.P\n@@ -283,16 +283,48 @@\n frutas)%0A\n+        frutas%5B0%5D = %22carambola%22%0A\n         \n@@ -342,17 +342,17 @@\n (frutas%5B\n-5\n+0\n %5D) // le\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-14_16-56-56",
+            "content": "@@ -77,65 +77,272 @@\n var \n-idade\n+lista %5B%5Dint = %5B%5Dint%7B1, 4, 5, 6 ,7%7D%0A        var fruta\n s %5B%5D\n+str\n in\n-t = make(%5B%5Dint, 10)%0A       fmt.Println(idades)\n+g = %5B%5Dstring%7B%22banana%22, %22ma%C3%A7%C3%A3%22, %22caqui%22, %22uva%22%7D%0A       frutas = %5B%5Dstring%7B%22p%C3%AAra%22, %22jaca%22%7D%0A      fmt.Println(lista)%0A      fmt.Println(frutas)%0A        fmt.Println(frutas%5B5%5D) // ler o primeiro da lista frutas\n %0A%0A%0A \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-14_16-59-32",
+            "content": "@@ -66,51 +66,8 @@\n ica%0A\n-        var qtd int%0A        fmt.Scan(&qtd)%0A\n     \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-14_17-00-25",
+            "content": "@@ -143,19 +143,18 @@\n (%5B%5Dint, \n-qtd\n+10\n )%0A      \n@@ -186,10 +186,4 @@\n   %7D%0A\n-%0A    %0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-14_17-00-40",
+            "content": "@@ -61,27 +61,24 @@\n est%C3%A1tica%0A   \n- //\n      var qtd\n@@ -81,27 +81,24 @@\n  qtd int%0A   \n- //\n      fmt.Sca\n@@ -104,27 +104,24 @@\n an(&qtd)%0A   \n- //\n     var idad\n@@ -151,19 +151,16 @@\n qtd)%0A   \n- //\n     fmt.\n@@ -179,181 +179,8 @@\n es)%0A\n-        arr := %5B%5Dint%7B9, 8, 7, 6, 5, 2%7D%0A        fmt.Print(%22%5B %22)%0A        for i := 0; i %3C len(arr); i++ %7B%0A            fmt.Printf(%22%25d%22, arr%5Bi%5D)%0A        %7D%0A        fmt.Print(%22%5D%22)%0A\n %0A%0A  \n@@ -184,8 +184,13 @@\n %0A    %7D%0A%0A\n+    %0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-14_17-12-43",
+            "content": "@@ -317,17 +317,16 @@\n ntf(%22%25d%22\n- \n , arr%5Bi%5D\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-12-52",
+            "content": "@@ -266,29 +266,33 @@\n for \n-_, valor := range arr\n+i := 0; i %3C len(arr); i++\n  %7B%0A \n@@ -324,15 +324,26 @@\n %22 , \n-valor\n+arr%5Bi%5D\n )%0A\n+        %7D%0A\n     \n@@ -362,10 +362,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%0A\n@@ -370,14 +370,8 @@\n %0A    %7D%0A%0A\n-    %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-13-39",
+            "content": "@@ -1,16 +1,12 @@\n-    \n     package \n@@ -14,20 +14,16 @@\n ain%0A    \n- \n-   \n import %22\n@@ -31,20 +31,16 @@\n mt%22%0A    \n- \n-   \n func mai\n@@ -62,20 +62,16 @@\n st%C3%A1tica%0A\n-    \n     //  \n@@ -85,28 +85,24 @@\n qtd int%0A    \n- \n-   \n //     fmt.S\n@@ -107,28 +107,24 @@\n .Scan(&qtd)%0A\n-    \n     //    va\n@@ -161,20 +161,16 @@\n td)%0A    \n-  \n-  \n //    fm\n@@ -187,20 +187,16 @@\n idades)%0A\n-    \n         \n@@ -226,36 +226,32 @@\n , 5, 2%7D%0A        \n-  \n-  \n fmt.Print(%22%5B %22)%0A\n@@ -250,20 +250,16 @@\n t(%22%5B %22)%0A\n-    \n         \n@@ -290,36 +290,32 @@\n r %7B%0A            \n-   \n- \n fmt.Printf(%22%25d%22 \n@@ -327,26 +327,8 @@\n or)%0A\n-            %7D%0A    \n     \n@@ -348,18 +348,23 @@\n (%22%5D%5Cn%22)%0A\n+%0A%0A\n     \n+%7D%0A%0A\n     %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-14-02",
+            "content": "@@ -356,18 +356,18 @@\n intf(%22%25d\n- \n %22\n+ \n , valor)\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-14-47",
+            "content": "@@ -260,14 +260,8 @@\n 5, 2\n-, 1, 1\n %7D%0A  \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-15-04",
+            "content": "@@ -308,19 +308,17 @@\n     for \n-pos\n+_\n , valor \n@@ -363,11 +363,13 @@\n ntf(\n-pos\n+%22%25d %22\n , va\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-15-28",
+            "content": "@@ -359,18 +359,17 @@\n mt.Print\n-ln\n+f\n (pos, va\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-15-29",
+            "content": "@@ -312,9 +312,11 @@\n for \n-_\n+pos\n , va\n@@ -363,15 +363,14 @@\n rint\n-f(%22%25d %22\n+ln(pos\n , va\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-15-54",
+            "content": "@@ -227,21 +227,19 @@\n         \n-lista\n+arr\n  := %5B%5Din\n@@ -326,21 +326,19 @@\n = range \n-lista\n+arr\n  %7B%0A     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-19-25",
+            "content": "@@ -290,16 +290,17 @@\n Print(%22%5B\n+ \n %22)%0A     \n@@ -368,11 +368,10 @@\n tf(%22\n-,%25v\n+%25d\n  %22, \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-19-57",
+            "content": "@@ -309,17 +309,17 @@\n     for \n-i\n+_\n , valor \n@@ -339,92 +339,8 @@\n a %7B%0A\n-                if i != 0 %7B%0A                    fmt.Println(%22, %22)%0A                %7D%0A\n     \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-14_17-21-27",
+            "content": "@@ -392,16 +392,18 @@\n mt.Print\n+ln\n (%22, %22)%0A \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-21-34",
+            "content": "@@ -445,16 +445,17 @@\n Printf(%22\n+,\n %25v %22, va\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-21-40",
+            "content": "@@ -38,297 +38,8 @@\n fmt%22\n-%0A%0A        func mostrar_vetor(lista %5B%5Dint) %7B%0A             fmt.Print(%22%5B%22)%0A            for i, valor := range lista %7B%0A                if i != 0 %7B%0A                    fmt.Print(%22, %22)%0A                %7D%0A                fmt.Printf(%22%25v %22, valor)%0A            %7D%0A            fmt.Print(%22%5D%5Cn%22)%0A        %7D\n %0A   \n@@ -281,28 +281,202 @@\n     \n-mostrar_vetor(lista)\n+ fmt.Print(%22%5B%22)%0A            for i, valor := range lista %7B%0A                if i != 0 %7B%0A                    fmt.Print(%22, %22)%0A                %7D%0A                fmt.Printf(%22%25v %22, valor)%0A            %7D\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-14_17-24-10",
+            "content": "@@ -587,16 +587,45 @@\n (lista)%0A\n+            fmt.Print(%22%5D%5Cn%22)%0A\n         \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-14_17-24-57",
+            "content": "@@ -78,20 +78,8 @@\n %5Dint\n-, sep string\n ) %7B%0A\n@@ -589,14 +589,8 @@\n ista\n-, %22, %22\n )%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_17-25-45",
+            "content": "@@ -379,24 +379,26 @@\n ica%0A        \n+//\n      var qtd\n@@ -402,32 +402,34 @@\n qtd int%0A        \n+//\n      fmt.Scan(&q\n@@ -444,46 +444,10 @@\n     \n-  \n-   lista := %5B%5Dint %7B1, 2, 3%7D%0A        \n+//\n     \n@@ -494,58 +494,10 @@\n     \n-    \n-for i := range lista %7B%0A%0A            %7D%0A        \n+//\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-14_17-39-10",
+            "content": "        package main\n        import \"fmt\"\n\n        func mostrar_vetor(lista []int, sep string) {\n             fmt.Print(\"[\")\n            for i, valor := range lista {\n                if i != 0 {\n                    fmt.Print(\", \")\n                }\n                fmt.Printf(\"%v \", valor)\n            }\n            fmt.Print(\"]\\n\")\n        }\n        func main() { //lista est\u00e1tica\n             var qtd int\n             fmt.Scan(&qtd)\n             lista := []int {1, 2, 3}\n            var idades []int = make([]int, qtd)\n            for i := range lista {\n\n            }\n            fmt.Println(idades)\n            lista := []int{9, 8, 7, 6, 5, 2, 1, 1}\n           mostrar_vetor(lista, \", \")\n        }\n",
+            "lines": "25"
         }
     ]
 }
