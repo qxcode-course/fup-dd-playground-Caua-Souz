@@ -1,11 +1,5 @@
 package main
 import "fmt"
 func main() {
-    var c, m int
-    fmt.Scan(&c)
-    fmt.Scan(&m)
-
-    
     fmt.Println("Hello, World!")
-
 }
