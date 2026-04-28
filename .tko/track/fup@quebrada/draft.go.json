@@ -52,8 +52,63 @@
         },
         {
             "label": "2026-03-24_16-32-08",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, resultado, resto int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&resultado)\n\n    resultado = (n1 / n2)\n    resto  = n1 % n2\n    fmt.Println(resultado)\n}\n",
+            "content": "@@ -210,29 +210,6 @@\n do)%0A\n-    fmt.Println(resto)%0A\n %7D%0A\n",
             "lines": "12"
+        },
+        {
+            "label": "2026-04-28_17-03-32",
+            "content": "@@ -233,42 +233,6 @@\n to)%0A\n-    fmt.Println(%22.2d/n%22, resultado)%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-04-21",
+            "content": "@@ -250,10 +250,10 @@\n ln(%22\n-2\n .\n+2\n d/n%22\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-04-34",
+            "content": "@@ -246,14 +246,14 @@\n rint\n-f(%22%25.2\n+ln(%222.\n d/n%22\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-04-59",
+            "content": "@@ -249,16 +249,18 @@\n tf(%22%25.2d\n+/n\n %22, resul\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-05-12",
+            "content": "@@ -253,11 +253,10 @@\n %25.2d\n-/n\n %22\n+,\n  res\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-05-27",
+            "content": "@@ -252,17 +252,16 @@\n %22%25.2d/n%22\n-,\n  resulta\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-05-28",
+            "content": "@@ -248,17 +248,17 @@\n ntf(%22%25.2\n-f\n+d\n /n%22, res\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-05-36",
+            "content": "@@ -248,17 +248,17 @@\n ntf(%22%25.2\n-d\n+f\n /n%22, res\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-06-59",
+            "content": "@@ -252,22 +252,14 @@\n %22%25.2\n-f\n+d\n /n%22, \n-float64(\n resu\n@@ -264,12 +264,11 @@\n sultado)\n-)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-08-05",
+            "content": "@@ -249,16 +249,18 @@\n tf(%22%25.2f\n+/n\n %22, float\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-28_17-08-10",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, resultado, resto int\n    fmt.Scan(&n1)\n    fmt.Scan(&n2)\n    fmt.Scan(&resultado)\n\n    resultado = (n1 / n2)\n    resto  = n1 % n2\n    fmt.Println(resultado)\n    fmt.Println(resto)\n    fmt.Printf(\"%.2f\", float64(resultado))\n}\n",
+            "lines": "14"
         }
     ]
 }

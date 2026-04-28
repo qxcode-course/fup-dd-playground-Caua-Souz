@@ -172,8 +172,53 @@
         },
         {
             "label": "2026-04-14_18-10-12",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    lista := make([]int, n)\n    for i := 1 ; i < len(lista) ; i++ {\n        fmt.Scan(&lista[i])\n        fmt.Println(i)\n    }\n}\n \n",
+            "content": "@@ -113,17 +113,16 @@\n  1 ; i %3C\n-=\n  len(lis\n",
             "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-39-40",
+            "content": "@@ -113,16 +113,17 @@\n  1 ; i %3C\n+=\n  len(lis\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-39-56",
+            "content": "@@ -113,17 +113,16 @@\n  1 ; i %3C\n-=\n  len(lis\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-40-14",
+            "content": "@@ -113,16 +113,17 @@\n  1 ; i %3C\n+=\n  len(lis\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-40-25",
+            "content": "@@ -110,9 +110,9 @@\n  := \n-0\n+1\n  ; i\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-41-21",
+            "content": "@@ -110,9 +110,9 @@\n  := \n-1\n+0\n  ; i\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-41-28",
+            "content": "@@ -165,54 +165,8 @@\n i%5D)%0A\n-    %7D%0A    for i := 0 ; i %3C len(lista) ; i++ %7B%0A\n     \n@@ -194,22 +194,8 @@\n   %7D%0A\n-        %0A    %7D%0A\n+%7D\n %0A %0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-28_17-43-35",
+            "content": "@@ -98,33 +98,33 @@\n n)%0A    for i := \n-0\n+1\n  ; i %3C len(lista\n@@ -227,24 +227,17 @@\n Println(\n-lista%5Bi%5D\n+i\n )%0A    %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-43-54",
+            "content": "@@ -241,64 +241,8 @@\n i%5D)%0A\n-    %7D%0A    if len(lista) == 0 %7B%0A        fmt.Println(%22%22)%0A%0A\n     \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-45-43",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    lista := make([]int, n)\n    for i := 0 ; i < len(lista) ; i++ {\n        fmt.Scan(&lista[i])\n    }\n    for i := 0 ; i < len(lista) ; i++ {\n        fmt.Println(lista[i])\n    }\n    if len(lista) == 0 {\n        fmt.Println(\"\")\n\n    }\n        \n    }\n\n \n",
+            "lines": "21"
         }
     ]
 }

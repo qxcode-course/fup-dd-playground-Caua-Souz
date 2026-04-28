@@ -9,4 +9,6 @@ func main() {
     resultado = (n1 / n2)
     resto  = n1 % n2
     fmt.Println(resultado)
+    fmt.Println(resto)
+    fmt.Printf("%.2f", float64(resultado))
 }

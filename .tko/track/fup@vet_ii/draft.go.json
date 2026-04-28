@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-50-21",
+            "content": "@@ -81,17 +81,16 @@\n Print(%22%5B\n- \n %22)%0A    l\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-50-37",
+            "content": "@@ -244,16 +244,18 @@\n mt.Print\n+ln\n (lista%5Bi\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-50-45",
+            "content": "@@ -251,19 +251,17 @@\n t(lista%5B\n- i \n+i\n %5D)%0A    %7D\n@@ -303,16 +303,18 @@\n mt.Print\n+ln\n (%22%22)%0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-50-57",
+            "content": "@@ -331,15 +331,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-51-07",
+            "content": "@@ -173,27 +173,25 @@\n Scan(&lista%5B\n- i \n+i\n %5D)%0A    %7D%0A   \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-51-18",
+            "content": "@@ -257,14 +257,12 @@\n sta%5B\n-i%5D, %22%22\n+ i %5D\n )%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-51-39",
+            "content": "@@ -258,17 +258,16 @@\n ta%5Bi%5D, %22\n- \n %22)%0A    %7D\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-51-47",
+            "content": "@@ -256,16 +256,17 @@\n ista%5Bi%5D,\n+ \n %22 %22)%0A   \n@@ -336,14 +336,15 @@\n .Print(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-51-54",
+            "content": "@@ -337,10 +337,8 @@\n rint\n-ln\n (%22%5D%22\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-52-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    fmt.Print(\"[ \")\n    lista := make([]int, n)\n    for i := 0 ; i < len(lista) ; i++ {\n        fmt.Scan(&lista[ i ])\n    }\n    for i := 0 ; i < len(lista) ; i++ {\n        fmt.Print(lista[i],\" \")\n    }\n    if len(lista) == 0 {\n        fmt.Print(\"\")\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "19"
+        }
+    ]
+}

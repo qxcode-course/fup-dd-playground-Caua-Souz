@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-09-07",
+            "content": "@@ -41,248 +41,35 @@\n     \n-var n1, n2, soma, subt, multi, divi int%0A    fmt.Scan(n1)%0A    fmt.Scan(n2)%0A%0A    soma = n1 + n2%0A    subt = n1 - n2%0A    multi = n1 * n2%0A    divi = n1 / n2%0A%0A    fmt.Println(soma)%0A    fmt.Println(subt)%0A    fmt.Println(multi)%0A    fmt.Println(divi\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-11-05",
+            "content": "@@ -76,20 +76,13 @@\n divi\n-, resto\n  int%0A\n+\n     \n@@ -192,28 +192,8 @@\n / n2\n-%0A    resto = n1 %25 n2\n %0A%0A  \n@@ -274,53 +274,15 @@\n rint\n-f(%22.2f%22, float64(divi))%0A    fmt.Println(resto\n+ln(divi\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-04-28_17-12-47",
+            "content": "@@ -300,17 +300,16 @@\n Printf(%22\n-%25\n .2f%22, fl\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-28_17-12-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, soma, subt, multi, divi, resto int\n    fmt.Scan(n1)\n    fmt.Scan(n2)\n\n    soma = n1 + n2\n    subt = n1 - n2\n    multi = n1 * n2\n    divi = n1 / n2\n    resto = n1 % n2\n\n    fmt.Println(soma)\n    fmt.Println(subt)\n    fmt.Println(multi)\n    fmt.Printf(\"%.2f\", float64(divi))\n    fmt.Println(resto)\n}\n",
+            "lines": "19"
+        }
+    ]
+}
