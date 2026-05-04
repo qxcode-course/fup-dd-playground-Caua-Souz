@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-04_17-44-22",
+            "content": "package main\nimport \"fmt\"\n\nfunc inverter(frase string) string {\n    runas := []rune(frase)\n    for i, j := 0, len(runas)-1 ; i < j; i, j = i+1, j-1 {\n        runas[i], runas[j] = runas[j], runas[i]\n    }\n    return string(runas)\n}\n\nfunc main() {\n    var frase rune\n    fmt.Scan(&frase)\n    invertida := inverter\n    fmt.Println(invertida)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

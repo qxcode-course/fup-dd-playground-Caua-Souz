@@ -22,7 +22,6 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for_extra
 - fup@for2
 - sandbox@sandbox
 flags:
@@ -32,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@castelos
-selected_index: 19
+selected: fup@fatores
+selected_index: 15

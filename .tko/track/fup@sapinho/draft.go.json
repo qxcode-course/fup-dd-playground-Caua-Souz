@@ -242,8 +242,13 @@
         },
         {
             "label": "2026-04-14_16-34-49",
-            "content": "            package main\n            import \"fmt\"\n            func main() {\n                var p, s, e, p1, op1 int\n                fmt.Scan(&p)\n                fmt.Scan(&s)\n                fmt.Scan(&e)\n                \n                for p1 = 0 ; op1 <=  p ; op1++ {\n                    op1 += s\n\n                    if op1 < p {\n                        op1 -= e\n                    } \n                fmt.Println(p1, op1)          \n            }\n            if op1 >= p {\n                fmt.Println(\"saiu\")\n            }\n        }\n",
+            "content": "@@ -94,29 +94,23 @@\n ar p\n-rof, salto, escorr, i\n+, s, e, p1, op1\n  int\n@@ -137,19 +137,16 @@\n .Scan(&p\n-rof\n )%0A      \n@@ -166,20 +166,16 @@\n .Scan(&s\n-alto\n )%0A      \n@@ -199,15 +199,26 @@\n n(&e\n-scorr)%0A\n+)%0A                \n %0A   \n@@ -238,35 +238,34 @@\n for \n-i :\n+p1 \n = 0\n+ \n ; \n-i %3C prof; i+= salto\n+op1 %3C=  p ; op1++\n  %7B%0A \n@@ -287,22 +287,17 @@\n     \n-if i %3E= prof %7B\n+op1 += s%0A\n %0A   \n@@ -317,31 +317,20 @@\n     \n-    fmt.Println(%22saiu%22)\n+if op1 %3C p %7B\n %0A   \n@@ -350,17 +350,23 @@\n     \n-%7D else %7B%0A\n+    op1 -= e%0A  \n     \n@@ -383,25 +383,57 @@\n     \n+%7D %0A\n       \n-i -= escorr\n+          fmt.Println(p1, op1)          \n %0A   \n@@ -441,26 +441,17 @@\n         \n-        %7D%0A\n+%7D\n %0A       \n@@ -447,37 +447,45 @@\n   %7D%0A            \n-    %7D\n+if op1 %3E= p %7B\n %0A               \n@@ -501,13 +501,29 @@\n tln(\n-i, i)\n+%22saiu%22)%0A            %7D\n %0A   \n",
             "lines": "20"
+        },
+        {
+            "label": "2026-05-04_18-00-53",
+            "content": "            package main\n            import \"fmt\"\n            func main() {\n                var prof, salto, escorr, i int\n                fmt.Scan(&prof)\n                fmt.Scan(&salto)\n                fmt.Scan(&escorr)\n\n                for i := 0; i < prof; i+= salto {\n                    if i >= prof {\n                        fmt.Println(\"saiu\")\n                    } else {\n                        i -= escorr\n                    }\n\n                }\n                fmt.Println(i, i)\n        }\n",
+            "lines": "18"
         }
     ]
 }
