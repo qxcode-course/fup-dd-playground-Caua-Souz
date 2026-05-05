@@ -22,8 +22,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for2
 - sandbox@sandbox
+- fup@if_extra
 flags:
   inbox: all
   panel: skills
@@ -31,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@fatores
-selected_index: 15
+selected: fup@maior
+selected_index: 10

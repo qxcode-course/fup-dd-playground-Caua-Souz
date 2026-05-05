@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-13-35",
+            "content": "@@ -169,17 +169,16 @@\n  chute %3E\n-=\n  valor &\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-14-13",
+            "content": "@@ -169,16 +169,17 @@\n  chute %3E\n+=\n  valor &\n@@ -252,44 +252,8 @@\n lse \n-if chute %3C valor && escolha == %22m%22  \n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-15-13",
+            "content": "@@ -283,9 +283,9 @@\n == %22\n-M\n+m\n %22  %7B\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-15-48",
+            "content": "@@ -169,17 +169,16 @@\n  chute %3E\n-=\n  valor &\n@@ -257,17 +257,16 @@\n  chute %3C\n-=\n  valor &\n@@ -332,23 +332,11 @@\n     \n+%7D\n %0A%0A%0A\n-        %7D%0A    \n %7D\n+%0A\n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-16-27",
+            "content": "@@ -161,32 +161,33 @@\n       if chute %3E\n+=\n  valor && escolh\n@@ -193,24 +193,24 @@\n ha == %22m%22 %7B%0A\n-\n             \n@@ -258,16 +258,17 @@\n  chute %3C\n+=\n  valor &\n@@ -288,148 +288,8 @@\n %22M%22 \n- %7B%0A            fmt.Println(%22segundo%22)%0A        %7D else if chute %3E valor && escolha == %22M%22 %7B%0A            fmt.Println(%22primeiro%22)%0A        %7D else\n  %7B%0A \n@@ -322,26 +322,16 @@\n gundo%22)%0A\n-        %7D%0A\n         \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-17-35",
+            "content": "@@ -491,13 +491,14 @@\n       %7D%0A    \n+%7D\n %0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-17-45",
+            "content": "@@ -197,43 +197,8 @@\n  %22m%22\n- %7C%7C chute %3C valor && escolha == %22M%22\n  %7B%0A \n@@ -423,25 +423,16 @@\n  %7D else \n-if chute \n %7B%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-18-46",
+            "content": "@@ -458,16 +458,25 @@\n  %7D else \n+if chute \n %7B%0A      \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-18-46",
+            "content": "@@ -282,16 +282,191 @@\n  %7D else \n+if chute %3C valor && escolha == %22M%22  %7B%0A            fmt.Println(%22segundo%22)%0A        %7D else if chute %3E valor && escolha == %22M%22 %7B%0A            fmt.Println(%22primeiro%22)%0A        %7D else\n  %7B%0A     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-19-08",
+            "content": "@@ -198,160 +198,18 @@\n %22m%22 \n- %7B%0A            fmt.Println(%22primeiro%22)%0A        %7D else if chute %3C valor && escolha == %22M%22  %7B%0A            fmt.Println(%22segundo%22)%0A        %7D else if chute %3E\n+%7C%7C chute %3C\n  val\n@@ -286,42 +286,8 @@\n lse \n-if chute %3C valor && escolha == %22m%22\n  %7B%0A \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-05_17-19-50",
+            "content": "@@ -500,61 +500,8 @@\n o%22)%0A\n-        %7D else %7B%0A            fmt.Println(%22primeiro%22)%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-20-09",
+            "content": "@@ -462,43 +462,8 @@\n  %22m%22\n- %7C%7C chute %3E valor && escolha == %22m%22\n  %7B%0A \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-05_17-22-41",
+            "content": "@@ -41,35 +41,575 @@\n     \n-fmt.Println(%22Hello World!%22)\n+var chute, valor float64%0A    var escolha string%0A    fmt.Scan(&chute)%0A    fmt.Scan(&escolha)%0A    fmt.Scan(&valor)%0A%0A        if chute %3E valor && escolha == %22m%22  %7B%0A            fmt.Println(%22primeiro%22)%0A        %7D else if chute %3C valor && escolha == %22M%22  %7B%0A            fmt.Println(%22segundo%22)%0A        %7D else if chute %3E valor && escolha == %22M%22 %7B%0A            fmt.Println(%22primeiro%22)%0A        %7D else if chute %3C valor && escolha == %22m%22 %7C%7C chute %3E valor && escolha == %22m%22 %7B%0A            fmt.Println(%22segundo%22)%0A        %7D else %7B%0A            fmt.Println(%22primeiro%22)%0A        %7D%0A        %0A%0A\n %0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-05_17-24-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello World!\")\n        }\n    \n",
+            "lines": "6"
+        }
+    ]
+}
