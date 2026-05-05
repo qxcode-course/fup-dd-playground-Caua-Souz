@@ -1,0 +1,174 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-36-49",
+            "content": "@@ -222,35 +222,8 @@\n  i %0A\n-        salto = salto - 10%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-05_17-39-06",
+            "content": "@@ -202,21 +202,18 @@\n         \n-salto\n+i2\n  = salto\n@@ -217,12 +217,12 @@\n lto \n-- 10\n++ i \n %0A   \n@@ -218,34 +218,37 @@\n to + i %0A        \n-i2\n+salto\n  = salto + i %0A  \n@@ -232,36 +232,36 @@\n   salto = salto \n-+ i \n+- 10\n %0A            if \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-39-35",
+            "content": "@@ -413,25 +413,26 @@\n    fmt.Print\n-f\n+ln\n (%22%25d saiu%5Cn%22\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-39-54",
+            "content": "@@ -194,16 +194,43 @@\n salto %7B%0A\n+        salto = salto - 10%0A\n         \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-40-21",
+            "content": "@@ -286,35 +286,8 @@\n   %7D%0A\n-        salto = salto - 10%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-05_17-42-58",
+            "content": "@@ -198,35 +198,8 @@\n o %7B%0A\n-        salto = salto - 10%0A\n     \n@@ -278,24 +278,51 @@\n           %7D%0A\n+        salto = salto - 10%0A\n             \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-43-13",
+            "content": "@@ -194,16 +194,43 @@\n salto %7B%0A\n+        salto = salto - 10%0A\n         \n@@ -313,39 +313,8 @@\n   %7D%0A\n-            salto = salto - 10%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-44-15",
+            "content": "@@ -268,24 +268,34 @@\n   break%0A    \n+        %7D%0A\n             \n@@ -313,30 +313,16 @@\n to - 10%0A\n-            %7D%0A\n         \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-45-05",
+            "content": "@@ -307,43 +307,8 @@\n  10%0A\n-                salto = salto - 10%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-46-31",
+            "content": "@@ -303,16 +303,51 @@\n to - 10%0A\n+                salto = salto - 10%0A\n         \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-46-55",
+            "content": "@@ -266,43 +266,8 @@\n     \n-salto = salto - 10%0A                \n brea\n@@ -284,16 +284,34 @@\n         \n+salto = salto - 10\n %0A       \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-47-24",
+            "content": "@@ -230,54 +230,62 @@\n     \n-salto = salto - 10%0A            if i2 %3E= prof %7B\n+    if i2 %3E= prof %7B%0A                salto = salto - 10\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-48-34",
+            "content": "@@ -230,62 +230,54 @@\n     \n-    if i2 %3E= prof %7B%0A                salto = salto - 10\n+salto = salto - 10%0A            if i2 %3E= prof %7B\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-49-13",
+            "content": "@@ -196,13 +196,8 @@\n lto \n-- 10 \n %7B%0A  \n@@ -246,16 +246,51 @@\n  prof %7B%0A\n+                salto = salto - 10%0A\n         \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-49-39",
+            "content": "@@ -255,58 +255,8 @@\n f %7B%0A\n-                               salto = salto - 10%0A\n     \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_17-50-00",
+            "content": "@@ -267,16 +267,31 @@\n         \n+               \n salto = \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-50-02",
+            "content": "@@ -192,16 +192,21 @@\n = salto \n+- 10 \n %7B%0A      \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-50-09",
+            "content": "@@ -246,16 +246,51 @@\n  prof %7B%0A\n+                salto = salto - 10%0A\n         \n@@ -338,39 +338,8 @@\n   %7D%0A\n-            salto = salto - 10%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-50-41",
+            "content": "@@ -250,43 +250,8 @@\n f %7B%0A\n-                salto = salto - 10%0A\n     \n@@ -295,24 +295,55 @@\n           %7D%0A\n+            salto = salto - 10%0A\n             \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-50-50",
+            "content": "@@ -73,21 +73,13 @@\n , i3\n-, salto2\n  int%0A\n+\n     \n@@ -267,17 +267,16 @@\n    salto\n-2\n  = salto\n@@ -421,24 +421,24 @@\n corrg%0A    %7D%0A\n+\n         fmt.\n@@ -467,17 +467,16 @@\n  + salto\n-2\n  - escor\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-51-48",
+            "content": "@@ -149,30 +149,8 @@\n rrg)\n-%0A    fmt.Scan(&salto2)\n %0A%0A  \n@@ -476,16 +476,17 @@\n  + salto\n+2\n  - escor\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-05_17-52-33",
+            "content": "@@ -69,16 +69,24 @@\n , i2, i3\n+, salto2\n  int%0A   \n@@ -146,16 +146,37 @@\n scorrg)%0A\n+    fmt.Scan(&salto2)\n %0A%0A    i2\n@@ -297,16 +297,17 @@\n    salto\n+2\n  = salto\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_17-52-58",
+            "content": "@@ -286,31 +286,8 @@\n  10%0A\n-        i2 = salto + i%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_18-14-57",
+            "content": "@@ -73,16 +73,8 @@\n , i3\n-, salto2\n  int\n@@ -272,11 +272,9 @@\n alto\n-2 :\n+ \n = sa\n@@ -300,17 +300,16 @@\n  = salto\n-2\n  + i%0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_18-15-31",
+            "content": "@@ -150,30 +150,8 @@\n rg)%0A\n-    fmt.Scan(&salto2)%0A\n %0A%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_18-15-59",
+            "content": "@@ -524,17 +524,16 @@\n  + salto\n-2\n  - escor\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-05_18-16-14",
+            "content": "@@ -81,13 +81,8 @@\n lto2\n-, i21\n  int\n@@ -172,27 +172,8 @@\n o2)%0A\n-    fmt.Scan(&i21)%0A\n %0A%0A  \n@@ -324,17 +324,16 @@\n       i2\n-1\n  = salto\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-05_18-17-10",
+            "content": "@@ -455,17 +455,16 @@\n %22, i, i2\n-1\n )%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-05_18-17-22",
+            "content": "@@ -455,16 +455,17 @@\n %22, i, i2\n+1\n )%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-05_18-17-50",
+            "content": "@@ -73,13 +73,26 @@\n , i3\n+, salto2, i21\n  int%0A\n-\n     \n@@ -151,16 +151,57 @@\n scorrg)%0A\n+    fmt.Scan(&salto2)%0A    fmt.Scan(&i21)%0A\n %0A%0A    i2\n@@ -322,17 +322,19 @@\n    salto\n- \n+2 :\n = salto \n@@ -344,32 +344,33 @@\n 0%0A        i2\n+1\n  = salto\n  + i%0A       \n@@ -353,24 +353,25 @@\n  i21 = salto\n+2\n  + i%0A       \n@@ -503,24 +503,24 @@\n corrg%0A    %7D%0A\n-\n         fmt.\n@@ -549,16 +549,17 @@\n  + salto\n+2\n  - escor\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-05_18-18-23",
+            "content": "@@ -304,17 +304,16 @@\n alto + i\n-3\n %0A       \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_18-18-47",
+            "content": "@@ -304,16 +304,17 @@\n alto + i\n+3\n %0A       \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_18-18-54",
+            "content": "@@ -282,16 +282,39 @@\n to - 10%0A\n+        i2 = salto + i%0A\n         \n@@ -326,16 +326,17 @@\n    break\n+%0A\n         \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-05_18-19-42",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var prof, salto, escorrg, i2, i3 int\n    fmt.Scan(&prof)\n    fmt.Scan(&salto)\n    fmt.Scan(&escorrg)\n\n\n    i2 = salto\n    for i := 0; i <= prof ; i+= salto {\n        i2 = salto + i \n            if i2 >= prof {\n                salto = salto - 10\n                break                \n            }\n            fmt.Printf(\"%d %d\\n\", i, i2)\n            i3 = i\n            i -= escorrg\n    }\n        fmt.Printf(\"%d saiu\\n\", i3 + salto - escorrg)\n}\n",
+            "lines": "22"
+        }
+    ]
+}

@@ -23,7 +23,7 @@ sources:
   tasks: null
 expanded:
 - sandbox@sandbox
-- fup@if_extra
+- fup@for_extra
 flags:
   inbox: all
   panel: skills
@@ -31,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@maior
-selected_index: 10
+selected: fup@poco
+selected_index: 9
