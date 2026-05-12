@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_15-12-37",
+            "content": "@@ -265,28 +265,35 @@\n     \n-F = (F + D + 16) %25 16\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_15-14-00",
+            "content": "@@ -100,42 +100,8 @@\n r %7B%0A\n-            F = (F + D + 16) %25 16%0A\n     \n@@ -257,10 +257,36 @@\n %7D%0A    %7D%0A\n+    F = (F + D + 16) %25 16%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_15-14-54",
+            "content": "@@ -133,72 +133,8 @@\n %25 16\n- //movimenta o fugitivo, somando sua posi%C3%A7%C3%A3o com a dire%C3%A7%C3%A3o, se D\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_15-15-52",
+            "content": "@@ -130,16 +130,79 @@\n 6) %25 16 \n+//movimenta o fugitivo, somando sua posi%C3%A7%C3%A3o com a dire%C3%A7%C3%A3o, se D\n %0A       \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-12_15-19-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var H, P, F, D int\n    fmt.Scan(&H, &P, &F, &D)\n\n    for {\n            F = (F + D + 16) % 16 \n        if F == H { \n            fmt.Println(\"S\")\n            break\n        }\n        if F == P {\n            fmt.Println(\"N\")\n            break\n        }\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}

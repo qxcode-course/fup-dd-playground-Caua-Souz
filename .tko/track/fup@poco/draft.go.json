@@ -167,8 +167,493 @@
         },
         {
             "label": "2026-05-05_18-19-42",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var prof, salto, escorrg, i2, i3 int\n    fmt.Scan(&prof)\n    fmt.Scan(&salto)\n    fmt.Scan(&escorrg)\n\n\n    i2 = salto\n    for i := 0; i <= prof ; i+= salto {\n        i2 = salto + i \n            if i2 >= prof {\n                salto = salto - 10\n                break                \n            }\n            fmt.Printf(\"%d %d\\n\", i, i2)\n            i3 = i\n            i -= escorrg\n    }\n        fmt.Printf(\"%d saiu\\n\", i3 + salto - escorrg)\n}\n",
+            "content": "@@ -219,17 +219,131 @@\n to + i %0A\n+            if i2 %3E= prof %7B%0A                salto = salto - 10%0A                break                %0A            %7D\n %0A\n-\n         \n@@ -394,16 +394,16 @@\n  i3 = i%0A\n+\n         \n@@ -423,39 +423,8 @@\n rrg%0A\n-            salto = salto - 10%0A\n     \n",
             "lines": "22"
+        },
+        {
+            "label": "2026-05-11_16-52-00",
+            "content": "@@ -223,71 +223,8 @@\n  i %0A\n-            if i2 %3E salto %7B%0A                break%0A            %7D\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-11_16-52-32",
+            "content": "@@ -239,20 +239,21 @@\n if i2 %3E \n-prof\n+salto\n  %7B%0A     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-11_16-52-44",
+            "content": "@@ -355,17 +355,16 @@\n        i\n-2\n  -= esco\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-11_16-55-55",
+            "content": "@@ -355,16 +355,17 @@\n        i\n+2\n  -= esco\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-11_16-56-15",
+            "content": "@@ -272,82 +272,8 @@\n eak%0A\n-            %7D else if i2 %3C 0 %7B%0A                fmt.Println(i2, %22 morreu%22)%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-11_16-57-37",
+            "content": "@@ -199,30 +199,8 @@\n o %7B%0A\n-        i2 -= escorrg%0A\n     \n@@ -416,16 +416,40 @@\n  i3 = i%0A\n+            i -= escorrg\n %0A       \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_16-59-19",
+            "content": "@@ -195,16 +195,38 @@\n salto %7B%0A\n+        i2 -= escorrg%0A\n         \n@@ -436,23 +436,13 @@\n    i\n+3\n  = i\n-2 - escorrg\n %0A%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-11_17-01-44",
+            "content": "@@ -396,16 +396,45 @@\n , i, i2)\n+%0A            i = i2 - escorrg\n %0A%0A      \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-03-23",
+            "content": "@@ -414,13 +414,21 @@\n     \n-i = i\n+salto = salto\n  - 1\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-05-46",
+            "content": "@@ -415,50 +415,12 @@\n    i\n-2\n  = i\n-2 - escorrg%0A            salto = salto\n  - 1\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-11_17-06-32",
+            "content": "@@ -411,16 +411,17 @@\n        i\n+2\n  = i2 - \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-07-35",
+            "content": "@@ -217,17 +217,16 @@\n alto + i\n-3\n  %0A      \n@@ -411,17 +411,16 @@\n        i\n-3\n  = i2 - \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-08-15",
+            "content": "@@ -392,17 +392,16 @@\n %25d%5Cn%22, i\n-3\n , i2)%0A%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-08-31",
+            "content": "@@ -502,16 +502,24 @@\n %5Cn%22, i3 \n++ salto \n - escorr\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-09-35",
+            "content": "@@ -500,17 +500,17 @@\n iu%5Cn%22, i\n-2\n+3\n  - escor\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-09-53",
+            "content": "@@ -143,18 +143,8 @@\n g)%0A%0A\n-    i3 = 0\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-11-16",
+            "content": "@@ -510,17 +510,17 @@\n iu%5Cn%22, i\n-3\n+2\n  - escor\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-12-01",
+            "content": "@@ -510,17 +510,17 @@\n iu%5Cn%22, i\n-2\n+3\n  - escor\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-12-08",
+            "content": "@@ -249,17 +249,16 @@\n  if i2 %3E\n-=\n  prof %7B%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-13-55",
+            "content": "@@ -474,24 +474,28 @@\n  - 10%0A    %7D%0A\n+    \n     fmt.Prin\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-15-21",
+            "content": "@@ -248,16 +248,73 @@\n   if i2 \n+%3E= prof %7B%0A                break%0A            %7D else if i2 \n %3C 0 %7B%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-15-45",
+            "content": "@@ -354,17 +354,16 @@\n 3, i2)%0A%0A\n-%0A\n         \n@@ -388,27 +388,8 @@\n rrg%0A\n-            i = i3%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-11_17-16-16",
+            "content": "@@ -252,64 +252,8 @@\n  i2 \n-%3E prof %7B%0A                break%0A            %7D else if i2 \n %3C 0 \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-11_17-16-42",
+            "content": "@@ -227,16 +227,17 @@\n alto + i\n+3\n  %0A      \n@@ -424,16 +424,17 @@\n        i\n+3\n  = i2 - \n@@ -441,16 +441,35 @@\n escorrg%0A\n+            i = i3%0A\n         \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-11_17-17-44",
+            "content": "@@ -401,16 +401,17 @@\n %25d%5Cn%22, i\n+3\n , i2)%0A%0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-11_17-17-54",
+            "content": "@@ -65,16 +65,20 @@\n orrg, i2\n+, i3\n  int%0A   \n@@ -139,16 +139,26 @@\n corrg)%0A%0A\n+    i3 = 0\n %0A    i2 \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-11_17-18-06",
+            "content": "@@ -65,20 +65,16 @@\n orrg, i2\n-, i3\n  int%0A   \n@@ -139,18 +139,8 @@\n g)%0A%0A\n-    i3 = 0\n %0A   \n@@ -178,16 +178,26 @@\n = prof ;\n+ i+= salto\n  %7B%0A     \n@@ -213,17 +213,16 @@\n alto + i\n-3\n  %0A      \n@@ -387,17 +387,16 @@\n %25d%5Cn%22, i\n-3\n , i2)%0A%0A%0A\n@@ -408,17 +408,16 @@\n        i\n-3\n  = i2 - \n@@ -428,27 +428,8 @@\n rrg%0A\n-            i = i3%0A\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-11_17-19-45",
+            "content": "@@ -516,17 +516,17 @@\n iu%5Cn%22, i\n-3\n+2\n  - escor\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-11_17-21-33",
+            "content": "@@ -517,12 +517,22 @@\n u%5Cn%22, i3\n+ - escorrg\n )%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-11_17-21-49",
+            "content": "@@ -343,38 +343,16 @@\n orreu%22)%0A\n-                break%0A\n         \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-05-11_17-22-05",
+            "content": "@@ -251,52 +251,8 @@\n f %7B%0A\n-                fmt.Printf(%22%25d saiu%5Cn%22, i3)%0A\n     \n@@ -509,11 +509,42 @@\n 0%0A    %7D%0A\n+    fmt.Printf(%22%25d saiu%5Cn%22, i3)\n %0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-11_17-22-58",
+            "content": "@@ -344,16 +344,59 @@\n 2 %3C 0 %7B%0A\n+                fmt.Println(i2, %22 morreu%22)%0A\n         \n@@ -556,39 +556,8 @@\n    %7D\n-%0A    fmt.Println(i3, %22 morreu%22)\n %0A%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-11_17-23-24",
+            "content": "@@ -348,50 +348,8 @@\n 0 %7B%0A\n-                fmt.Println(i3, %22morreu%22)%0A\n     \n@@ -510,10 +510,42 @@\n 0%0A    %7D%0A\n+    fmt.Println(i3, %22 morreu%22)%0A%0A\n %7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-05-11_17-24-15",
+            "content": "@@ -369,35 +369,31 @@\n mt.Print\n-f(%22%25d %25d%5Cn%22, i3, i2\n+ln(i3, %22morreu%22\n )%0A      \n@@ -556,73 +556,6 @@\n   %7D%0A\n-    if i2 %3C 0 %7B%0A        fmt.Printf(%22%25d morreu%22, i3)%0A        %0A    %7D%0A\n %7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-11_17-26-00",
+            "content": "@@ -429,18 +429,9 @@\n    %7D\n-else%7B%0A    \n+%0A\n     \n@@ -468,29 +468,16 @@\n i3, i2)%0A\n-            %7D\n %0A%0A      \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_17-27-12",
+            "content": "@@ -336,32 +336,78 @@\n lse if i2 %3C 0 %7B%0A\n+                fmt.Printf(%22%25d %25d%5Cn%22, i3, i2)%0A\n                 \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_17-27-29",
+            "content": "@@ -577,18 +577,16 @@\n d morreu\n-%5Cn\n %22, i3)%0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-27-40",
+            "content": "@@ -239,17 +239,16 @@\n  if i2 %3E\n-=\n  prof %7B%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-35-33",
+            "content": "@@ -239,16 +239,17 @@\n  if i2 %3E\n+=\n  prof %7B%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-35-44",
+            "content": "@@ -224,84 +224,8 @@\n i3 %0A\n-        i3 = i2 - escorrg%0A            i = i3%0A            salto = salto - 10%0A\n     \n@@ -446,16 +446,96 @@\n      %7D%0A%0A\n+            i3 = i2 - escorrg%0A            i = i3%0A            salto = salto - 10%0A\n     %7D%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-41-42",
+            "content": "@@ -220,16 +220,92 @@\n o + i3 %0A\n+        i3 = i2 - escorrg%0A            i = i3%0A            salto = salto - 10%0A\n         \n@@ -526,88 +526,8 @@\n  %7D%0A%0A\n-            i3 = i2 - escorrg%0A            i = i3%0A            salto = salto - 10%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-41-50",
+            "content": "@@ -239,17 +239,16 @@\n  if i2 %3E\n-=\n  prof %7B%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-42-11",
+            "content": "@@ -239,16 +239,17 @@\n  if i2 %3E\n+=\n  prof %7B%0A\n@@ -347,17 +347,8 @@\n %3C 0 \n-&& i3 %3C 0\n %7B%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-43-32",
+            "content": "@@ -239,18 +239,16 @@\n  if i2 %3E\n- =\n  prof %7B%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-43-44",
+            "content": "@@ -239,16 +239,17 @@\n  if i2 %3E\n+ \n = prof %7B\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-43-45",
+            "content": "@@ -239,16 +239,17 @@\n  if i2 %3E\n+=\n  prof %7B%0A\n@@ -358,54 +358,8 @@\n  0%7B%0A\n-                 fmt.Printf(%22%25d %25d%5Cn%22, i3, i)%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-45-26",
+            "content": "@@ -340,17 +340,70 @@\n if i\n+2\n  %3C \n-prof %7B\n+0 && i3 %3C 0%7B%0A                 fmt.Printf(%22%25d %25d%5Cn%22, i3, i)\n %0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_17-46-07",
+            "content": "@@ -336,17 +336,16 @@\n lse if i\n-2\n  %3C prof \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-46-16",
+            "content": "@@ -344,66 +344,14 @@\n 2 %3C \n-0 && i3 %3C 0%7B%0A                 fmt.Printf(%22%25d %25d%5Cn%22, i3, i)\n+prof %7B\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-46-24",
+            "content": "@@ -341,17 +341,73 @@\n f i2 %3C 0\n-%7B\n+ && i3 %3C 0%7B%0A                 fmt.Printf(%22%25d %25d%5Cn%22, i3, i)\n %0A       \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_17-46-43",
+            "content": "@@ -239,17 +239,16 @@\n  if i2 %3E\n-=\n  prof %7B%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-46-49",
+            "content": "@@ -552,46 +552,8 @@\n 0 %7B%0A\n-        fmt.Printf(%22%25d %25d%5Cn%22, i2, i3)%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-47-59",
+            "content": "@@ -543,17 +543,16 @@\n  if i2 %3C\n-=\n  0 %7B%0A   \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_17-49-18",
+            "content": "@@ -547,13 +547,52 @@\n i2 %3C\n+=\n  0 %7B%0A\n+        fmt.Printf(%22%25d %25d%5Cn%22, i2, i3)%0A\n     \n@@ -622,17 +622,17 @@\n eu%5Cn%22, i\n-2\n+3\n )%0A      \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_17-52-38",
+            "content": "@@ -579,25 +579,25 @@\n morreu%5Cn%22, i\n-3\n+2\n )%0A        %0A \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-52-45",
+            "content": "@@ -588,21 +588,8 @@\n , i3\n- - salto - 10\n )%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-54-18",
+            "content": "@@ -576,32 +576,45 @@\n %25d morreu%5Cn%22, i3\n+ - salto - 10\n )%0A        %0A    %7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-55-15",
+            "content": "@@ -344,16 +344,38 @@\n i2 %3C 0%7B%0A\n+                break%0A\n         \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_17-59-29",
+            "content": "@@ -348,76 +348,8 @@\n  0%7B%0A\n-                fmt.Printf(%22%25d morreu%5Cn%22, i3)%0A                break%0A\n     \n@@ -526,18 +526,16 @@\n 2 %3C 0 %7B%0A\n-  \n         \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-11_18-00-03",
+            "content": "@@ -331,13 +331,110 @@\n    %7D\n+ \n else \n+if i2 %3C 0%7B%0A                fmt.Printf(%22%25d morreu%5Cn%22, i3)%0A                break%0A            %7Delse\n %7B%0A  \n@@ -575,80 +575,8 @@\n - 10\n-%0A%0A            if i2 %3C 0%7B%0A                fmt.Printf(%22%25d morreu%5Cn%22, i3) %7D\n %0A   \n@@ -594,16 +594,18 @@\n 2 %3C 0 %7B%0A\n+  \n         \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-01-22",
+            "content": "@@ -548,26 +548,8 @@\n  i3)\n-%0A            break\n  %7D%0A \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-01-35",
+            "content": "@@ -499,16 +499,62 @@\n i2 %3C 0%7B%0A\n+                fmt.Printf(%22%25d morreu%5Cn%22, i3)%0A\n         \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-11_18-02-05",
+            "content": "@@ -336,33 +336,10 @@\n lse \n-if i2 %3E 0 && i2 %3C prof\n %7B%0A\n- \n     \n@@ -380,20 +380,16 @@\n i3, i2)%0A\n-    \n         \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-03-09",
+            "content": "@@ -339,17 +339,16 @@\n  if i2 %3E\n-=\n  0 && i2\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-03-35",
+            "content": "@@ -609,14 +609,8 @@\n , i3\n-+salto\n )%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-04-31",
+            "content": "@@ -605,17 +605,17 @@\n u%5Cn%22, i3\n--\n++\n salto)%0A \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-04-57",
+            "content": "@@ -604,17 +604,23 @@\n eu%5Cn%22, i\n-2\n+3-salto\n )%0A      \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-05-08",
+            "content": "@@ -609,11 +609,8 @@\n , i2\n--i3\n )%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-05-26",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var prof\n@@ -74,17 +74,20 @@\n  i3 int%0A\n-%09\n+    \n fmt.Scan\n@@ -94,17 +94,20 @@\n (&prof)%0A\n-%09\n+    \n fmt.Scan\n@@ -115,17 +115,20 @@\n &salto)%0A\n-%09\n+    \n fmt.Scan\n@@ -143,17 +143,23 @@\n g)%0A%0A\n-%09\n+    \n i3 = 0%0A\n-%09\n+    \n i2 =\n@@ -165,17 +165,20 @@\n = salto%0A\n-%09\n+    \n for i :=\n@@ -194,14 +194,21 @@\n prof\n+ \n ; %7B%0A\n-%09%09\n+        \n i2 =\n@@ -218,19 +218,30 @@\n lto + i3\n-%0A%09%09\n+ %0A            \n if i2 %3E=\n@@ -240,35 +240,48 @@\n if i2 %3E= prof %7B%0A\n-%09%09%09\n+                \n fmt.Printf(%22%25d s\n@@ -296,21 +296,43 @@\n i3)%0A\n-%09%09%09break%0A%09%09%7D \n+                break%0A            %7D\n else\n@@ -355,22 +355,35 @@\n 2 %3C prof\n- \n %7B%0A\n-%09%09%09\n+                 \n fmt.Prin\n@@ -408,72 +408,88 @@\n i2)%0A\n-%09%09%7D%0A%0A%09%09if i2 %3C 0 %7B%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09i3 = i2 - escorrg%0A%09%09i = i3%0A%09%09\n+                %7D%0A%0A            i3 = i2 - escorrg%0A            i = i3%0A            \n salt\n@@ -504,18 +504,28 @@\n o - 10%0A%0A\n-%09%09\n+            \n if i2 %3C \n@@ -529,28 +529,40 @@\n  %3C 0\n- \n %7B%0A\n-%09%09%09break%0A%09%09%7D%0A%09%7D%0A%09\n+            break %7D%0A    %7D%0A    \n if i\n@@ -573,10 +573,16 @@\n 0 %7B%0A\n-%09%09\n+        \n fmt.\n@@ -608,13 +608,27 @@\n %22, i\n-3)%0A%0A%09\n+2-i3)%0A        %0A    \n %7D%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-05-11_18-06-14",
+            "content": "@@ -480,14 +480,8 @@\n , i3\n--salto\n )%0A%0A%09\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_18-06-39",
+            "content": "@@ -476,17 +476,17 @@\n u%5Cn%22, i3\n-+\n+-\n salto)%0A%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_18-07-51",
+            "content": "@@ -474,16 +474,19 @@\n reu%5Cn%22, \n+i3+\n salto)%0A%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_18-08-39",
+            "content": "@@ -478,19 +478,13 @@\n n%22, \n-i3 + i2 + i\n+salto\n )%0A%0A%09\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_18-09-11",
+            "content": "@@ -484,21 +484,17 @@\n  + i2 + \n-salto\n+i\n )%0A%0A%09%7D%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_18-09-18",
+            "content": "@@ -401,16 +401,44 @@\n lto - 10\n+%0A%0A%09%09if i2 %3C 0 %7B%0A%09%09%09break%0A%09%09%7D\n %0A%09%7D%0A%09if \n@@ -476,16 +476,29 @@\n u%5Cn%22, i3\n+ + i2 + salto\n )%0A%0A%09%7D%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_18-10-01",
+            "content": "@@ -435,22 +435,16 @@\n ntf(%22%25d \n-%25d %25d \n morreu%5Cn\n@@ -452,19 +452,8 @@\n , i3\n-, i2, salto\n )%0A%0A%09\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-11_18-14-03",
+            "content": "@@ -420,84 +420,57 @@\n %3C 0 \n-&& salto %3C 0%7B%0A        fmt.Printf(%22%25d %25d%5Cn%22, i3, i3)%0A%09%09fmt.Printf(%22%25d %5Cn%22, i3\n+%7B%0A%09%09fmt.Printf(%22%25d %25d %25d morreu%5Cn%22, i3, i2, salto\n )%0A%0A%09\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-11_18-15-49",
+            "content": "@@ -432,43 +432,10 @@\n  %3C 0\n- \n %7B%0A\n-%09%09fmt.Printf(%22%25d %25d%5Cn%22, i3, i3)%0A\n     \n@@ -457,36 +457,22 @@\n %22%25d \n+%25d\n %5Cn%22, i3\n-)%0A%09%7D else if i2 %3C 0 %7B\n+, i3)\n %0A%09%09f\n@@ -494,13 +494,14 @@\n n%22, i3)%0A\n+%0A\n %09%7D%0A%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-11_18-16-18",
+            "content": "@@ -536,14 +536,8 @@\n %22%25d \n-morreu\n %5Cn%22,\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-16-29",
+            "content": "@@ -478,38 +478,32 @@\n  fmt.Printf(%22%25d \n-morreu\n %5Cn%22, i3)%0A%09%7D else\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-16-43",
+            "content": "@@ -503,14 +503,8 @@\n , i3\n--salto\n )%0A%09%7D\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-17-28",
+            "content": "@@ -495,24 +495,30 @@\n orreu%5Cn%22, i3\n+-salto\n )%0A%09%7D else if\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-17-44",
+            "content": "@@ -549,20 +549,17 @@\n reu%5Cn%22, \n-salto\n+i3\n )%0A%09%7D%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-17-59",
+            "content": "@@ -545,21 +545,24 @@\n  morreu%5Cn%22, \n-i3\n+salto\n )%0A%09%7D%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-18-10",
+            "content": "@@ -431,16 +431,48 @@\n o %3C 0 %7B%0A\n+%09%09fmt.Printf(%22%25d %25d%5Cn%22, i3, i3)%0A\n         \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-18-50",
+            "content": "@@ -258,35 +258,43 @@\n %0A%09%09%7D\n-%0A%09%09\n+ else \n if i2 \n-%3C 0 %7B%0A            \n+%3E= 0 && i2 %3C prof %7B%0A%09%09%09\n fmt.\n@@ -308,68 +308,54 @@\n %22%25d \n-morreu\n+%25d\n %5Cn%22, i3\n-)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09fmt.Printf(%22%25d %25d%5Cn%22, i3, i2)\n+, i2)%0A%09%09%7D%0A%0A%09%09if i2 %3C 0 %7B%0A%09%09%09break%0A%09%09%7D\n %0A%0A%09%09\n@@ -405,10 +405,129 @@\n - 10%0A%09%7D%0A\n+%09if i2 %3C 0 && salto %3C 0 %7B%0A        fmt.Printf(%22%25d morreu%5Cn%22, i3)%0A%09%7D else if i2 %3C 0 %7B%0A%09%09fmt.Printf(%22%25d morreu%5Cn%22, i3)%0A%09%7D%0A\n %7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-11_18-23-46",
+            "content": "@@ -308,17 +308,17 @@\n eu%5Cn%22, i\n-2\n+3\n )%0A%09%09%09bre\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_18-24-23",
+            "content": "@@ -138,16 +138,26 @@\n i3 = 0%0A%09\n+i2 = salto\n %0A%09for i \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_18-25-20",
+            "content": "@@ -371,84 +371,8 @@\n orrg\n-%0A%0A        if i3 %3C 0 %7B%0A%09%09%09fmt.Printf(%22%25d morreu%5Cn%22, i3)%0A%09%09%09break%0A%09%09%7D%0A        \n %0A%09%09i\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-11_18-26-12",
+            "content": "@@ -411,33 +411,33 @@\n %22%25d morreu%5Cn%22, i\n-2\n+3\n )%0A%09%09%09break%0A%09%09%7D%0A%0A\n@@ -435,16 +435,24 @@\n eak%0A%09%09%7D%0A\n+        \n %0A%09%09i = i\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-26-34",
+            "content": "@@ -423,15 +423,9 @@\n %22, i\n-3-salto\n+2\n )%0A%09%09\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-26-40",
+            "content": "@@ -412,32 +412,38 @@\n %25d morreu%5Cn%22, i3\n+-salto\n )%0A%09%09%09break%0A%09%09%7D%0A%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-26-48",
+            "content": "@@ -396,11 +396,8 @@\n %0A%09%09%09\n-// \n fmt.\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-27-30",
+            "content": "@@ -388,24 +388,27 @@\n i3 %3C 0 %7B%0A%09%09%09\n+// \n fmt.Printf(%22\n@@ -427,14 +427,8 @@\n , i3\n--salto\n )%0A%09%09\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-27-37",
+            "content": "@@ -393,127 +393,92 @@\n 0 %7B%0A\n-            i = i3%0A%09%09    salto = salto - 10%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%0A    if(i3 %3C 0)%7B%0A        fmt.Printf(%22%25d morreu%5Cn%22,i3);%0A    \n+%09%09%09fmt.Printf(%22%25d morreu%5Cn%22, i3-salto)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09i = i3%0A%09%09salto = salto - 10%0A%09\n %7D%0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-11_18-28-29",
+            "content": "@@ -137,16 +137,17 @@\n %09i3 = 0%0A\n+%09\n %0A%09for i \n@@ -255,27 +255,36 @@\n if i2 %3C 0 %7B%0A\n-%09%09%09\n+            \n fmt.Printf(%22\n@@ -369,18 +369,24 @@\n scorrg%0A%0A\n-%09%09\n+        \n if i3 %3C \n@@ -389,19 +389,101 @@\n 3 %3C 0 %7B%0A\n-%09%09%09\n+            i = i3%0A%09%09    salto = salto - 10%0A%09%09%09break%0A%09%09%7D%0A%09%7D%0A%0A    if(i3 %3C 0)%7B%0A        \n fmt.Prin\n@@ -503,58 +503,17 @@\n %5Cn%22,\n- \n i3)\n-%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09i = i3%0A%09%09salto = salto - 10%0A%09\n+;%0A    \n %7D%0A%7D%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-11_18-28-52",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar prof, salto, escorrg, i2, i3 int\n\tfmt.Scan(&prof)\n\tfmt.Scan(&salto)\n\tfmt.Scan(&escorrg)\n\n\ti3 = 0\n\n\tfor i := 0; i <= prof; {\n\t\ti2 = salto + i3\n\t\tif i2 >= prof {\n\t\t\tfmt.Printf(\"%d saiu\\n\", i3)\n\t\t\tbreak\n\t\t}\n\t\tif i2 < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", i2)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"%d %d\\n\", i3, i2)\n\n\t\ti3 = i2 - escorrg\n\n\t\tif i3 < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", i3)\n\t\t\tbreak\n\t\t}\n\n\t\ti = i3\n\t\tsalto = salto - 10\n\t}\n}\n",
+            "lines": "36"
         }
     ]
 }
