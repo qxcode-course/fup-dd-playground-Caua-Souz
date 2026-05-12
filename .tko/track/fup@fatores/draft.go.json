@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-04_18-01-34",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,386 +41,35 @@\n     \n-var num int%0A    fmt.Scan(&num)%0A%0A    fatorando := 2%0A    i := 0%0A%0A    for num != 1 %7B%0A        if num %25 fatorando == 0 %7B%0A            num = num / fatorando%0A            i++%0A        %7D else %7B%0A            if i %3E 0 %7B%0A                fmt.Println(fatorando, i)%0A            %7D%0A            fatorando++%0A            i = 0%0A        %7D%0A%0A    %7D%0A        if i %3E 0 %7B%0A            fmt.Println(fatorando, i)%0A%7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-12_16-12-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num int\n    fmt.Scan(&num)\n\n    fatorando := 2\n    i := 0\n\n    for num != 1 {\n        if num % fatorando == 0 {\n            num = num / fatorando\n            i++\n        } else {\n            if i > 0 {\n                fmt.Println(fatorando, i)\n            }\n            fatorando++\n            i = 0\n        }\n\n    }\n        if i > 0 {\n            fmt.Println(fatorando, i)\n}\n}\n",
+            "lines": "26"
         }
     ]
 }

@@ -652,6 +652,21 @@
         },
         {
             "label": "2026-05-11_18-28-52",
+            "content": "@@ -418,13 +418,8 @@\n reak\n-%0A%0A%09%09%09\n %0A%09%09%7D\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-12_16-18-16",
+            "content": "@@ -64,17 +64,9 @@\n orrg\n- int%0A%09var\n+,\n  i2,\n@@ -73,17 +73,16 @@\n  i3 int%0A\n-%0A\n %09fmt.Sca\n@@ -143,16 +143,35 @@\n 0%0A%0A%09for \n+i := 0; i %3C= prof; \n %7B%0A%09%09i2 =\n@@ -185,42 +185,8 @@\n + i3\n-%0A%0A%09%09fmt.Printf(%22%25d %25d%5Cn%22, i3, i2)%0A\n %0A%09%09i\n@@ -239,24 +239,117 @@\n %09%09%09break%0A%09%09%7D\n+%0A%09%09if i2 %3C 0 %7B%0A%09%09%09fmt.Printf(%22%25d morreu%5Cn%22, i2)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09fmt.Printf(%22%25d %25d%5Cn%22, i3, i2)\n %0A%0A%09%09i3 = i2 \n@@ -414,24 +414,29 @@\n %09%09%09break\n+%0A%0A%09%09%09\n %0A%09%09%7D%0A%0A%09%09\n salto -=\n@@ -431,16 +431,32 @@\n %0A%0A%09%09\n+i = i3%0A%09%09salto = \n salto -\n-=\n  10%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-12_16-19-41",
+            "content": "@@ -60,17 +60,25 @@\n  escorrg\n-,\n+ int%0A%09var\n  i2, i3 \n@@ -81,16 +81,17 @@\n  i3 int%0A\n+%0A\n %09fmt.Sca\n@@ -156,27 +156,8 @@\n for \n-i := 0; i %3C= prof; \n %7B%0A%09%09\n@@ -171,16 +171,50 @@\n lto + i3\n+%0A%0A%09%09fmt.Printf(%22%25d %25d%5Cn%22, i3, i2)%0A\n %0A%09%09if i2\n@@ -271,101 +271,8 @@\n %0A%09%09%7D\n-%0A%09%09if i2 %3C 0 %7B%0A%09%09%09fmt.Printf(%22%25d morreu%5Cn%22, i2)%0A%09%09%09break%0A%09%09%7D%0A%0A%09%09fmt.Printf(%22%25d %25d%5Cn%22, i3, i2)\n %0A%0A%09%09\n@@ -357,32 +357,16 @@\n %0A%0A%09%09\n-i = i3%0A%09%09salto = \n salto -\n+=\n  10%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-12_16-20-27",
             "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar prof, salto, escorrg, i2, i3 int\n\tfmt.Scan(&prof)\n\tfmt.Scan(&salto)\n\tfmt.Scan(&escorrg)\n\n\ti3 = 0\n\n\tfor i := 0; i <= prof; {\n\t\ti2 = salto + i3\n\t\tif i2 >= prof {\n\t\t\tfmt.Printf(\"%d saiu\\n\", i3)\n\t\t\tbreak\n\t\t}\n\t\tif i2 < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", i2)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"%d %d\\n\", i3, i2)\n\n\t\ti3 = i2 - escorrg\n\n\t\tif i3 < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", i3)\n\t\t\tbreak\n\t\t}\n\n\t\ti = i3\n\t\tsalto = salto - 10\n\t}\n}\n",
             "lines": "36"
         }

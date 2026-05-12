@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-12_16-40-28",
+            "content": "@@ -168,106 +168,10 @@\n  _, \n-i2 := range lista %7B%0A            if i2 %3C menor %7B%0A                menor = i2%0A            %7D%0A        %7D\n+%0A%0A\n %0A   \n@@ -183,17 +183,27 @@\n Println(\n-menor\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-12_16-49-17",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    lista := make([]int, 5)\n    for i := 0 ; i < 5 ; i++ {\n        fmt.Scan(&lista[i])\n    } \n    menor := lista[0]\n        for _, i2 := range lista {\n            if i2 < menor {\n                menor = i2\n            }\n        }\n    fmt.Println(menor)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

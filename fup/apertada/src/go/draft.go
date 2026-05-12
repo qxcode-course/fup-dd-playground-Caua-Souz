@@ -1,15 +1,15 @@
 package main
 import "fmt"
 func main() {
-    var n1, n2, n3, n4, n5 int
-    fmt.Scan(&n1)
-    fmt.Scan(&n2)
-    fmt.Scan(&n3)
-    fmt.Scan(&n4)
-    fmt.Scan(&n5)
-
-    lista := make([]int, {n1, n2, n3, n4, n5}
-
-
-    fmt.Println("Hello, World!")
+    lista := make([]int, 5) //criar uma lista de cinco inteiros
+    for i := 0 ; i < 5 ; i++ { //para i sendo 0, enquanto i for menor que 5, incremente o i
+        fmt.Scan(&lista[i]) //ler o índice i da lista
+    } 
+    menor := lista[0] //identificando o menor valor da lista
+        for _, i2 := range lista { // i2 (novo contador) é igual ao tamanho da lista
+            if i2 < menor { //se esse contador for menor do que o primeiro índice da lista 
+                menor = i2 //igualamos os valores entre as variáveis
+            }
+        }
+    fmt.Println(menor)
 }
