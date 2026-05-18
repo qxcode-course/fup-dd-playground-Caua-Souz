@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-12_16-58-58",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -10,27 +10,20 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22\n-%0A%0A)\n %0Afun\n@@ -41,157 +41,35 @@\n     \n-var cchico, ccebol, animais int%0A    fmt.Scan(&cchico, &ccebol, &animais)%0A%0A    lista := make(%5B%5Dstring, animais)%0A%0A    fmt.Println(cchico, ccebol, lista\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-18_17-15-42",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\n)\nfunc main() {\n    var cchico, ccebol, animais int\n    fmt.Scan(&cchico, &ccebol, &animais)\n\n    lista := make([]string, animais)\n\n    fmt.Println(cchico, ccebol, lista)\n}\n",
+            "lines": "14"
         }
     ]
 }

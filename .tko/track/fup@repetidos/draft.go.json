@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_16-12-28",
+            "content": "@@ -76,19 +76,8 @@\n &n)%0A\n-    i := 0%0A\n     \n@@ -94,119 +94,41 @@\n ake(\n-%5B%5Dint, n)%0A    for _, p2 := range lista%7B%0A        if p2 == p %7B%0A            i++%0A        %7D%0A    %7D%0A%0A    fmt.Println(i\n+)%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-18_16-17-58",
+            "content": "@@ -211,13 +211,13 @@\n Println(\n-p\n+i\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_16-19-20",
+            "content": "@@ -87,20 +87,8 @@\n = 0%0A\n-    p2 := 0%0A\n     \n@@ -212,13 +212,12 @@\n rintln(p\n-2\n )%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-18_16-19-45",
+            "content": "@@ -87,16 +87,23 @@\n = 0%0A    \n+p2 := 0\n %0A    lis\n@@ -223,13 +223,14 @@\n Println(\n-i\n+p2\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-18_16-19-58",
+            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    var p, n int\n    fmt.Scan(&p, &n)\n    i := 0\n    \n    lista := make([]int, n)\n    for _, p2 := range lista{\n        if p2 == p {\n            i++\n        }\n    }\n\n    fmt.Println(i)\n}\n",
+            "lines": "17"
+        }
+    ]
+}

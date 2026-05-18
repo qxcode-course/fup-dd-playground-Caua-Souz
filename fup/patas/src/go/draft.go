@@ -1,6 +1,14 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+
+)
 func main() {
-    var ccebol, cchico, animais
-    fmt.Println("Hello, World!")
+    var cchico, ccebol, animais int
+    fmt.Scan(&cchico, &ccebol, &animais)
+
+    lista := make([]string, animais)
+
+    fmt.Println(cchico, ccebol, lista)
 }
