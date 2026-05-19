@@ -7,8 +7,118 @@
         },
         {
             "label": "2026-05-18_17-15-42",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\n)\nfunc main() {\n    var cchico, ccebol, animais int\n    fmt.Scan(&cchico, &ccebol, &animais)\n\n    lista := make([]string, animais)\n\n    fmt.Println(cchico, ccebol, lista)\n}\n",
+            "content": "@@ -48,55 +48,39 @@\n     \n+var \n cchico\n- := 0%0A    ccebolinha := 0%0A    quant := 0 \n+, ccebol, animais int\n %0A   \n@@ -109,33 +109,30 @@\n ebol\n-inha, &quant\n+, &animais\n )%0A\n+%0A\n     \n-animais\n+lista\n  := \n@@ -150,387 +150,55 @@\n ng, \n-quant)%0A    for i := 0 ; i %3C quant ; i++ %7B%0A        fmt.Scan(&animais%5Bi%5D)%0A    %7D%0A    patas := 0%0A    c := 0%0A    g := 0%0A    v := 0%0A    for _, valor := range animais %7B%0A        if valor == %22c%22 %7B%0A            c+= 4%0A        %7D else if valor == %22g%22 %7B%0A            g+= 2 %0A        %7D else if valor == %22v%22 %7B%0A            v+= 4%0A        %7D%0A    %7D%0A    patas += c + g + v%0A    fmt.Println(patas)%0A    %0A    \n+animais)%0A%0A    fmt.Println(cchico, ccebol, lista)\n %0A%7D%0A\n",
             "lines": "14"
+        },
+        {
+            "label": "2026-05-19_16-32-42",
+            "content": "@@ -27,15 +27,8 @@\n mt%22%0A\n-%09%22math%22\n %0A)%0Af\n@@ -544,284 +544,8 @@\n     \n-dif1 := math.Abs(float64(cchico)) - float64(patas)%0A    dif2 := math.Abs(float64(ccebolinha)) - float64(patas)%0A    if dif1 %3E dif2 %7B%0A        fmt.Println(%22Chico Bento%22)%0A    %7D else if dif1 %3C dif2 %7B%0A        fmt.Println(%22Cebolinha%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-05-19_16-36-26",
+            "content": "@@ -700,24 +700,26 @@\n intln(%22C\n-ebolinha\n+hico Bento\n %22)%0A    %7D\n@@ -759,34 +759,32 @@\n t.Println(%22C\n-hico Bento\n+ebolinha\n %22)%0A    %7D els\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-36-55",
+            "content": "@@ -789,24 +789,8 @@\n lse \n-if dif1 == dif2 \n %7B%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-37-16",
+            "content": "@@ -732,16 +732,16 @@\n  dif\n-2 %3E\n+1 %3C\n  dif\n-1\n+2\n  %7B%0A \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-37-47",
+            "content": "@@ -680,24 +680,10 @@\n if2 \n-&& dif2 %3C dif1\n %7B%0A\n+\n     \n@@ -741,15 +741,8 @@\n if1 \n-&& dif1\n %7B%0A  \n@@ -774,16 +774,16 @@\n Bento%22)%0A\n-\n     %7D el\n@@ -785,16 +785,32 @@\n  %7D else \n+if dif1 == dif2 \n %7B%0A      \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-38-45",
+            "content": "@@ -762,16 +762,8 @@\n dif1\n- %3C dif2 \n %7B%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-38-47",
+            "content": "@@ -818,25 +818,8 @@\n lse \n-if dif1 == dif2  \n %7B%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-39-31",
+            "content": "@@ -814,16 +814,33 @@\n  %7D else \n+if dif1 == dif2  \n %7B%0A      \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-40-43",
+            "content": "@@ -676,16 +676,30 @@\n  %3E dif2 \n+&& dif2 %3C dif1\n %7B%0A      \n@@ -751,16 +751,31 @@\n  %3E dif1 \n+&& dif1 %3C dif2 \n %7B%0A      \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-40-53",
+            "content": "@@ -564,37 +564,38 @@\n ath.Abs(float64(\n-patas\n+cchico\n )) - float64(cch\n@@ -591,22 +591,21 @@\n float64(\n-cchico\n+patas\n )%0A    di\n@@ -627,21 +627,26 @@\n float64(\n-patas\n+ccebolinha\n )) - flo\n@@ -650,26 +650,21 @@\n float64(\n-ccebolinha\n+patas\n )%0A    if\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-41-45",
+            "content": "@@ -669,17 +669,17 @@\n if dif1 \n-%3C\n+%3E\n  dif2 %7B%0A\n@@ -730,17 +730,17 @@\n if dif2 \n-%3C\n+%3E\n  dif1 %7B%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-42-14",
+            "content": "@@ -704,18 +704,16 @@\n n(%22C\n-hico Bento\n+ebolinha\n %22)%0A \n@@ -757,32 +757,34 @@\n t.Println(%22C\n-ebolinha\n+hico Bento\n %22)%0A    %7D els\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-43-26",
+            "content": "@@ -669,17 +669,17 @@\n if dif1 \n-%3E\n+%3C\n  dif2 %7B%0A\n@@ -736,9 +736,9 @@\n if2 \n-%3E\n+%3C\n  dif\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-43-37",
+            "content": "@@ -789,27 +789,8 @@\n lse \n-if dif1 - dif2 == 0\n %7B%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-44-24",
+            "content": "@@ -803,17 +803,17 @@\n dif2 == \n-2\n+0\n %7B%0A      \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-44-36",
+            "content": "@@ -572,22 +572,21 @@\n float64(\n-cchico\n+patas\n )) - flo\n@@ -586,29 +586,30 @@\n ) - float64(\n-patas\n+cchico\n )%0A    dif2 :\n@@ -627,26 +627,21 @@\n float64(\n-ccebolinha\n+patas\n )) - flo\n@@ -645,21 +645,26 @@\n float64(\n-patas\n+ccebolinha\n )%0A    if\n@@ -785,16 +785,35 @@\n  %7D else \n+if dif1 - dif2 == 2\n %7B%0A      \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-46-07",
+            "content": "@@ -669,17 +669,17 @@\n if dif1 \n-%3C\n+%3E\n  dif2 %7B%0A\n@@ -732,17 +732,17 @@\n if dif2 \n-%3C\n+%3E\n  dif1 %7B%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_16-46-35",
+            "content": "@@ -579,16 +579,17 @@\n (cchico)\n+)\n  - float\n@@ -593,25 +593,24 @@\n oat64(patas)\n-)\n %0A    dif2 :=\n@@ -638,16 +638,17 @@\n bolinha)\n+)\n  - float\n@@ -656,17 +656,16 @@\n 4(patas)\n-)\n %0A    if \n@@ -789,23 +789,8 @@\n lse \n-if dif1 == dif2\n %7B%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_17-02-43",
+            "content": "@@ -55,19 +55,23 @@\n     \n-var \n cchico\n-,\n+ := 0%0A   \n  cce\n@@ -81,19 +81,29 @@\n inha\n-,\n+ := 0%0A   \n  quant \n-int\n+:= 0 \n %0A   \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-19_17-03-30",
+            "content": "@@ -350,37 +350,33 @@\n %22 %7B%0A            \n-patas\n+c\n += 4%0A        %7D e\n@@ -409,21 +409,17 @@\n         \n-patas\n+g\n += 2 %0A  \n@@ -461,21 +461,17 @@\n         \n-patas\n+v\n += 4%0A   \n@@ -479,24 +479,46 @@\n     %7D%0A    %7D%0A\n+    patas += c + g + v\n %0A    fmt.Pri\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-19_17-04-07",
+            "content": "@@ -253,16 +253,46 @@\n  := 0%0A  \n+  c := 0%0A    g := 0%0A    v := 0\n %0A    for\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-19_17-04-08",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n    var cchico, ccebolinha, quant int\n    fmt.Scan(&cchico, &ccebolinha, &quant)\n    animais := make([]string, quant)\n    for i := 0 ; i < quant ; i++ {\n        fmt.Scan(&animais[i])\n    }\n    patas := 0\n  \n    for _, valor := range animais {\n        if valor == \"c\" {\n            patas+= 4\n        } else if valor == \"g\" {\n            patas+= 2 \n        } else if valor == \"v\" {\n            patas+= 4\n        }\n    }\n\n    fmt.Println(patas)\n    dif1 := math.Abs(float64(cchico) - float64(patas))\n    dif2 := math.Abs(float64(ccebolinha) - float64(patas))\n    if dif1 < dif2 {\n        fmt.Println(\"Chico Bento\")\n    } else if dif2 < dif1 {\n        fmt.Println(\"Cebolinha\")\n    } else if dif1 == dif2{\n        fmt.Println(\"empate\")\n    }\n\n    \n}\n",
+            "lines": "38"
         }
     ]
 }

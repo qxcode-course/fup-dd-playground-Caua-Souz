@@ -19,8 +19,8 @@ sources:
   writeable: false
   quests: null
 expanded:
-- sandbox@sandbox
 - fup@list
+- sandbox@sandbox
 flags:
   inbox: all
   panel: skills
@@ -28,5 +28,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@patas
-selected_index: 15
+selected: fup@dindin
+selected_index: 16
