@@ -73,4 +73,5 @@ func main() {
     slices.Sort(repet) //ordenar as variáveis de repet
     fmt.Println(repet) //printar repet
 
+
 }
