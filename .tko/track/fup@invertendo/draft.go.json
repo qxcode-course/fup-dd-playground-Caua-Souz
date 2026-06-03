@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_16-13-24",
+            "content": "@@ -41,170 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A    fmt.Print(%22%5B %22)%0A%0A    lista := make(%5B%5Dint, n)%0A    for i := 0 ; i %3C n ; i++ %7B%0A        fmt.Scan(&lista%5Bi%5D)%0A    %7D%0A    fmt.Println(lista\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_16-16-39",
+            "content": "@@ -63,16 +63,36 @@\n Scan(&n)\n+%0A    fmt.Print(%22%5B %22)\n %0A%0A    li\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-03_16-16-57",
+            "content": "@@ -174,17 +174,16 @@\n Println(\n- \n lista)%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-03_16-17-07",
+            "content": "@@ -178,11 +178,8 @@\n tln(\n-%22 %22\n  lis\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-03_16-17-14",
+            "content": "@@ -177,16 +177,17 @@\n ntln(%22 %22\n+ \n lista)%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-03_16-17-16",
+            "content": "@@ -177,17 +177,16 @@\n ntln(%22 %22\n-,\n lista)%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-03_16-17-24",
+            "content": "@@ -162,128 +162,8 @@\n   %7D%0A\n-    for i, i2 := 0 , len(lista) - 1; i %3C i2 ; i, i2=i+1, i2-1 %7B%0A        lista%5Bi%5D, lista%5Bi2%5D = lista%5Bi2%5D, lista%5Bi%5D%0A    %7D%0A\n     \n@@ -174,16 +174,20 @@\n Println(\n+%22 %22,\n lista)%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-03_16-21-56",
+            "content": "@@ -23,198 +23,13 @@\n mt%22%0A\n-%0A\n func \n-inverter_vetor(lista %5B%5Dint) %5B%5Dint %7B%0A        for i, i2 := 0 , len(lista) - 1; i %3C i2 ; i, i2=i+1, i2-1 %7B%0A        lista%5Bi%5D, lista%5Bi2%5D = lista%5Bi2%5D, lista%5Bi%5D%0A%7D%0A        return lista%0A%7D%0Afunc \n main\n@@ -151,16 +151,136 @@\n ista%5Bi%5D)\n+%0A    %7D%0A    for i, i2 := 0 , len(lista) - 1; i %3C i2 ; i, i2=i+1, i2-1 %7B%0A        lista%5Bi%5D, lista%5Bi2%5D = lista%5Bi2%5D, lista%5Bi%5D\n %0A    %7D%0A \n@@ -298,29 +298,13 @@\n tln(\n-inverter_vetor(\n lista)\n-)\n %0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-03_16-27-23",
+            "content": "@@ -347,16 +347,28 @@\n   %7D%0A    \n+fmt.Println(\n inverter\n@@ -384,75 +384,8 @@\n sta)\n-%0A%0A    for _, elem := range lista%7B%0A        fmt.Print(%22 %22, elem)%0A    %7D\n+)\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-03_16-33-15",
+            "content": "@@ -253,26 +253,8 @@\n &n)%0A\n-    fmt.Print(%22%5B%22)\n %0A   \n@@ -347,30 +347,8 @@\n   %7D%0A\n-    fmt.Print(%22 %5D%5Cn%22)%0A\n     \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-03_16-34-07",
+            "content": "@@ -361,16 +361,37 @@\n )%0A    %7D%0A\n+    fmt.Print(%22 %5D%5Cn%22)\n %0A    inv\n@@ -481,32 +481,6 @@\n   %7D%0A\n-        fmt.Print(%22 %5D%5Cn%22)%0A\n %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-03_16-34-27",
+            "content": "package main\nimport \"fmt\"\n\nfunc inverter_vetor(lista []int) []int {\n        for i, i2 := 0 , len(lista) - 1; i < i2 ; i, i2=i+1, i2-1 {\n        lista[i], lista[i2] = lista[i2], lista[i]\n}\n        return lista\n}\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    fmt.Print(\"[\")\n    lista := make([]int, n)\n    for i := 0 ; i < n ; i++ {\n        fmt.Scan(&lista[i])\n    }\n\n    inverter_vetor(lista)\n\n    for _, elem := range lista{\n        fmt.Print(\" \", elem)\n    }\n        fmt.Print(\" ]\\n\")\n}\n",
+            "lines": "25"
+        }
+    ]
+}

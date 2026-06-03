@@ -1,0 +1,154 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_16-50-26",
+            "content": "@@ -42,650 +42,35 @@\n     \n-var qtde int%0A    var sabor, turno string%0A    fmt.Scan(&qtde)%0A    choco := 0%0A    lim := 0%0A    man := 0%0A    tar := 0%0A    for i := 0; i %3C qtde ; i++ %7B%0A        fmt.Scan(&sabor, &turno)%0A        if sabor == %22c%22%7B%0A            choco += 1%0A        %7D else %7B%0A            lim += 1%0A        %7D%0A    %7D%0A    if turno == %22man%22 %7B%0A        man += 1%0A    %7D else %7B%0A        tar += 1%0A    %7D%0A    if choco %3E lim %7B%0A        fmt.Println(%22c%22)%0A    %7D else if lim %3E choco %7B%0A        fmt.Println(%22l%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A    if man %3E tar %7B%0A        fmt.Println(%22m%22)%0A    %7D else if tar %3E man %7B%0A        fmt.Println(%22t%22)%0A    %7D else %7B%0A    fmt.Println(%22empate%22)%0A%7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-01-17",
+            "content": "@@ -656,21 +656,8 @@\n lse \n-if man == tar\n %7B%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-01_17-01-43",
+            "content": "@@ -172,17 +172,16 @@\n = 0; i %3C\n-=\n  qtde ; \n@@ -651,16 +651,26 @@\n   %7D else\n+ if man ==\n  tar%7B%0A  \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-01_17-03-11",
+            "content": "@@ -649,24 +649,27 @@\n %0A    %7D else \n+tar\n %7B%0A    fmt.Pr\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-01_17-03-12",
+            "content": "@@ -172,16 +172,17 @@\n = 0; i %3C\n+=\n  qtde ; \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-01_17-03-24",
+            "content": "@@ -51,16 +51,44 @@\n tde int%0A\n+    var sabor, turno string%0A\n     fmt.\n@@ -157,40 +157,8 @@\n = 0%0A\n-    sabor := %22%22%0A    turno := %22%22%0A\n     \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-01_17-04-20",
+            "content": "@@ -381,25 +381,8 @@\n lse \n-if turno == %22tar%22\n %7B%0A  \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-05-33",
+            "content": "@@ -607,17 +607,17 @@\n rintln(%22\n-t\n+m\n %22)%0A    %7D\n@@ -650,33 +650,33 @@\n    fmt.Println(%22\n-m\n+t\n %22)%0A    %7D else %7B%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-06-51",
+            "content": "@@ -369,32 +369,49 @@\n += 1%0A    %7D else \n+if turno == %22tar%22\n %7B%0A        tar +=\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-08-01",
+            "content": "@@ -55,36 +55,8 @@\n int%0A\n-    var sabor, turno string%0A\n     \n@@ -125,16 +125,47 @@\n ar := 0%0A\n+    sabor := %22%22%0A    turno := %22%22\n %0A    for\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-08-43",
+            "content": "@@ -657,21 +657,8 @@\n lse \n-if man == tar\n %7B%0A  \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-09-10",
+            "content": "@@ -51,16 +51,44 @@\n tde int%0A\n+    var sabor, turno string%0A\n     fmt.\n@@ -156,40 +156,8 @@\n := 0\n-%0A    sabor := %22%22%0A    turno := %22%22\n %0A%0A  \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-10-45",
+            "content": "@@ -55,36 +55,8 @@\n int%0A\n-    var sabor, turno string%0A\n     \n@@ -124,16 +124,48 @@\n tar := 0\n+%0A    sabor := %22%22%0A    turno := %22%22\n %0A%0A    fo\n@@ -666,25 +666,24 @@\n f man == tar\n- \n %7B%0A    fmt.Pr\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-01_17-10-59",
+            "content": "@@ -649,24 +649,38 @@\n %0A    %7D else \n+if man == tar \n %7B%0A    fmt.Pr\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-11-10",
+            "content": "@@ -340,16 +340,18 @@\n no == %22m\n+an\n %22 %7B%0A    \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-11-44",
+            "content": "@@ -655,21 +655,8 @@\n lse \n-if man == tar\n %7B%0A  \n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-12-20",
+            "content": "@@ -696,57 +696,8 @@\n e%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A\n %7D%0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-01_17-13-44",
+            "content": "@@ -743,8 +743,10 @@\n     %7D%0A%7D%0A\n+%7D%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-01_17-13-45",
+            "content": "@@ -696,13 +696,55 @@\n e%22)%0A    \n-%0A\n+%7D else %7B%0A        fmt.Println(%22empate%22)%0A    \n %7D%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_17-13-59",
+            "content": "@@ -696,70 +696,8 @@\n e%22)%0A\n-    %7D else if qtde == 2 %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A\n     \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-01_17-14-53",
+            "content": "@@ -761,8 +761,10 @@\n %0A    %0A%7D%0A\n+%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-01_17-14-54",
+            "content": "@@ -643,32 +643,97 @@\n %22m%22)%0A    %7D else \n+if man == tar%7B%0A    fmt.Println(%22empate%22)%0A    %7D else if qtde == 2 \n %7B%0A        fmt.Pr\n@@ -752,13 +752,17 @@\n e%22)%0A    \n-%0A\n %7D\n+%0A    \n %0A%7D%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-01_17-16-20",
+            "content": "@@ -375,24 +375,8 @@\n else\n- if turno == %22t%22\n  %7B%0A \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-01_17-17-09",
+            "content": "@@ -363,32 +363,48 @@\n  += 1%0A    %7D else\n+ if turno == %22t%22\n  %7B%0A        tar +\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-01_17-17-33",
+            "content": "@@ -59,55 +59,51 @@\n     \n-fmt.Scan(&qtde)%0A    sabor := %22%22%0A    turno := %22%22\n+var sabor, turno string%0A    fmt.Scan(&qtde)\n %0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-01_17-31-43",
+            "content": "@@ -59,51 +59,55 @@\n     \n-var sabor, turno string%0A    fmt.Scan(&qtde)\n+fmt.Scan(&qtde)%0A    sabor := %22%22%0A    turno := %22%22\n %0A   \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_17-32-25",
+            "content": "@@ -264,17 +264,19 @@\n  choco +\n-+\n+= 1\n %0A       \n@@ -302,17 +302,19 @@\n    lim +\n-+\n+= 1\n %0A       \n@@ -357,17 +357,19 @@\n    man +\n-+\n+= 1\n %0A    %7D e\n@@ -387,17 +387,19 @@\n    tar +\n-+\n+= 1\n %0A    %7D%0A \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-03_15-36-18",
+            "content": "@@ -548,17 +548,17 @@\n  if man \n-%3C\n+%3E\n  tar %7B%0A \n@@ -577,17 +577,17 @@\n rintln(%22\n-m\n+t\n %22)%0A    %7D\n@@ -599,17 +599,17 @@\n  if tar \n-%3C\n+%3E\n  man %7B%0A \n@@ -620,33 +620,33 @@\n    fmt.Println(%22\n-t\n+m\n %22)%0A    %7D else %7B%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-03_15-36-40",
+            "content": "@@ -316,16 +316,17 @@\n   %7D%0A    \n+%7D\n %0A    if \n@@ -389,18 +389,16 @@\n +%0A    %7D%0A\n-%7D%0A\n     if c\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-03_15-37-51",
+            "content": " package main\nimport \"fmt\"\nfunc main() {\n    var qtde int\n    var sabor, turno string\n    fmt.Scan(&qtde)\n    choco := 0\n    lim := 0\n    man := 0\n    tar := 0\n\n    for i := 0; i < qtde ; i++ {\n        fmt.Scan(&sabor, &turno)\n        if sabor == \"c\"{\n            choco ++\n        } else {\n            lim ++\n        }\n    \n    if turno == \"m\" {\n        man ++\n    } else {\n        tar ++\n    }\n}\n    if choco > lim {\n        fmt.Println(\"c\")\n    } else if lim > choco {\n        fmt.Println(\"l\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n    if man < tar {\n        fmt.Println(\"m\")\n    } else if tar < man {\n        fmt.Println(\"t\")\n    } else {\n        fmt.Println(\"empate\")\n    \n}\n}\n",
+            "lines": "41"
+        }
+    ]
+}

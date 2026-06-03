@@ -22,8 +22,13 @@
         },
         {
             "label": "2026-05-18_16-19-58",
-            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    var p, n int\n    fmt.Scan(&p, &n)\n    i := 0\n    \n    lista := make([]int, n)\n    for _, p2 := range lista{\n        if p2 == p {\n            i++\n        }\n    }\n\n    fmt.Println(i)\n}\n",
+            "content": "@@ -72,16 +72,27 @@\n &p, &n)%0A\n+    i := 0%0A\n     %0A   \n@@ -124,80 +124,33 @@\n     \n-contador := 0%0A    for i := 0 ; i %3C n ; i++ %7B%0A        fmt.Scan(&\n+for _, p2 := range \n lista\n-%5Bi%5D)\n+%7B\n %0A   \n@@ -161,16 +161,10 @@\n  if \n-lista%5Bi%5D\n+p2\n  == \n@@ -179,24 +179,17 @@\n         \n-contador\n+i\n ++%0A     \n@@ -198,21 +198,16 @@\n  %7D%0A    %7D\n-%0A    \n %0A%0A    fm\n@@ -220,16 +220,9 @@\n tln(\n-contador\n+i\n )%0A%7D%0A\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-06-03_16-49-35",
+            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    var p, n int\n    fmt.Scan(&p, &n)\n    \n    lista := make([]int, n)\n    contador := 0\n    for i := 0 ; i < n ; i++ {\n        fmt.Scan(&lista[i])\n        if lista[i] == p {\n            contador++\n        }\n    }\n    \n\n    fmt.Println(contador)\n}\n",
+            "lines": "19"
         }
     ]
 }

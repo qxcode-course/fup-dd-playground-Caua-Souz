@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_15-41-34",
+            "content": "@@ -41,263 +41,35 @@\n     \n-var ne1, ne2 int%0A%0A%0A    fmt.Scan(&ne1)%0A    lista1 := make(%5B%5Dint, ne1)%0A    for i1 := 0 ; i1 %3C ne1 ; i1++ %7B%0A        fmt.Scan(&lista1%5Bi1%5D)%0A%0A    %7D%0A    fmt.Scan(&ne2)%0A    lista2 := make(%5B%5Dint, ne2)%0A    for i2 := 0 ; i2 %3C ne2 ; i2++ %7B %0A    fmt.Scan(&lista2%5Bi2%5D)%0A%7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_15-52-06",
+            "content": "@@ -297,351 +297,7 @@\n %5D)%0A%7D\n-%0A%0A    contido := true%0A    for _, x := range lista1 %7B%0A        encontrou := false %0A%0A    for _, y := range lista2 %7B%0A        if x == y %7B%0A            encontrou = true%0A            break%0A        %7D%0A    %7D%0A%0A    if !encontrou %7B%0A        contido = false%0A    %7D%0A%0A    if contido %7B%0A        fmt.Println(%22sim%22)%0A    %7D else %7B%0A        fmt.Println(%22n%C3%A3o%22)%0A    %7D%0A%0A    %7D\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-03_15-57-53",
+            "content": "@@ -620,17 +620,17 @@\n intln(%22n\n-a\n+%C3%A3\n o%22)%0A    \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-03_15-58-24",
+            "content": "@@ -1,12 +1,8 @@\n-    \n package \n@@ -6,20 +6,16 @@\n ge main%0A\n-    \n import %22\n@@ -19,20 +19,16 @@\n t %22fmt%22%0A\n-    \n func mai\n@@ -33,20 +33,16 @@\n ain() %7B%0A\n-    \n     var \n@@ -56,28 +56,24 @@\n 2 int%0A%0A%0A    \n-  \n-  \n fmt.Scan(&ne\n@@ -75,28 +75,24 @@\n n(&ne1)%0A    \n-   \n- \n lista1 := ma\n@@ -106,20 +106,16 @@\n t, ne1)%0A\n-    \n     for \n@@ -146,28 +146,24 @@\n + %7B%0A        \n- \n-   \n fmt.Scan(&li\n@@ -173,34 +173,26 @@\n 1%5Bi1%5D)%0A%0A    \n-   \n- \n %7D%0A\n-    \n     fmt.Scan\n@@ -202,20 +202,16 @@\n e2)%0A    \n- \n-   \n lista2 :\n@@ -229,28 +229,24 @@\n t, ne2)%0A    \n-  \n-  \n for i2 := 0 \n@@ -266,20 +266,16 @@\n i2++ %7B %0A\n-    \n     fmt.\n@@ -292,27 +292,39 @@\n a2%5Bi2%5D)%0A\n-    \n %7D%0A%0A    \n+contido := true%0A\n     for \n@@ -354,27 +354,25 @@\n         \n-    \n+en\n cont\n-ido\n+rou\n  := fals\n@@ -375,20 +375,16 @@\n false %0A%0A\n-    \n     for \n@@ -414,20 +414,16 @@\n         \n-    \n if x == \n@@ -442,27 +442,25 @@\n     \n-  \n-  \n+en\n cont\n-ido\n+rou\n  = true%0A\n     \n@@ -455,20 +455,16 @@\n  = true%0A\n-    \n         \n@@ -485,37 +485,75 @@\n     \n+%7D%0A\n     %7D%0A\n-        %7D%0A\n+%0A    if !encontrou %7B%0A        contido = false\n %0A    \n+%7D%0A%0A\n     if \n-!\n cont\n@@ -558,24 +558,60 @@\n ntido %7B%0A    \n+  \n+  fmt.Println(%22sim%22)%0A    %7D else %7B%0A\n         fmt.\n@@ -635,39 +635,13 @@\n   %7D%0A\n+%0A\n     %7D%0A\n-    fmt.Println(%22sim%22)%0A    \n %7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-03_16-02-16",
+            "content": "@@ -611,27 +611,8 @@\n o%22)%0A\n-            return%0A\n     \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-03_16-02-28",
+            "content": "@@ -98,253 +98,83 @@\n ne1)\n- //escanear a quantidade de elementos do primeiro vetor%0A        lista1 := make(%5B%5Dint, ne1) //criar o vetor baseado na quantidade escaneada%0A        for i1 := 0 ; i1 %3C ne1 ; i1++ %7B //enquanto i1 for menor que a quantidade de vetores, i1 incrementa\n+%0A        lista1 := make(%5B%5Dint, ne1)%0A        for i1 := 0 ; i1 %3C ne1 ; i1++ %7B\n %0A   \n@@ -207,41 +207,8 @@\n i1%5D)\n- //escaneia o vetor continuamente\n %0A%0A  \n@@ -241,68 +241,8 @@\n ne2)\n- //mesma coisa s%C3%B3 que com outro contador, quantidade e lista\n %0A   \n@@ -389,49 +389,8 @@\n a1 %7B\n- //x %C3%A9 igual ao tamanho da primeira lista\n %0A   \n@@ -455,48 +455,8 @@\n a2 %7B\n- //y %C3%A9 igual ao tamanho da segunda lista\n %0A   \n@@ -479,29 +479,8 @@\n  y %7B\n- //se x for igual a y\n %0A   \n@@ -510,147 +510,30 @@\n true\n- //ent%C3%A3o os elementos da primeira lista est%C3%A3o contidos na segunda%0A                break //quebra pois n%C3%A3o %C3%A9 necess%C3%A1rio continuar o processo\n+%0A                break\n %0A   \n@@ -579,44 +579,8 @@\n do %7B\n- //se n%C3%A3o est%C3%A1 contido, imprimir n%C3%A3o\n %0A   \n@@ -629,17 +629,8 @@\n turn\n- //pular \n %0A   \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-03_16-46-09",
+            "content": "    package main\n    import \"fmt\"\n    func main() {\n        var ne1, ne2 int\n\n\n        fmt.Scan(&ne1) //escanear a quantidade de elementos do primeiro vetor\n        lista1 := make([]int, ne1) //criar o vetor baseado na quantidade escaneada\n        for i1 := 0 ; i1 < ne1 ; i1++ { //enquanto i1 for menor que a quantidade de vetores, i1 incrementa\n            fmt.Scan(&lista1[i1]) //escaneia o vetor continuamente\n\n        }\n        fmt.Scan(&ne2) //mesma coisa s\u00f3 que com outro contador, quantidade e lista\n        lista2 := make([]int, ne2)\n        for i2 := 0 ; i2 < ne2 ; i2++ { \n        fmt.Scan(&lista2[i2])\n    }\n\n        for _, x := range lista1 { //x \u00e9 igual ao tamanho da primeira lista\n            contido := false \n\n        for _, y := range lista2 { //y \u00e9 igual ao tamanho da segunda lista\n            if x == y { //se x for igual a y\n                contido = true //ent\u00e3o os elementos da primeira lista est\u00e3o contidos na segunda\n                break //quebra pois n\u00e3o \u00e9 necess\u00e1rio continuar o processo\n            }\n        }\n\n        if !contido { //se n\u00e3o est\u00e1 contido, imprimir n\u00e3o\n            fmt.Println(\"nao\")\n            return //pular \n    }\n    }\n    fmt.Println(\"sim\")\n    }\n",
+            "lines": "35"
+        }
+    ]
+}

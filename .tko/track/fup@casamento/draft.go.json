@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-01-19",
+            "content": "@@ -67,16 +67,17 @@\n )%0A    fo\n+i\n r i := 0\n@@ -143,16 +143,17 @@\n Println(\n+%22\n lista)%0A%7D\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-03_17-01-29",
+            "content": "@@ -108,15 +108,13 @@\n fmt.\n-S\n+s\n can(\n-)(\n &lis\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-03_17-01-38",
+            "content": "@@ -109,16 +109,18 @@\n mt.Scan(\n+)(\n &lista%5Bi\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-03_17-01-44",
+            "content": "@@ -128,80 +128,9 @@\n     \n-    if lista%5Bi%5D %3E 0 %7B%0A            fmt.Println(lista%5Bi%5D)%0A        %7D%0A    %7D%0A\n+%7D\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-03_17-06-03",
+            "content": "@@ -167,16 +167,18 @@\n mt.Print\n+ln\n (lista%5Bi\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-03_17-06-21",
+            "content": "@@ -140,17 +140,17 @@\n ista%5Bi%5D \n-%3C\n+%3E\n  0 %7B%0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-03_17-06-36",
+            "content": "@@ -1,12 +1,8 @@\n-    \n package \n@@ -6,20 +6,16 @@\n ge main%0A\n-    \n import %22\n@@ -19,20 +19,16 @@\n t %22fmt%22%0A\n-    \n func mai\n@@ -33,20 +33,16 @@\n ain() %7B%0A\n-    \n     list\n@@ -65,32 +65,8 @@\n  5)%0A\n-%0A\n-        maior := 0%0A    \n     \n@@ -96,28 +96,24 @@\n + %7B%0A        \n-   \n- \n fmt.Scan(&li\n@@ -128,20 +128,16 @@\n         \n-    \n if lista\n@@ -144,22 +144,11 @@\n %5Bi%5D \n-%3E lista%5Bmaior%5D\n+%3C 0\n  %7B%0A \n@@ -162,17 +162,27 @@\n     \n-maior = i\n+fmt.Print(lista%5Bi%5D)\n %0A   \n@@ -195,20 +195,16 @@\n %0A    %7D%0A%0A\n-    \n     fmt.\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-03_17-14-28",
+            "content": "@@ -264,17 +264,17 @@\n Println(\n-maior\n+lista\n )%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-03_17-14-39",
+            "content": "@@ -121,17 +121,16 @@\n  0 ; i %3C\n-=\n  5 ; i++\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-03_17-14-50",
+            "content": "@@ -122,14 +122,14 @@\n 0 ; \n-5 %3E= i\n+i %3C= 5\n  ; i\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-03_17-15-16",
+            "content": "@@ -122,13 +122,14 @@\n 0 ; \n-i %3C 5\n+5 %3E= i\n  ; i\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-03_17-15-54",
+            "content": "    package main\n    import \"fmt\"\n    func main() {\n        lista := make([]int, 5)\n\n        maior := 0\n        for i := 0 ; i < 5 ; i++ {\n            fmt.Scan(&lista[i])\n            if lista[i] > lista[maior] {\n            maior = i\n        }\n    }\n\n        fmt.Println(maior)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

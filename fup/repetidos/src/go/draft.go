@@ -4,14 +4,16 @@ import "fmt"
 func main() {
     var p, n int
     fmt.Scan(&p, &n)
-    i := 0
     
-    lista := make([]int, n)
-    for _, p2 := range lista{
-        if p2 == p {
-            i++
+    lista := make([]int, n) //criar uma lista a partir de n inteiros
+    contador := 0
+    for i := 0 ; i < n ; i++ {
+        fmt.Scan(&lista[i])
+        if lista[i] == p { //se um indíce da lista for igual ao número escolhido...
+            contador++ //...o contador incrementa
         }
     }
+    
 
-    fmt.Println(i)
+    fmt.Println(contador)
 }

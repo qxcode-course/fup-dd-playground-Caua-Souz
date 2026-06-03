@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-03_17-18-54",
+            "content": "@@ -37,151 +37,8 @@\n ) %7B%0A\n-    var n int%0A%0A    lista := make(%5B%5Dint, n)%0A    for i := 0 ; i %3C len(lista) ; i++ %7B%0A        if lista%5Bi%5D %25 2 == 0 %7B%0A            %0A        %7D%0A    %7D%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-03_17-22-34",
+            "content": "@@ -50,51 +50,8 @@\n  int\n-%0A    var pares %5B%5D int%0A    var impares %5B%5Dint\n %0A%0A  \n@@ -128,199 +128,60 @@\n     \n-fmt.Scan(&lista%5Bi%5D)%0A    %7D%0A    for _, n := range lista %7B%0A        if n %25 2 == 0 %7B%0A            pares = append(pares, n)%0A        %7D else %7B%0A            impares = append(impares, n)%0A    \n+if lista%5Bi%5D %25 2 == 0 %7B%0A            %0A        %7D%0A\n     %7D%0A\n-    %7D%0A\n     \n@@ -193,37 +193,26 @@\n rint\n-(pares)%0A    fmt.Print(impares\n+ln(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-03_17-29-10",
+            "content": "@@ -371,18 +371,16 @@\n mt.Print\n-ln\n (pares)%0A\n@@ -396,10 +396,8 @@\n rint\n-ln\n (imp\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_17-29-31",
+            "content": "@@ -374,18 +374,16 @@\n Println(\n-im\n pares)%0A \n@@ -393,21 +393,23 @@\n fmt.Println(\n+im\n pares)%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_17-32-09",
+            "content": "@@ -204,17 +204,17 @@\n  for _, \n-i\n+n\n  := rang\n@@ -234,17 +234,17 @@\n      if \n-i\n+n\n  %25 2 == \n@@ -277,25 +277,25 @@\n pend(pares, \n-i\n+n\n )%0A        %7D \n@@ -339,17 +339,17 @@\n mpares, \n-i\n+n\n )%0A      \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_17-33-51",
+            "content": "@@ -204,17 +204,17 @@\n  for _, \n-c\n+i\n  := rang\n@@ -234,17 +234,17 @@\n      if \n-c\n+i\n  %25 2 == \n@@ -277,25 +277,25 @@\n pend(pares, \n-c\n+i\n )%0A        %7D \n@@ -339,17 +339,17 @@\n mpares, \n-c\n+i\n )%0A      \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_17-35-36",
+            "content": "@@ -204,17 +204,17 @@\n  for _, \n-n\n+c\n  := rang\n@@ -234,17 +234,17 @@\n      if \n-n\n+c\n  %25 2 == \n@@ -277,25 +277,25 @@\n pend(pares, \n-n\n+c\n )%0A        %7D \n@@ -339,17 +339,17 @@\n mpares, \n-n\n+c\n )%0A      \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_17-35-44",
+            "content": "@@ -187,16 +187,22 @@\n sta%5Bi%5D)%0A\n+    %7D%0A\n     for \n@@ -408,10 +408,8 @@\n ares)%0A%7D%0A\n-%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_17-36-26",
+            "content": "@@ -352,18 +352,16 @@\n %7D%0A    %7D%0A\n-%7D%0A\n     fmt.\n@@ -402,8 +402,10 @@\n ares)%0A%7D%0A\n+%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_17-36-46",
+            "content": "@@ -55,20 +55,57 @@\n     \n-%0A    numeros\n+var pares %5B%5D int%0A    var impares %5B%5Dint%0A%0A    lista\n  := \n@@ -144,23 +144,21 @@\n i %3C len(\n-numeros\n+lista\n ) ; i++ \n@@ -177,23 +177,21 @@\n t.Scan(&\n-numeros\n+lista\n %5Bi%5D)%0A   \n@@ -195,88 +195,94 @@\n     \n-%7D%0A    impares := make(%5B%5Dint, 0, len(numeros))%0A    for _, elem := range numeros %7B\n+for _, n := range lista %7B%0A        if n %25 2 == 0 %7B%0A            pares = append(pares, n)\n %0A   \n@@ -290,24 +290,14 @@\n     \n-if\n+%7D\n  el\n+s\n e\n-m %25 2 == 1\n  %7B%0A \n@@ -337,12 +337,9 @@\n es, \n-elem\n+n\n )%0A  \n@@ -346,26 +346,48 @@\n       %7D%0A\n-%0A\n     \n-    %7D\n+%7D%0A%7D%0A    fmt.Println(impares)\n %0A    fmt\n@@ -391,23 +391,21 @@\n fmt.Println(\n-im\n pares)%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-03_17-43-59",
+            "content": "@@ -51,19 +51,20 @@\n int%0A    \n-var\n+%0A   \n  numeros\n@@ -68,14 +68,9 @@\n ros \n-%5B%5Dint \n+:\n = ma\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-03_17-46-19",
+            "content": "@@ -107,17 +107,28 @@\n 0 ; i %3C \n-n\n+len(numeros)\n  ; i++ %7B\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-03_17-47-49",
+            "content": "@@ -51,25 +51,19 @@\n int%0A    \n-%0A    %0A   \n+var\n  numeros\n@@ -63,17 +63,22 @@\n numeros \n-:\n+%5B%5Dint \n = make(%5B\n@@ -185,39 +185,23 @@\n t, 0\n-)%0A    pares := make(%5B%5Dint, 0)%0A%0A\n+, len(numeros))\n %0A   \n@@ -307,64 +307,8 @@\n em)%0A\n-        %7Delse %7B%0A            pares = append(pares, elem)%0A\n     \n@@ -353,29 +353,6 @@\n es)%0A\n-    fmt.Println(pares)%0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-03_17-51-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    \n    \n    numeros := make([]int, n)\n    for i := 0 ; i < n ; i++ {\n        fmt.Scan(&numeros[i])\n    }\n    impares := make([]int, 0)\n    pares := make([]int, 0)\n\n\n    for _, elem := range numeros {\n        if elem % 2 == 1 {\n            impares = append(impares, elem)\n        }else {\n            pares = append(pares, elem)\n        }\n\n        }\n    fmt.Println(impares)\n    fmt.Println(pares)\n}\n",
+            "lines": "25"
+        }
+    ]
+}
