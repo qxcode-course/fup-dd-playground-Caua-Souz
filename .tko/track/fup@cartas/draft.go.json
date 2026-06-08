@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_19-09-30",
+            "content": "@@ -23,16 +23,27 @@\n %0A%09%22fmt%22%0A\n+%09%22strings%22%0A\n )%0Afunc m\n@@ -111,17 +111,16 @@\n int, q)%0A\n-%0A\n     for \n@@ -178,295 +178,92 @@\n     \n-%7D%0A\n     \n-resultado := make(%5B%5Dstring, q)%0A%0A%0A    for i, carta := range cartas %7B%0A        switch carta %7B%0A        case 1:%0A            resultado%5Bi%5D = %22A%22%0A        case 11:%0A            resultado%5Bi%5D = %22J%22%0A        case 12:%0A            resultado%5Bi%5D = %22Q%22%0A        case 13:%0A            resultado%5Bi\n+if cartas%5Bi%5D == 1 %7B%0A            as := strings(cartas%5Bi%5D)%0A            as%5B0\n %5D = \n-%22K%22\n+'A'\n %0A   \n@@ -271,81 +271,47 @@\n     \n-default:%0A  \n+%7D%0A\n     \n-  \n+%7D%0A\n    \n- resultado%5Bi%5D =\n  fmt.\n-Sp\n+P\n rint\n-(carta)%0A        %7D%0A    %7D%0A%0A    \n+ln(%22Hello, World!%22)%0A\n %7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_19-23-32",
+            "content": "@@ -27,22 +27,8 @@\n mt%22%0A\n-    %22strings%22%0A\n )%0Afu\n@@ -533,62 +533,8 @@\n    %7D\n-%0A    fmt.Printf(%22%5B%25s%5D%5Cn%22,strings.Join(resultado, %22 %22))\n %0A%0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-08_19-25-29",
+            "content": "@@ -593,17 +593,16 @@\n ltado, %22\n-,\n  %22))%0A%0A  \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-08_19-25-50",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n    \"strings\"\n)\nfunc main() {\n    var q int\n    fmt.Scan(&q)\n\n    cartas := make([]int, q)\n\n    for i := 0; i < q ; i++ {\n        fmt.Scan(&cartas[i])\n    }\n    resultado := make([]string, q)\n\n\n    for i, carta := range cartas {\n        switch carta {\n        case 1:\n            resultado[i] = \"A\"\n        case 11:\n            resultado[i] = \"J\"\n        case 12:\n            resultado[i] = \"Q\"\n        case 13:\n            resultado[i] = \"K\"\n        default:\n            resultado[i] = fmt.Sprint(carta)\n        }\n    }\n    fmt.Printf(\"[%s]\\n\",strings.Join(resultado, \", \"))\n\n    }\n",
+            "lines": "35"
+        }
+    ]
+}

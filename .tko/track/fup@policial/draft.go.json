@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_16-39-31",
+            "content": "@@ -206,16 +206,18 @@\n mt.Print\n+ln\n (lista)%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-08_16-39-48",
+            "content": "@@ -201,75 +201,23 @@\n     \n-%0A    for i := 0 ; i %3C n ; i++ %7B%0A        fmt.Printf(%22%25d %22lista)%0A    %7D\n+fmt.Print(lista)\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-08_16-43-01",
+            "content": "@@ -253,18 +253,16 @@\n tf(%22%25d %22\n-, \n lista)%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_16-43-02",
+            "content": "@@ -246,26 +246,30 @@\n mt.Print\n-(&\n+f(%22%25d %22, \n lista\n-%5Bi%5D\n )%0A    %7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_16-43-56",
+            "content": "@@ -170,37 +170,8 @@\n i%5D)%0A\n-        fmt.Print(&lista%5Bi%5D)%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_16-44-17",
+            "content": "@@ -227,10 +227,76 @@\n a)%0A    %0A\n+    for i := 0 ; i %3C n ; i++ %7B%0A        fmt.Print(&lista%5Bi%5D)%0A    %7D%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-08_16-44-23",
+            "content": "@@ -184,16 +184,17 @@\n t.Print(\n+&\n lista%5Bi%5D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_16-44-36",
+            "content": "@@ -170,33 +170,8 @@\n i%5D)%0A\n-        sort.Ints(lista)%0A\n     \n@@ -200,15 +200,36 @@\n )%0A    %7D%0A\n+    sort.Ints(lista)%0A\n     %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_16-44-48",
+            "content": "@@ -170,18 +170,16 @@\n i%5D)%0A    \n-%7D%0A\n     sort\n@@ -195,44 +195,8 @@\n ta)%0A\n-    %0A    for i := 0 ; i %3C n ; i++ %7B%0A\n     \n@@ -225,10 +225,15 @@\n )%0A    %7D%0A\n+    %0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_16-45-57",
+            "content": "@@ -259,13 +259,8 @@\n a%5Bi%5D\n-, %22 %22\n )%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_16-46-06",
+            "content": "@@ -263,13 +263,8 @@\n , %22 \n-%22,%22/n\n %22)%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_16-46-27",
+            "content": "@@ -265,10 +265,12 @@\n %22 %22,\n+%22\n /n\n+%22\n )%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_16-46-34",
+            "content": "@@ -256,16 +256,17 @@\n ista%5Bi%5D,\n+ \n %22 %22,/n)%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_18-34-57",
+            "content": "@@ -264,12 +264,10 @@\n %22 %22,\n-%22%5Cn%22\n+/n\n )%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_18-35-30",
+            "content": "@@ -263,31 +263,12 @@\n ,%22 %22\n-)%0A        fmt.Println(%22\n+,%22%5Cn\n %22)%0A \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_18-35-57",
+            "content": "@@ -262,21 +262,16 @@\n %5D,%22 %22)%0A \n-   %7D%0A\n        f\n@@ -285,10 +285,16 @@\n tln(%22%22)%0A\n+    %7D%0A\n %7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-08_18-36-23",
+            "content": "@@ -267,24 +267,27 @@\n )%0A    %7D%0A    \n+   \n fmt.Println(\n@@ -291,10 +291,8 @@\n ln(%22\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-08_18-36-48",
+            "content": "@@ -280,16 +280,18 @@\n mt.Print\n+ln\n (%22%5Cn%22)%0A%7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-08_18-37-00",
+            "content": "@@ -261,52 +261,18 @@\n i%5D,%22\n+ \n %22)%0A    \n-    if i == len(lista) - 1 %7B%0A        \n+%7D%0A\n     \n@@ -284,37 +284,13 @@\n rint\n-f\n (%22\n-%25d%22, %22%5Cn%22)%0A%0A        %7D%0A    %7D\n+%5Cn%22)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-08_18-39-16",
+            "content": "@@ -325,10 +325,8 @@\n %25d%22,\n-i,\n  %22%5Cn\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-08_18-39-27",
+            "content": "@@ -323,13 +323,17 @@\n (%22%25d\n-%5Cn\n %22,i\n+, %22%5Cn%22\n )%0A%0A \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-08_18-39-49",
+            "content": "@@ -286,16 +286,21 @@\n n(lista)\n+ - 1 \n %7B%0A      \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-08_18-40-01",
+            "content": "@@ -233,41 +233,8 @@\n + %7B%0A\n-        if i != len(lista) %7B%0A    \n     \n@@ -256,17 +256,16 @@\n ista%5Bi%5D,\n- \n %22%22)%0A    \n@@ -272,14 +272,26 @@\n     \n-%7Delse \n+if i == len(lista)\n %7B%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-08_18-41-28",
+            "content": "@@ -216,23 +216,25 @@\n := 0\n+ \n ; i %3C n\n+ \n ; i++ %7B%0A\n %09if \n@@ -233,75 +233,120 @@\n + %7B%0A\n-%09if i %3E 0 %7B%0A%09%09fmt.Print(%22 %22)%0A%09%7D%0A%09fmt.Print(lista%5Bi%5D)%0A%7D%0Afmt.Println(\n+        if i != len(lista) %7B%0A            fmt.Print(lista%5Bi%5D, %22%22)%0A        %7Delse %7B%0A            fmt.Printf(%22%25d%5Cn%22,i\n )%0A%0A \n@@ -354,13 +354,16 @@\n       %7D%0A    \n+%7D%0A%7D\n %0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-08_18-43-02",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    lista := make([]int, n)\n    for i := 0 ; i < n ; i++ {\n        fmt.Scan(&lista[i])\n    }\n    sort.Ints(lista)\n    \n    for i := 0; i < n; i++ {\n\tif i > 0 {\n\t\tfmt.Print(\" \")\n\t}\n\tfmt.Print(lista[i])\n}\nfmt.Println()\n\n        }\n    \n",
+            "lines": "26"
+        }
+    ]
+}

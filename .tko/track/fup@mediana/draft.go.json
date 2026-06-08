@@ -2,8 +2,48 @@
     "patches": [
         {
             "label": "2026-06-08_16-17-09",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -10,37 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22slices%22%0A)%0A\n func\n@@ -37,144 +37,8 @@\n ) %7B%0A\n-    var notas int%0A    fmt.Scan(&notas)%0A%0A    for i := 0.0 ; i %3C notas ; i++ %7B%0A        fmt.Scan(&notas)%0A        slices.Sort(notas)%0A    %7D%0A%0A\n     \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-08_16-31-58",
+            "content": "@@ -26,19 +26,21 @@\n fmt%22%0A%09%22s\n-ort\n+lices\n %22%0A)%0Afunc\n@@ -58,16 +58,20 @@\n    var n\n+otas\n  int%0A   \n@@ -86,42 +86,14 @@\n n(&n\n-)%0A%0A    notas := make(%5B%5Dfloat64, n)\n+otas)%0A\n %0A   \n@@ -107,16 +107,18 @@\n := 0\n+.0\n  ; i %3C n\n  ; i\n@@ -113,16 +113,20 @@\n  ; i %3C n\n+otas\n  ; i++ %7B\n@@ -153,11 +153,8 @@\n otas\n-%5Bn%5D\n )%0A  \n@@ -164,20 +164,18 @@\n    s\n-ort.Float64s\n+lices.Sort\n (not\n@@ -201,17 +201,27 @@\n Println(\n-notas\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-08_16-34-31",
+            "content": "@@ -99,19 +99,23 @@\n  make(%5B%5D\n-int\n+float64\n , n)%0A   \n@@ -187,11 +187,15 @@\n ort.\n-Int\n+Float64\n s(no\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_16-36-12",
+            "content": "@@ -1,244 +1,53 @@\n-package main%0A%0Aimport (%0A%09%22fmt%22%0A%09%22sort%22%0A)%0Afunc main() %7B%0A    var n int%0A    fmt.Scan(&n)%0A%0A    notas := make(%5B%5Dint, n)%0A    for i := 0 ; i %3C n ; i++ %7B%0A        fmt.Scan(&notas%5Bn%5D)%0A        sort.Ints(notas)%0A        break%0A    %7D%0A%0A    fmt.Println(notas)%0A%7D\n+@@ -195,22 +195,8 @@%0A as)%250A%0A-        break%250A%0A     \n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-06-08_18-43-58",
+            "content": "@@ -170,18 +170,16 @@\n n%5D)%0A    \n-%7D%0A\n     sort\n@@ -190,16 +190,36 @@\n s(notas)\n+%0A        break%0A    %7D\n %0A%0A    fm\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-08_18-45-42",
+            "content": "@@ -162,17 +162,17 @@\n (&notas%5B\n-i\n+n\n %5D)%0A    %7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_18-46-37",
+            "content": "@@ -103,15 +103,11 @@\n e(%5B%5D\n-float64\n+int\n , n)\n@@ -185,15 +185,11 @@\n ort.\n-Float64\n+Int\n s(no\n@@ -202,33 +202,25 @@\n     \n-if n %25 2.0 == 0.0 %7B%0A%0A    %7D\n+fmt.Println(notas)\n %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_18-51-37",
+            "content": "@@ -204,31 +204,8 @@\n tas)\n-%0A    fmt.Println(notas)\n %0A%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-08_18-51-49",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    notas := make([]float64, n)\n    for i := 0 ; i < n ; i++ {\n        fmt.Scan(&notas[i])\n    }\n    sort.Float64s(notas)\n    fmt.Println(notas)\n\n    if n % 2.0 == 0.0 {\n\n    }\n}\n",
+            "lines": "21"
         }
     ]
 }
