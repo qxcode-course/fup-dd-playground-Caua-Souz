@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_15-40-13",
+            "content": "@@ -67,47 +67,8 @@\n (&n)\n-%0A    contadorp := 0%0A    contadorim := 0\n %0A%0A  \n@@ -155,94 +155,8 @@\n i%5D)%0A\n-        if lista%5Bi%5D %25 2 == 0 %7B%0A            contadorp = contadorp + lista%5Bi%5D%0A        %7D%0A\n     \n@@ -184,27 +184,6 @@\n ta)%0A\n-    fmt.Println(con)%0A\n %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-08_15-44-41",
+            "content": "@@ -324,18 +324,12 @@\n ntln(con\n-tadorp\n )%0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_15-44-43",
+            "content": "@@ -83,16 +83,35 @@\n rp := 0%0A\n+    contadorim := 0\n %0A%0A    li\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_15-44-50",
+            "content": "@@ -87,28 +87,8 @@\n = 0%0A\n-    contadorim := 0%0A\n %0A%0A  \n@@ -251,93 +251,8 @@\n %5Bi%5D%0A\n-            continue%0A        %7D else %7B%0A            contadorim = contadorim + lista%5Bi%5D%0A\n     \n@@ -317,35 +317,6 @@\n rp)%0A\n-    fmt.Println(contadorimp)%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-08_15-46-26",
+            "content": "@@ -444,12 +444,13 @@\n ntadorim\n+p\n )%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-08_15-46-27",
+            "content": "@@ -376,219 +376,80 @@\n     \n-    if contadorim %3E contadorp %7B%0A            fmt.Println(%22soldados%22)%0A        %7D else if contadorp %3E contadorim %7B%0A            fmt.Println(%22rebeldes%22)%0A        %7D else %7B%0A            fmt.Println(%22empate%22)%0A        %7D%0A    \n+fmt.Println(lista)%0A    fmt.Println(contadorp)%0A    fmt.Println(contadorim)\n %0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-08_15-49-10",
+            "content": "@@ -225,48 +225,8 @@\n  0 %7B\n- //se o ind%C3%ADce atual da lista for par...\n %0A   \n@@ -270,42 +270,29 @@\n a%5Bi%5D\n- //o contador armazena esse n%C3%BAmero\n+%0A            continue\n %0A   \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-08_15-50-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    contadorp := 0\n    contadorim := 0\n\n\n    lista := make([]int, n)\n    for i := 0; i < n ; i++ {\n        fmt.Scan(&lista[i])\n        if lista[i] % 2 == 0 { //se o ind\u00edce atual da lista for par...\n            contadorp = contadorp + lista[i] //o contador armazena esse n\u00famero\n        } else {\n            contadorim = contadorim + lista[i]\n        }\n    }\n        if contadorim > contadorp {\n            fmt.Println(\"soldados\")\n        } else if contadorp > contadorim {\n            fmt.Println(\"rebeldes\")\n        } else {\n            fmt.Println(\"empate\")\n        }\n    \n}\n",
+            "lines": "27"
+        }
+    ]
+}
