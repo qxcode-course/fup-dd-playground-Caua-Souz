@@ -42,7 +42,7 @@
         },
         {
             "label": "2026-06-08_18-51-49",
-            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    notas := make([]float64, n)\n    for i := 0 ; i < n ; i++ {\n        fmt.Scan(&notas[i])\n    }\n    sort.Float64s(notas)\n    fmt.Println(notas)\n\n    if n % 2.0 == 0.0 {\n\n    }\n}\n",
+            "content": "@@ -248,25 +248,16 @@\n == 0.0 %7B\n-%0A        \n %0A%0A    %7D%0A\n",
             "lines": "21"
         }
     ]

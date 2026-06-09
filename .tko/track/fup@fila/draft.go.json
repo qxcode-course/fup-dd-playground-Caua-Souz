@@ -67,8 +67,48 @@
         },
         {
             "label": "2026-06-03_17-51-38",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    \n    \n    numeros := make([]int, n)\n    for i := 0 ; i < n ; i++ {\n        fmt.Scan(&numeros[i])\n    }\n    impares := make([]int, 0)\n    pares := make([]int, 0)\n\n\n    for _, elem := range numeros {\n        if elem % 2 == 1 {\n            impares = append(impares, elem)\n        }else {\n            pares = append(pares, elem)\n        }\n\n        }\n    fmt.Println(impares)\n    fmt.Println(pares)\n}\n",
+            "content": "@@ -0,0 +1,454 @@\n+package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var n int%0A    %0A    %0A    numeros := make(%5B%5Dint, n)%0A    for i := 0 ; i %3C n ; i++ %7B%0A        fmt.Scan(&numeros%5Bi%5D)%0A    %7D%0A    impares := make(%5B%5Dint, 0)%0A    pares := make(%5B%5Dint, 0)%0A%0A%0A    for _, elem := range numeros %7B%0A        if elem %25 2 == 1 %7B%0A            impares = append(impares, elem)%0A        %7Delse %7B%0A            pares = append(pares, elem)%0A        %7D%0A%0A        %7D%0A    fmt.Println(impares)%0A    fmt.Println(pares)%0A%7D%0A\n",
             "lines": "25"
+        },
+        {
+            "label": "2026-06-09_16-52-24",
+            "content": "@@ -1,73 +0,0 @@\n-package main%09%0Aimport %22fmt%22%0Afunc main() %7B%0A%09fmt.Println(%22Hello World!%22)%0A%0A%7D%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2026-06-09_16-55-30",
+            "content": "@@ -39,304 +39,34 @@\n  %7B%0A%09\n-var n int%0A%09fmt.Scan(&n)%0A%0A%09impares := make(%5B%5Dint, 0)%0A%09pares := make(%5B%5Dint, 0)%0A%09alunos := make(%5B%5Dint, n)%0A%09for i := 0 ; i %3C n ; i++ %7B%0A%09%09fmt.Scan(&alunos%5Bi%5D)%0A%09%09if alunos%5Bi%5D %25 2 == 0 %7B%0A%09%09%09pares = append(alunos, i )%0A%09%09%7D else %7B%0A%09%09%09impares = append(alunos, i )%0A%09%09%7D%0A%09%7D%0A%09fmt.Print(impares)%0A%09fmt.Print(pares\n+fmt.Println(%22Hello World!%22\n )%0A%0A%7D\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-06-09_17-02-47",
+            "content": "@@ -313,22 +313,16 @@\n (impares\n-, %22%5Cn%22\n )%0A%09fmt.P\n@@ -335,14 +335,8 @@\n ares\n-, %22%5Cn%22\n )%0A%0A%7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_17-03-29",
+            "content": "@@ -214,29 +214,28 @@\n 2 == 0 %7B%0A%09%09%09\n-aluno\n+pare\n s = append(p\n@@ -233,20 +233,21 @@\n  append(\n-pare\n+aluno\n s, i )%0A%09\n@@ -259,21 +259,22 @@\n se %7B%0A%09%09%09\n-aluno\n+impare\n s = appe\n@@ -276,22 +276,21 @@\n  append(\n-impare\n+aluno\n s, i )%0A%09\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_17-04-17",
+            "content": "@@ -218,20 +218,21 @@\n  0 %7B%0A%09%09%09\n-pare\n+aluno\n s = appe\n@@ -238,25 +238,16 @@\n end(\n-alunos, alunos%5Bi%5D\n+pares, i\n  )%0A%09\n@@ -259,22 +259,21 @@\n se %7B%0A%09%09%09\n-impare\n+aluno\n s = appe\n@@ -279,24 +279,18 @@\n end(\n-alunos,alunos%5Bi%5D\n+impares, i\n  )%0A%09\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_17-04-42",
+            "content": "@@ -214,29 +214,28 @@\n 2 == 0 %7B%0A%09%09%09\n-aluno\n+pare\n s = append(p\n@@ -233,20 +233,21 @@\n  append(\n-pare\n+aluno\n s, aluno\n@@ -267,21 +267,22 @@\n se %7B%0A%09%09%09\n-aluno\n+impare\n s = appe\n@@ -284,22 +284,21 @@\n  append(\n-impare\n+aluno\n s,alunos\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_17-05-11",
+            "content": "@@ -307,17 +307,8 @@\n %5D )%0A\n-%09%09%09break%0A\n %09%09%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-09_17-05-18",
+            "content": "package main\t\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\timpares := make([]int, 0)\n\tpares := make([]int, 0)\n\talunos := make([]int, n)\n\tfor i := 0 ; i < n ; i++ {\n\t\tfmt.Scan(&alunos[i])\n\t\tif alunos[i] % 2 == 0 {\n\t\t\talunos = append(pares, alunos[i] )\n\t\t} else {\n\t\t\talunos = append(impares,alunos[i] )\n\t\t\tbreak\n\t\t}\n\t}\n\tfmt.Print(impares, \"\\n\")\n\tfmt.Print(pares, \"\\n\")\n\n}\n",
+            "lines": "22"
         }
     ]
 }
