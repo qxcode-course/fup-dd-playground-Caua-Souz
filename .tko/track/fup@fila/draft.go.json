@@ -107,8 +107,108 @@
         },
         {
             "label": "2026-06-09_17-05-18",
-            "content": "package main\t\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\timpares := make([]int, 0)\n\tpares := make([]int, 0)\n\talunos := make([]int, n)\n\tfor i := 0 ; i < n ; i++ {\n\t\tfmt.Scan(&alunos[i])\n\t\tif alunos[i] % 2 == 0 {\n\t\t\talunos = append(pares, alunos[i] )\n\t\t} else {\n\t\t\talunos = append(impares,alunos[i] )\n\t\t\tbreak\n\t\t}\n\t}\n\tfmt.Print(impares, \"\\n\")\n\tfmt.Print(pares, \"\\n\")\n\n}\n",
+            "content": "@@ -218,20 +218,21 @@\n  0 %7B%0A%09%09%09\n-pare\n+aluno\n s = appe\n@@ -267,22 +267,21 @@\n se %7B%0A%09%09%09\n-impare\n+aluno\n s = appe\n",
             "lines": "22"
+        },
+        {
+            "label": "2026-06-15_16-35-16",
+            "content": "@@ -243,25 +243,24 @@\n res, alunos%5B\n- \n i%5D )%0A%09%09%7D els\n@@ -298,17 +298,16 @@\n ,alunos%5B\n- \n i%5D )%0A%09%09%09\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-15_16-35-45",
+            "content": "@@ -336,11 +336,8 @@\n int(\n-%22%22,\n impa\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-15_16-36-16",
+            "content": "@@ -321,17 +321,16 @@\n %0A%09%09%7D%0A%09%7D%0A\n-%0A\n %09fmt.Pri\n@@ -337,91 +337,10 @@\n nt(%22\n-%5B%22)%0A%09for _, v := range impares %7B%0A%09%09fmt.Print(v, %22 %22)%0A%09%7D%0A%09fmt.Print(%22%5D%22)%0A%09fmt.Print(\n+%22,\n impa\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-15_16-40-03",
+            "content": "@@ -243,24 +243,25 @@\n res, alunos%5B\n+ \n i%5D )%0A%09%09%7D els\n@@ -299,16 +299,17 @@\n ,alunos%5B\n+ \n i%5D )%0A%09%09%09\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-15_16-40-15",
+            "content": "@@ -381,12 +381,8 @@\n int(\n-%22 %22,\n v, %22\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-15_16-40-35",
+            "content": "@@ -408,18 +408,16 @@\n nt(%22%5D%22)%0A\n-%09%0A\n %09fmt.Pri\n@@ -423,79 +423,44 @@\n int(\n-%22%5B%22)%0A%09for _, w := range pares %7B%0A%09%09fmt.Print(%22 %22,w,%22 %22)%0A%09%7D%0A%09fmt.Print(%22%5D\n+impares, %22%5Cn%22)%0A%09fmt.Print(pares, %22%5Cn\n %22)%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-15_16-41-50",
+            "content": "@@ -477,13 +477,8 @@\n w,%22 \n-%22,%22%5Cn\n %22)%0A%09\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-42-15",
+            "content": "@@ -410,14 +410,8 @@\n (%22%5D%22\n-, %22%5Cn%22\n )%0A%09%0A\n@@ -474,17 +474,21 @@\n  %22,w,%22 %22\n- \n+,%22%5Cn%22\n )%0A%09%7D%0A%09fm\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-42-46",
+            "content": "@@ -476,16 +476,21 @@\n nt(%22 %22,w\n+,%22 %22 \n )%0A%09%7D%0A%09fm\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-43-01",
+            "content": "@@ -325,36 +325,35 @@\n %7D%0A%0A%09fmt.Print(%22%5B\n- \n %22)%0A\n+\n %09for _, v := ran\n@@ -377,16 +377,20 @@\n t.Print(\n+%22 %22,\n v, %22 %22)%0A\n@@ -429,17 +429,16 @@\n Print(%22%5B\n- \n %22)%0A%09for \n@@ -475,14 +475,13 @@\n int(\n-w, \n %22 %22\n+,w\n )%0A%09%7D\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-43-54",
+            "content": "@@ -471,16 +471,17 @@\n Print(w,\n+ \n %22 %22)%0A%09%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-44-10",
+            "content": "@@ -493,19 +493,13 @@\n rint(%22%5D%22\n-, %22%5Cn%22\n )%0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-44-18",
+            "content": "@@ -493,13 +493,19 @@\n rint(%22%5D%22\n+, %22%5Cn%22\n )%0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-44-44",
+            "content": "@@ -498,23 +498,8 @@\n %22%5D%22)\n-%0A%09fmt.Println()\n %0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-44-58",
+            "content": "@@ -493,22 +493,16 @@\n rint(%22%5D%22\n-, %22%5Cn%22\n )%0A%09fmt.P\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-15_16-45-39",
+            "content": "@@ -500,12 +500,27 @@\n %22, %22%5Cn%22)\n+%0A%09fmt.Println()\n %0A%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-15_16-46-55",
+            "content": "@@ -471,17 +471,16 @@\n Print(w,\n- \n %22 %22)%0A%09%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-47-22",
+            "content": "@@ -495,16 +495,17 @@\n int(%22%5D%22,\n+ \n %22%5Cn%22)%0A%0A%7D\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-47-40",
+            "content": "@@ -303,16 +303,24 @@\n os%5Bi%5D )%0A\n+%09%09%09break\n %0A%09%09%7D%0A%09%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-49-32",
+            "content": "package main\t\nimport \"fmt\"\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\n\timpares := make([]int, 0)\n\tpares := make([]int, 0)\n\talunos := make([]int, n)\n\tfor i := 0 ; i < n ; i++ {\n\t\tfmt.Scan(&alunos[i])\n\t\tif alunos[i] % 2 == 0 {\n\t\t\tpares = append(pares, alunos[i] )\n\t\t} else {\n\t\t\timpares = append(impares,alunos[i] )\n\n\t\t}\n\t}\n\n\tfmt.Print(\"[ \")\n\tfor _, v := range impares {\n\t\tfmt.Print(v, \" \")\n\t}\n\tfmt.Print(\"]\", \"\\n\")\n\t\n\tfmt.Print(\"[ \")\n\tfor _, w := range pares {\n\t\tfmt.Print(w, \" \")\n\t}\n\tfmt.Print(\"]\",\"\\n\")\n\n}\n",
+            "lines": "32"
         }
     ]
 }

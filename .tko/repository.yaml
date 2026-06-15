@@ -23,9 +23,9 @@ expanded:
 flags:
   inbox: all
   panel: skills
-  show_panel: 'true'
+  show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@parkour
-selected_index: 25
+selected: fup@dominos
+selected_index: 41

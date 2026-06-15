@@ -2,8 +2,38 @@
     "patches": [
         {
             "label": "2026-06-08_19-00-42",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,413 +41,35 @@\n     \n-var n int%0A%0A    vetor := make(%5B%5Dint, n)%0A%0A    for i := 0 ; i %3C n ; i++ %7B%0A        fmt.Scan(&vetor%5Bi%5D)%0A    %7D%0A%0A    Jedi := 0%0A    Sith := 0%0A%0A    for i := 0 ; i %3C n ;i++ %7B%0A        if i %3C= n/2 %7B%0A            Jedi += vetor%5Bi%5D%0A        %7D else %7B%0A            Sith += vetor%5Bi%5D%0A        %7D%0A    %7D%0A    if Jedi %3E Sith %7B%0A    fmt.Println(%22Jedi%22)%0A%7D else if Sith %3E Jedi%7B%0A    fmt.Println(%22Sith%22)%0A%7D else %7B%0A    fmt.Println(%22Empate%22)%0A%7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-09_18-11-40",
+            "content": "@@ -272,20 +272,8 @@\n lse \n-if i %3E= n/2 \n %7B%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-09_18-16-59",
+            "content": "@@ -430,23 +430,8 @@\n lse \n-if Jedi == Sith\n %7B%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-09_18-17-27",
+            "content": "@@ -216,16 +216,17 @@\n   if i %3C\n+=\n  n/2 %7B%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-09_18-19-38",
+            "content": "@@ -217,21 +217,19 @@\n  if i %3C \n-(\n n/2\n-)\n  %7B%0A     \n@@ -279,13 +279,11 @@\n  %3E= \n-(\n n/2\n-)\n  %7B%0A \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-09_18-20-22",
+            "content": "@@ -51,24 +51,8 @@\n int%0A\n-    fmt.Scan(&n)\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-15_16-30-59",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    vetor := make([]int, n)\n\n    for i := 0 ; i < n ; i++ {\n        fmt.Scan(&vetor[i])\n    }\n\n    Jedi := 0\n    Sith := 0\n\n    for i := 0 ; i < n ;i++ {\n        if i < (n/2) {\n            Jedi += vetor[i]\n        } else if i >= (n/2) {\n            Sith += vetor[i]\n        }\n    }\n    if Jedi > Sith {\n    fmt.Println(\"Jedi\")\n} else if Sith > Jedi{\n    fmt.Println(\"Sith\")\n} else if Jedi == Sith{\n    fmt.Println(\"Empate\")\n}\n}\n",
+            "lines": "29"
         }
     ]
 }
