@@ -1,0 +1,114 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_16-32-17",
+            "content": "@@ -41,158 +41,35 @@\n     \n-var q int%0A    fmt.Scan(&q)%0A%0A    soldados := make(%5B%5Dint, q)%0A    for i := 0; i %3C q; i++ %7B%0A        fmt.Scan(&soldados%5Bi%5D)%0A    %7D%0A    fmt.Println(soldados)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_16-38-47",
+            "content": "@@ -92,15 +92,11 @@\n e(%5B%5D\n-float64\n+int\n , q)\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-16_16-40-56",
+            "content": "@@ -51,36 +51,8 @@\n int%0A\n-    var soma, media float64%0A\n     \n@@ -64,16 +64,16 @@\n can(&q)%0A\n+\n %0A    sol\n@@ -175,165 +175,27 @@\n    f\n-or i := 0 ; i %3C len(soldados); i++ %7B%0A        soma = soldados%5Bi%5D + soldados%5Bi+1%5D%0A    %7D%0A    media = soma/float64(q)%0A    fmt.Println(soma)%0A    fmt.Println(media\n+mt.Println(soldados\n )%0A%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-16_16-47-59",
+            "content": "@@ -313,16 +313,38 @@\n at64(q)%0A\n+    fmt.Println(soma)%0A\n     fmt.\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-16_16-48-09",
+            "content": "@@ -232,10 +232,8 @@\n dos)\n--1\n ; i+\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-16_16-48-17",
+            "content": "@@ -206,34 +206,41 @@\n for \n-_, valor := range soldados\n+i := 0 ; i %3C len(soldados)-1; i++\n  %7B%0A \n@@ -254,24 +254,45 @@\n soma\n-+= valor\n+ = soldados%5Bi%5D + soldados%5Bi+1%5D\n %0A    %7D%0A\n- \n     \n@@ -343,16 +343,6 @@\n a)%0A%0A\n-%0A%0A    %7D%0A   \n+%7D\n %0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-16_16-51-39",
+            "content": "@@ -304,23 +304,25 @@\n rint\n-f(%22%25.2f%22media)%0A\n+ln(media)%0A%0A%0A%0A    \n %7D%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-16_16-52-06",
+            "content": "@@ -308,18 +308,16 @@\n f(%22%25.2f%22\n-, \n media)%0A%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-16_16-52-07",
+            "content": "@@ -320,151 +320,8 @@\n dia)\n-%0A%0A    for i := 0; i %3C q; i++ %7B%0A        if soldados%5Bi%5D %3C media %7B%0A              soldados%5Bi%5D = 'P'%0A        %7D%0A    %7D%0A    fmt.Println(soldados)%0A%0A    \n %0A%7D%0A \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-16_17-22-48",
+            "content": "@@ -319,14 +319,8 @@\n edia\n-, %22%5Cn%22\n )%0A%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-16_17-23-06",
+            "content": "@@ -319,26 +319,14 @@\n edia\n-)%0A    fmt.Println(\n+, %22%5Cn%22\n )%0A%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-16_17-23-31",
+            "content": "@@ -316,16 +316,34 @@\n , media)\n+%0A    fmt.Println()\n %0A%0A    fo\n@@ -443,137 +443,8 @@\n    %7D\n- else if soldados%5Bi%5D %3E media %7B%0A            soldados%5Bi%5D = 'M'%0A            %7D else %7B%0A                soldados%5Bi%5D = 'G'%0A            %7D\n %0A   \n@@ -459,16 +459,18 @@\n mt.Print\n+ln\n (soldado\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-16_17-26-11",
+            "content": "@@ -79,31 +79,8 @@\n t64%0A\n-    var P, M, G string%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_17-29-50",
+            "content": "@@ -75,16 +75,39 @@\n float64%0A\n+    var P, M, G string%0A\n     fmt.\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-16_17-31-07",
+            "content": "@@ -319,15 +319,8 @@\n edia\n-, %22%25%5Cn%22\n )%0A%0A \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_17-31-28",
+            "content": "@@ -318,16 +318,17 @@\n media, %22\n+%25\n %5Cn%22)%0A%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_17-31-39",
+            "content": "@@ -307,11 +307,8 @@\n tf(%22\n-%22,%22\n %25.2f\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_17-32-03",
+            "content": "@@ -303,16 +303,19 @@\n Printf(%22\n+%22,%22\n %25.2f%22, m\n@@ -319,16 +319,21 @@\n , media,\n+ %22%5Cn%22\n )%0A%0A    f\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_17-32-13",
+            "content": "@@ -315,16 +315,17 @@\n %22, media\n+,\n )%0A%0A    f\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_17-53-58",
+            "content": "@@ -314,18 +314,13 @@\n f%22, \n-%22\n media\n-,%5Cn%22\n )%0A%0A \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_17-56-56",
+            "content": "@@ -309,21 +309,27 @@\n (%22%25.2f%22,\n+ %22\n media\n+,%5Cn%22\n )%0A%0A    f\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-16_17-57-28",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var q int\n    var soma, media float64\n    fmt.Scan(&q)\n\n    soldados := make([]float64, q)\n    for i := 0; i < q; i++ {\n        fmt.Scan(&soldados[i])\n    }\n    for _, valor := range soldados {\n        soma+= valor\n    }\n     media = soma/float64(q)\n    fmt.Printf(\"%.2f\",media)\n\n    for i := 0; i < q; i++ {\n        if soldados[i] < media {\n              soldados[i] = 'P'\n        } else if soldados[i] > media {\n            soldados[i] = 'M'\n            } else {\n                soldados[i] = 'G'\n            }\n    }\n    fmt.Print(soldados)\n\n    \n}\n   \n",
+            "lines": "31"
+        }
+    ]
+}
