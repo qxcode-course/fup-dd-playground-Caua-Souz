@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_17-16-11",
+            "content": "@@ -41,130 +41,35 @@\n     \n-var c rune%0A    fmt.Scanf(%22%25c%22, &c)%0A%0A    if c %3E= 'a' && c %3E= 'z' %7B%0A        c = c - ('a' - 'A')%0A    %7D%0A    %0A    fmt.Println(c\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-22_17-22-50",
+            "content": "@@ -98,9 +98,9 @@\n & c \n-%3C\n+%3E\n = 'z\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-22_17-23-04",
+            "content": "@@ -42,21 +42,16 @@\n    var c\n-aract\n  rune%0A  \n@@ -70,21 +70,16 @@\n %22%25c%22, &c\n-aract\n )%0A%0A    i\n@@ -77,29 +77,24 @@\n c)%0A%0A    if c\n-aract\n  %3E= 'a' && c\n@@ -89,29 +89,24 @@\n  %3E= 'a' && c\n-aract\n  %3C= 'z' %7B%0A  \n@@ -112,30 +112,20 @@\n        c\n-aract = caract\n+ = c\n  - ('a' \n@@ -135,93 +135,8 @@\n A')%0A\n-    %7D else if caract %3E= 'A' && caract %3C= 'Z' %7B%0A        caract = caract + ('a' + 'A')%0A\n     \n@@ -163,13 +163,8 @@\n ln(c\n-aract\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-22_17-25-39",
+            "content": "@@ -274,18 +274,11 @@\n rint\n-f(%22%25caract\n+ln(\n cara\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-22_17-25-56",
+            "content": "@@ -280,19 +280,16 @@\n %22%25caract\n-%22, \n caract)%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-22_17-25-58",
+            "content": "@@ -70,21 +70,16 @@\n canf(%22%25c\n-aract\n %22, &cara\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-22_17-26-14",
+            "content": "@@ -70,16 +70,21 @@\n canf(%22%25c\n+aract\n %22, &cara\n@@ -280,16 +280,21 @@\n intf(%22%25c\n+aract\n %22, carac\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-22_17-26-22",
+            "content": "@@ -279,10 +279,8 @@\n (%22%25c\n-%5Cn\n %22, c\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-22_17-26-32",
+            "content": "@@ -235,25 +235,25 @@\n ract + ('a' \n--\n++\n  'A')%0A    %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-22_17-27-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var caract rune\n    fmt.Scanf(\"%c\", &caract)\n\n    if caract >= 'a' && caract <= 'z' {\n        caract = caract - ('a' - 'A')\n    } else if caract >= 'A' && caract <= 'Z' {\n        caract = caract + ('a' - 'A')\n    }\n    \n    fmt.Printf(\"%c\\n\", caract)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

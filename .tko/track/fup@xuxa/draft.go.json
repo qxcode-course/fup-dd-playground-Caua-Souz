@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-05-04_17-44-22",
-            "content": "package main\nimport \"fmt\"\n\nfunc inverter(frase string) string {\n    runas := []rune(frase)\n    for i, j := 0, len(runas)-1 ; i < j; i, j = i+1, j-1 {\n        runas[i], runas[j] = runas[j], runas[i]\n    }\n    return string(runas)\n}\n\nfunc main() {\n    var frase rune\n    fmt.Scan(&frase)\n    invertida := inverter\n    fmt.Println(invertida)\n}\n",
+            "content": "@@ -23,121 +23,72 @@\n mt%22%0A\n-import %22bufio%22%0Aimport %22os%22%0A%0A%0A%0Afunc main() %7B%0A   s := bufio.NewScanner(os.Stdin)%0A   s.Scan()%0A    texto := s.Text()%0A\n+%0Afunc inverter(frase string) string %7B%0A    runas := %5B%5Drune(frase)\n %0A   \n@@ -97,69 +97,110 @@\n or i\n+, j\n  := 0\n- ; i %3C len(texto)/2 ; i++ %7B%0A        aux := texto\n+, len(runas)-1 ; i %3C j; i, j = i+1, j-1 %7B%0A        runas%5Bi%5D, runas%5Bj%5D = runas%5Bj%5D, runas\n %5Bi%5D%0A    \n     \n@@ -199,25 +199,143 @@\n     \n+%7D%0A\n     \n-if texto%0A    %7D\n+return string(runas)%0A%7D%0A%0Afunc main() %7B%0A    var frase rune%0A    fmt.Scan(&frase)%0A    invertida := inverter%0A    fmt.Println(invertida)\n %0A%7D%0A\n",
             "lines": "17"
+        },
+        {
+            "label": "2026-06-22_17-01-30",
+            "content": "@@ -10,16 +10,28 @@\n ain%0A\n+import %22fmt%22\n %0Aimport \n (%0A%09%22\n@@ -30,19 +30,16 @@\n ort \n-(%0A%09\n %22bufio%22%0A\n %09%22fm\n@@ -38,23 +38,20 @@\n io%22%0A\n-%09%22fmt%22%0A%09\n+import \n %22os%22%0A\n-)%0A\n %0A%0A%0Af\n@@ -66,24 +66,17 @@\n () %7B%0A   \n- scanner\n+s\n  := bufi\n@@ -101,24 +101,17 @@\n din)%0A   \n- scanner\n+s\n .Scan()%0A\n@@ -118,57 +118,24 @@\n     \n-frase := scanner.Text()%0A    runes := %5B%5Drune(frase\n+texto := s.Text(\n )%0A%0A \n@@ -147,16 +147,17 @@\n r i := 0\n+ \n ; i %3C le\n@@ -162,21 +162,22 @@\n len(\n-runes)-1; i--\n+texto)/2 ; i++\n  %7B%0A \n@@ -187,46 +187,45 @@\n     \n-fmt.Print(string(runes\n+aux := texto\n %5Bi%5D\n-))\n %0A    \n-%7D%0A    %0A\n+    if texto%0A    %7D\n %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-22_17-10-15",
+            "content": "@@ -186,16 +186,23 @@\n for i :=\n+ 0; i %3C\n  len(run\n@@ -211,16 +211,8 @@\n )-1;\n- i %3C= 0;\n  i--\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_17-10-47",
+            "content": "@@ -207,9 +207,9 @@\n ; i \n-%3E\n+%3C\n = 0;\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_17-11-13",
+            "content": "@@ -261,26 +261,8 @@\n   %7D%0A\n-    fmt.Println()%0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_17-11-26",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n    runes := []rune(frase)\n\n    for i := len(runes)-1; i >= 0; i-- {\n        fmt.Print(string(runes[i]))\n    }\n    fmt.Println()\n    \n\n}\n",
+            "lines": "23"
         }
     ]
 }

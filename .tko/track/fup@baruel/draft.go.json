@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_14-26-28",
+            "content": "@@ -23,243 +23,21 @@\n mt%22%0A\n-%0Afunc criarvetor() %5B%5Dint %7B%0A    qtd := 0%0A    fmt.Scan(&qtd)%0A    lista := make(%5B%5Dint, qtd)%0A    for i := range lista %7B%0A        fmt.Scan(&lista%5Bi%5D)%0A    %7D%0A    return lista%0A%7D%0Afunc main() %7B%0A    max := 0%0A    qtdf := 0%0A    fmt.Scan(&max, &qtdf)\n+func main() %7B\n %0A   \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-22_14-32-35",
+            "content": "@@ -223,53 +223,17 @@\n     \n-fmt.Scan(&max)%0A    figurinhas := criarvetor()\n+qtdf := 0\n %0A   \n@@ -241,31 +241,24 @@\n fmt.\n-Printl\n+Sca\n n(\n+&\n max, \n-figurinhas\n+&qtdf\n )%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-22_14-33-52",
+            "content": "@@ -306,68 +306,35 @@\n     \n-album := make(%5B%5Dint, 1)%0A    repetidos := make(%5B%5Dint, 1)%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-22_14-35-23",
+            "content": "@@ -191,181 +191,8 @@\n ta%0A%7D\n-%0A%0Afunc temounao(lista %5B%5Dint, valor int) bool %7B%0A    for _, elemento := range lista %7B%0A        if elemento == valor %7B%0A            return true%0A        %7D%0A    %7D%0A    return false%0A%7D\n %0Afun\n@@ -359,11 +359,15 @@\n nt, 1)%0A%0A\n+    \n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_14-37-55",
+            "content": "@@ -536,219 +536,7 @@\n 1)%0A%0A\n-    for _, elemento := range figurinhas %7B%0A        if !temounao(album, elemento) %7B%0A            album = append(album, elemento)%0A        %7D else %7B%0A            repetidos = append(repetidos, elemento)%0A        %7D%0A    %7D%0A%0A\n %0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-22_14-40-09",
+            "content": "@@ -747,58 +747,8 @@\n   %7D%0A\n-    fmt.Println(album)%0A    fmt.Println(repetidos)%0A\n %0A%0A%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-06-22_14-40-38",
+            "content": "@@ -438,16 +438,49 @@\n vetor()%0A\n+    fmt.Println(max, figurinhas)%0A\n     albu\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-22_14-40-50",
+            "content": "@@ -463,17 +463,17 @@\n (%5B%5Dint, \n-0\n+1\n )%0A    re\n@@ -495,17 +495,17 @@\n (%5B%5Dint, \n-0\n+1\n )%0A%0A    f\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-22_14-41-15",
+            "content": "@@ -714,174 +714,30 @@\n   %7D%0A\n-%0A\n     f\n-alta := make(%5B%5Dint,0)%0A        for i := 1; i %3C= max ; i++ %7B%0A            if !temounao(album, i)%7B%0A                falta = append(falta, i)%0A            %7D%0A%0A        %7D\n+mt.Println(album)\n %0A   \n@@ -764,29 +764,8 @@\n os)%0A\n-    fmt.Println(falta)\n+%0A\n %0A%7D%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-22_14-50-21",
+            "content": "@@ -193,159 +193,8 @@\n %0A%7D%0A%0A\n-func imprimirlista(lista %5B%5Dint) %7B%0A    fmt.Print(%22%5B%22)%0A    for _, elemento := range lista %7B%0A        fmt.Print(elemento, %22 %22)%0A    %7D%0A    fmt.Print(%22%5D%22)%0A%7D%0A%0A\n func\n@@ -881,29 +881,27 @@\n   %7D%0A    \n-imprimirlista\n+fmt.Println\n (repetid\n@@ -912,21 +912,19 @@\n     \n-imprimirlista\n+fmt.Println\n (fal\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-22_14-53-24",
+            "content": "@@ -335,10 +335,8 @@\n rint\n-ln\n (%22%5D%22\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-22_14-53-40",
+            "content": "@@ -239,17 +239,16 @@\n Print(%22%5B\n- \n %22)%0A    f\n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-22_14-53-59",
+            "content": "@@ -62,40 +62,8 @@\n := 0\n- //criar e escaneia a quantidade\n %0A   \n@@ -111,24 +111,8 @@\n qtd)\n- //criar a lista\n %0A   \n@@ -138,124 +138,53 @@\n ta %7B\n- //para cada elemento na lista...%0A        fmt.Scan(&lista%5Bi%5D) //escaneiar a lista%0A    %7D%0A    return lista //retornarr\n+%0A        fmt.Scan(&lista%5Bi%5D)%0A    %7D%0A    return\n  lis\n@@ -428,172 +428,63 @@\n ta %7B\n- //verificar os elementos da lista%0A        if elemento == valor %7B //caso tenha o elemento na lista...%0A            return true //retornar %22true%22 (tem elemento igual)\n+%0A        if elemento == valor %7B%0A            return true\n %0A   \n@@ -516,40 +516,8 @@\n alse\n- //caso contr%C3%A1rio retornar false\n %0A%7D%0Af\n@@ -595,43 +595,8 @@\n or()\n- //criar o vetor com base na fun%C3%A7%C3%A3o\n %0A   \n@@ -738,46 +738,8 @@\n o) %7B\n- //se n%C3%A3o tiver o elemento no album...\n %0A   \n@@ -782,63 +782,25 @@\n nto)\n- //colocar no album%0A        %7D else %7B //caso j%C3%A1 tenha...\n+%0A        %7D else %7B\n %0A   \n@@ -851,32 +851,8 @@\n nto)\n- //colocar nas repetidas\n %0A   \n@@ -968,70 +968,8 @@\n  i)%7B\n- //se n%C3%A3o tiver o elemento no album se baseando no contador...\n %0A   \n@@ -1009,39 +1009,8 @@\n , i)\n- //colocar na lista o que falta\n %0A   \n",
+            "lines": "54"
+        },
+        {
+            "label": "2026-06-22_15-03-04",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarvetor() []int {\n    qtd := 0 //criar e escaneia a quantidade\n    fmt.Scan(&qtd)\n    lista := make([]int, qtd) //criar a lista\n    for i := range lista { //para cada elemento na lista...\n        fmt.Scan(&lista[i]) //escaneiar a lista\n    }\n    return lista //retornarr lista\n}\n\nfunc imprimirlista(lista []int) {\n    fmt.Print(\"[ \")\n    for _, elemento := range lista {\n        fmt.Print(elemento, \" \")\n    }\n    fmt.Println(\"]\")\n}\n\nfunc temounao(lista []int, valor int) bool {\n    for _, elemento := range lista { //verificar os elementos da lista\n        if elemento == valor { //caso tenha o elemento na lista...\n            return true //retornar \"true\" (tem elemento igual)\n        }\n    }\n    return false //caso contr\u00e1rio retornar false\n}\nfunc main() {\n    max := 0\n    fmt.Scan(&max)\n    figurinhas := criarvetor() //criar o vetor com base na fun\u00e7\u00e3o\n    album := make([]int, 0)\n    repetidos := make([]int, 0)\n\n    for _, elemento := range figurinhas {\n        if !temounao(album, elemento) { //se n\u00e3o tiver o elemento no album...\n            album = append(album, elemento) //colocar no album\n        } else { //caso j\u00e1 tenha...\n            repetidos = append(repetidos, elemento) //colocar nas repetidas\n        }\n    }\n\n    falta := make([]int,0)\n        for i := 1; i <= max ; i++ {\n            if !temounao(album, i){ //se n\u00e3o tiver o elemento no album se baseando no contador...\n                falta = append(falta, i) //colocar na lista o que falta\n            }\n\n        }\n    imprimirlista(repetidos)\n    imprimirlista(falta)\n}\n",
+            "lines": "54"
+        }
+    ]
+}

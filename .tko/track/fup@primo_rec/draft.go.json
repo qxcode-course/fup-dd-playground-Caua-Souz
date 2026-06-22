@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_17-44-00",
+            "content": "@@ -23,237 +23,21 @@\n mt%22%0A\n-%0Afunc primo(n int) bool %7B%0A    if n %3C= 1 %7B%0A        return false%0A    %7D%0A    for i := 2; i*i %3C= n; i++ %7B%0A        if n%25i == 0 %7B%0A            return false%0A        %7D%0A    %7D%0A    return true%0A%7D %0Afunc main() %7B%0A    var n int%0A    fmt.Scan(&n)%0A%0A\n+func main() %7B\n %0A   \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-22_17-49-34",
+            "content": "@@ -238,84 +238,54 @@\n     \n-if primo(n)%7B%0A        fmt.Println(1)%0A    %7D else %7B%0A        fmt.Println(0)%0A    %7D\n+fmt.Scan(&n)%0A%0A%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-22_17-50-23",
+            "content": "@@ -181,87 +181,8 @@\n   %7D%0A\n-        if n == 1 %7C%7C n == 2 %7C%7C n == 3 %7B%0A            return true%0A        %7D%0A    %0A\n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-22_17-52-07",
+            "content": "@@ -173,24 +173,98 @@\n e%0A        %7D%0A\n+        if n == 1 %7C%7C n == 2 %7C%7C n == 3 %7B%0A            return true%0A        %7D%0A\n     %0A    %7D%0A \n@@ -313,25 +313,8 @@\n int%0A\n-    fmt.Scan(&n)%0A\n     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-22_17-53-11",
+            "content": "package main\nimport \"fmt\"\n\nfunc primo(n int) bool {\n    if n <= 1 {\n        return false\n    }\n    for i := 2; i*i <= n; i++ {\n        if n%i == 0 {\n            return false\n        }\n    \n    }\n    return true\n} \nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    if primo(n){\n        fmt.Println(1)\n    } else {\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}

@@ -1,17 +1,20 @@
 package main
-import "fmt"
-import "bufio"
-import "os"
 
-
-
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 func main() {
-   s := bufio.NewScanner(os.Stdin)
-   s.Scan()
-    texto := s.Text()
+    scanner := bufio.NewScanner(os.Stdin) //definimos a variável scanner como o novo scanner
+    scanner.Scan() //ele escaneia o texto dentro do buffer 
+    frase := scanner.Text() //guarda a linha lida dentro da variável frase
+    runes := []rune(frase) //converte a frase para um vetor de runa
 
-    for i := 0 ; i < len(texto)/2 ; i++ {
-        aux := texto[i]
-        if texto
+    for i := len(runes)-1; i >= 0; i-- { //aqui é um for decresente, pois precisamos ordenar a palavra
+        fmt.Print(string(runes[i])) //convertemos as runas para string e imprimimos
     }
+    fmt.Println()
+    
+
 }

@@ -107,8 +107,108 @@
         },
         {
             "label": "2026-06-16_17-57-28",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var q int\n    var soma, media float64\n    fmt.Scan(&q)\n\n    soldados := make([]float64, q)\n    for i := 0; i < q; i++ {\n        fmt.Scan(&soldados[i])\n    }\n    for _, valor := range soldados {\n        soma+= valor\n    }\n     media = soma/float64(q)\n    fmt.Printf(\"%.2f\",media)\n\n    for i := 0; i < q; i++ {\n        if soldados[i] < media {\n              soldados[i] = 'P'\n        } else if soldados[i] > media {\n            soldados[i] = 'M'\n            } else {\n                soldados[i] = 'G'\n            }\n    }\n    fmt.Print(soldados)\n\n    \n}\n   \n",
+            "content": "@@ -470,33 +470,33 @@\n  soldados%5Bi%5D = '\n-G\n+M\n '%0A            %7D \n",
             "lines": "31"
+        },
+        {
+            "label": "2026-06-22_15-19-57",
+            "content": "@@ -132,47 +132,8 @@\n  q)%0A\n-    classificacao := make(%5B%5Dstring, q)%0A\n     \n@@ -389,37 +389,32 @@\n             \n-classificacao\n+soldados\n %5Bi%5D = 'P'%0A  \n@@ -459,37 +459,32 @@\n             \n-classificacao\n+soldados\n %5Bi%5D = 'G'%0A  \n@@ -518,29 +518,24 @@\n         \n-classificacao\n+soldados\n %5Bi%5D = 'G\n@@ -583,39 +583,8 @@\n dos)\n-%0A    fmt.Println(classificacao)\n %0A%0A  \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-22_15-24-37",
+            "content": "@@ -455,11 +455,11 @@\n %5D = \n-%22P%22\n+'P'\n %0A   \n@@ -530,11 +530,11 @@\n %5D = \n-%22M%22\n+'G'\n %0A   \n@@ -590,11 +590,11 @@\n %5D = \n-%22G%22\n+'G'\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-22_15-25-05",
+            "content": "@@ -531,9 +531,9 @@\n  = %22\n-G\n+M\n %22%0A  \n@@ -579,33 +579,33 @@\n sificacao%5Bi%5D = %22\n-M\n+G\n %22%0A            %7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-22_15-25-23",
+            "content": "@@ -606,24 +606,48 @@\n     %7D%0A    %7D%0A\n+    fmt.Print(soldados)%0A\n     fmt.Prin\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-22_15-25-35",
+            "content": "@@ -623,16 +623,18 @@\n mt.Print\n+ln\n (classif\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-22_15-25-53",
+            "content": "@@ -610,21 +610,16 @@\n %7D%0A    %7D%0A\n-    %0A\n     fmt.\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-22_15-26-59",
+            "content": "@@ -23,166 +23,8 @@\n mt%22%0A\n-%0Afunc imprimirlista(lista %5B%5Dstring) %7B%0A    fmt.Print(%22%5B %22)%0A    for _, elemento := range lista %7B%0A        fmt.Print(elemento, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D%22)%0A%7D%0A%0A\n func\n@@ -614,26 +614,26 @@\n   %7D%0A\n+    \n %0A    \n-imprimirlista\n+fmt.Print\n (cla\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-22_15-27-47",
+            "content": "@@ -20,16 +20,173 @@\n  %22fmt%22%0A%0A\n+func imprimirlista(lista %5B%5Dstring) %7B%0A    fmt.Print(%22%5B %22)%0A    for _, elemento := range lista %7B%0A        fmt.Print(elemento, %22 %22)%0A    %7D%0A    fmt.Println(%22%5D%22)%0A%7D%0A%0A\n func mai\n@@ -773,25 +773,29 @@\n  %7D%0A%0A    \n-fmt.Print\n+imprimirlista\n (classif\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-06-22_15-28-41",
+            "content": "@@ -616,41 +616,8 @@\n  %7D%0A%0A\n-    for i := 0; i %3C q; i++ %7B%0A    \n     \n@@ -629,10 +629,8 @@\n rint\n-ln\n (cla\n@@ -639,26 +639,17 @@\n ificacao\n-%5Bi%5D)%0A    %7D\n+)\n %0A%0A    %0A%7D\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-22_15-29-45",
+            "content": "@@ -351,10 +351,8 @@\n %25.2f\n-%5Cn\n %22,me\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-22_15-30-14",
+            "content": "@@ -660,16 +660,18 @@\n mt.Print\n+ln\n (classif\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-22_15-30-27",
+            "content": "@@ -681,13 +681,8 @@\n o%5Bi%5D\n-,%22%5Cn%22\n )%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-22_15-30-50",
+            "content": "@@ -679,17 +679,18 @@\n cao%5Bi%5D,%22\n- \n+%5Cn\n %22)%0A    %7D\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-22_15-31-04",
+            "content": "@@ -678,33 +678,22 @@\n acao\n+%5Bi%5D,%22 %22\n )%0A    %7D\n-%0A    fmt.Println()\n %0A%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-22_15-32-27",
+            "content": "@@ -674,19 +674,16 @@\n ificacao\n-%5Bi%5D\n )%0A    %7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-22_15-32-46",
+            "content": "@@ -681,13 +681,8 @@\n o%5Bi%5D\n-, %22 %22\n )%0A  \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-22_15-32-55",
+            "content": "@@ -678,16 +678,17 @@\n acao%5Bi%5D,\n+ \n %22 %22)%0A   \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-22_15-33-02",
+            "content": "@@ -677,16 +677,20 @@\n cacao%5Bi%5D\n+,%22 %22\n )%0A    %7D%0A\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-22_15-33-29",
+            "content": "@@ -683,66 +683,8 @@\n i%5D)%0A\n-        if i %3C q-1 %7B%0A            fmt.Print(%22 %22)%0A        %7D%0A\n     \n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-06-22_15-34-28",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var q int\n    var soma, media float64\n    fmt.Scan(&q)\n\n    soldados := make([]float64, q)\n    classificacao := make([]string, q)\n    for i := 0; i < q; i++ {\n        fmt.Scan(&soldados[i])\n    }\n    for _, valor := range soldados {\n        soma+= valor\n    }\n     media = soma/float64(q)\n    fmt.Printf(\"%.2f\\n\",media)\n\n    for i := 0; i < q; i++ {\n        if soldados[i] < media {\n              classificacao[i] = \"P\"\n        } else if soldados[i] > media {\n            classificacao[i] = \"G\"\n            } else {\n                classificacao[i] = \"M\"\n            }\n    }\n\n    for i := 0; i < q; i++ {\n        fmt.Print(classificacao[i])\n        if i < q-1 {\n            fmt.Print(\" \")\n        }\n    }\n    fmt.Println()\n\n    \n}\n   \n",
+            "lines": "40"
         }
     ]
 }

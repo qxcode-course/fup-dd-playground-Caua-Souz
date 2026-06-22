@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-22_15-40-34",
+            "content": "@@ -37,520 +37,8 @@\n ) %7B%0A\n-    var n int%0A    fmt.Scan(&n)%0A%0A    animais := make(%5B%5Dint, n)%0A    for i := 0; i %3C n; i++ %7B%0A        fmt.Scan(&animais%5Bi%5D)%0A    %7D %0A    casais := 0 %0A    contem := make(%5B%5Dbool, n)%0A%0A    for i := 0; i %3C n; i++ %7B%0A        if contem%5Bi%5D %7B%0A            continue%0A        %7D%0A    for i2 := i + 1; i2 %3C n; i2++ %7B%0A        if contem%5Bi2%5D %7B%0A            continue%0A        %7D%0A        if animais%5Bi%5D == -animais%5Bi2%5D %7B%0A            casais++%0A            contem%5Bi%5D = true%0A            contem%5Bi2%5D = true%0A            break%0A        %7D%0A    %7D%0A%0A    %7D%0A%0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-22_15-55-30",
+            "content": "@@ -561,18 +561,27 @@\n Println(\n-casais\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-22_15-55-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    animais := make([]int, n)\n    for i := 0; i < n; i++ {\n        fmt.Scan(&animais[i])\n    } \n    casais := 0 \n    contem := make([]bool, n)\n\n    for i := 0; i < n; i++ {\n        if contem[i] {\n            continue\n        }\n    for i2 := i + 1; i2 < n; i2++ {\n        if contem[i2] {\n            continue\n        }\n        if animais[i] == -animais[i2] {\n            casais++\n            contem[i] = true\n            contem[i2] = true\n            break\n        }\n    }\n\n    }\n\n    fmt.Println(casais)\n}\n",
+            "lines": "33"
+        }
+    ]
+}
