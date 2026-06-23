@@ -667,8 +667,13 @@
         },
         {
             "label": "2026-05-12_16-20-27",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar prof, salto, escorrg, i2, i3 int\n\tfmt.Scan(&prof)\n\tfmt.Scan(&salto)\n\tfmt.Scan(&escorrg)\n\n\ti3 = 0\n\n\tfor i := 0; i <= prof; {\n\t\ti2 = salto + i3\n\t\tif i2 >= prof {\n\t\t\tfmt.Printf(\"%d saiu\\n\", i3)\n\t\t\tbreak\n\t\t}\n\t\tif i2 < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", i2)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"%d %d\\n\", i3, i2)\n\n\t\ti3 = i2 - escorrg\n\n\t\tif i3 < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", i3)\n\t\t\tbreak\n\t\t}\n\n\t\ti = i3\n\t\tsalto = salto - 10\n\t}\n}\n",
+            "content": "@@ -44,21 +44,41 @@\n var \n-P, S, E\n+prof, salto, escorrg, i2, i3\n  int%0A\n-%0A\n %09fmt\n@@ -84,17 +84,20 @@\n t.Scan(&\n-P\n+prof\n )%0A%09fmt.S\n@@ -101,17 +101,21 @@\n t.Scan(&\n-S\n+salto\n )%0A%09fmt.S\n@@ -123,112 +123,178 @@\n an(&\n-E)%0A%0A%09pos := 0%0A%09salto := S%0A%0A%09for %7B%0A%09%09topo := pos + salto%0A%0A%09%09if topo %3E= P %7B%0A%09%09%09fmt.Printf(%22%25d saiu%5Cn%22, pos\n+escorrg)%0A%0A%09i3 = 0%0A%0A%09for i := 0; i %3C= prof; %7B%0A%09%09i2 = salto + i3%0A%09%09if i2 %3E= prof %7B%0A%09%09%09fmt.Printf(%22%25d saiu%5Cn%22, i3)%0A%09%09%09break%0A%09%09%7D%0A%09%09if i2 %3C 0 %7B%0A%09%09%09fmt.Printf(%22%25d morreu%5Cn%22, i2\n )%0A%09%09\n@@ -333,46 +333,45 @@\n n%22, \n-pos, topo)%0A%0A%09%09pos = topo - E\n+i3, i2)%0A%0A%09%09i3 = i2 - escorrg\n %0A%0A%09%09if \n-pos\n+i3\n  %3C 0\n@@ -406,11 +406,10 @@\n n%22, \n-pos\n+i3\n )%0A%09%09\n@@ -426,16 +426,32 @@\n %0A%0A%09%09\n+i = i3%0A%09%09salto = \n salto -\n-=\n  10%0A\n",
             "lines": "36"
+        },
+        {
+            "label": "2026-06-23_17-06-14",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar P, S, E int\n\n\tfmt.Scan(&P)\n\tfmt.Scan(&S)\n\tfmt.Scan(&E)\n\n\tpos := 0\n\tsalto := S\n\n\tfor {\n\t\ttopo := pos + salto\n\n\t\tif topo >= P {\n\t\t\tfmt.Printf(\"%d saiu\\n\", pos)\n\t\t\tbreak\n\t\t}\n\n\t\tfmt.Printf(\"%d %d\\n\", pos, topo)\n\n\t\tpos = topo - E\n\n\t\tif pos < 0 {\n\t\t\tfmt.Printf(\"%d morreu\\n\", pos)\n\t\t\tbreak\n\t\t}\n\n\t\tsalto -= 10\n\t}\n}\n",
+            "lines": "34"
         }
     ]
 }

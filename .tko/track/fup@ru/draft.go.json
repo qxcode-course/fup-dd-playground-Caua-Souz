@@ -1,0 +1,139 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-23_14-52-27",
+            "content": "@@ -31,72 +31,175 @@\n rt %22\n-strings%22%0Afunc main() %7B%0A    var frase string%0A    fmt.Scan(&frase)\n+bufio%22%0Aimport %22os%22%0Aimport %22strings%22%0Aimport %22unicode%22%0Afunc main() %7B%0A    scanner := bufio.NewScanner(strings.NewReader())%0A    scanner.Scan()%0A    frase := scanner.Text()%0A\n %0A   \n@@ -215,18 +215,23 @@\n tln(\n-frase)%0A    \n+%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-23_15-35-46",
+            "content": "@@ -19,16 +19,33 @@\n t %22fmt%22%0A\n+import %22strings%22%0A\n func mai\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-23_15-35-48",
+            "content": "@@ -23,237 +23,86 @@\n mt%22%0A\n-import %22bufio%22%0Aimport %22os%22%0Afunc main() %7B%0A   scanner := bufio.NewScanner(os.Stdin)\n+func main() %7B%0A    var frase string\n %0A   \n-scanner.Scan()%0A   frase := scanner.Text()%0A   runes := %5B%5Drune(frase)%0A%0A   for i := 0; i %3C= len(runes); i++ %7B%0A    fmt.Print(string(runes%5Bi%5D))%0A%0A   %7D\n+ fmt.Scan(&frase)%0A    fmt.Println(frase)\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-23_15-40-11",
+            "content": "@@ -207,10 +207,8 @@\n nes)\n--1\n ; i+\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-23_15-40-19",
+            "content": "@@ -221,20 +221,21 @@\n     fmt.\n-Scan\n+Print\n (string(\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-23_15-40-59",
+            "content": "@@ -247,29 +247,8 @@\n i%5D))\n-%0A    fmt.Print(frase)\n %0A%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-23_15-41-18",
+            "content": "@@ -258,21 +258,21 @@\n t.Print(\n-runes\n+frase\n )%0A%0A   %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-23_15-41-28",
+            "content": "@@ -248,14 +248,9 @@\n %5D))%0A\n-%0A   %7D%0A\n+ \n    f\n@@ -258,22 +258,28 @@\n t.Print(\n-frase)\n+runes)%0A%0A   %7D\n %0A    %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-23_15-41-41",
+            "content": "@@ -253,13 +253,32 @@\n    %7D%0A   \n-%0A\n+fmt.Print(frase)%0A   \n  %0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-23_15-42-35",
+            "content": "@@ -254,23 +254,8 @@\n   %7D%0A\n-   fmt.Print()%0A\n    %0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-23_15-44-54",
+            "content": "@@ -10,50 +10,47 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22cmp%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0A\n+%22fmt%22%0Aimport %22bufio%22%0Aimport %22os%22\n %0Afun\n@@ -257,320 +257,24 @@\n %0A   \n-vogais := make(%5B%5Dstring, '0')%0A   consoantes := make(%5B%5Dstring, '0')%0A   %0A   for c := 0; c %3C= len(runes)-1; c++ %7B%0A    if frase%5Bc%5D == 'a' %7C%7C frase%5Bc%5D == 'e' %7C%7C frase%5Bc%5D == 'i' %7C%7C frase%5Bc%5D == 'o' %7C%7C frase%5Bc%5D == 'u' %7B%0A        vogais = append(vogais, frase)%0A     %7D%0A   %7D%0A   fmt.Print(vogais)%0A   fmt.Print(consoantes)%0A   \n+fmt.Print()%0A   %0A\n  %0A%7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-23_15-54-21",
+            "content": "@@ -25,16 +25,23 @@\n %22bufio%22%0A\n+%09%22cmp%22%0A\n %09%22fmt%22%0A%09\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-23_15-54-29",
+            "content": "@@ -504,39 +504,8 @@\n se)%0A\n-     %7D else %7B%0A        continue%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-23_15-54-46",
+            "content": "@@ -270,25 +270,27 @@\n e(%5B%5Dstring, \n-0\n+'0'\n )%0A   consoan\n@@ -311,17 +311,19 @@\n string, \n-0\n+'0'\n )%0A   %0A  \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_15-55-21",
+            "content": "@@ -176,101 +176,374 @@\n %0A   \n-%0A   vogais := make(%5B%5Dstring, 0)%0A   consoantes := make(%5B%5Dstring, 0)%0A   %0A  %0A   fmt.Print(frase)\n+for i := 0; i %3C= len(runes)-1; i++ %7B%0A    fmt.Scan(string(runes%5Bi%5D))%0A%0A   %7D%0A   vogais := make(%5B%5Dstring, 0)%0A   consoantes := make(%5B%5Dstring, 0)%0A   %0A   for c := 0; c %3C= len(runes)-1; c++ %7B%0A    if frase%5Bc%5D == 'a' %7C%7C frase%5Bc%5D == 'e' %7C%7C frase%5Bc%5D == 'i' %7C%7C frase%5Bc%5D == 'o' %7C%7C frase%5Bc%5D == 'u' %7B%0A        vogais = append(vogais, frase)%0A     %7D else %7B%0A        continue%0A     %7D%0A   %7D\n %0A   \n",
+            "lines": "33"
+        },
+        {
+            "label": "2026-06-23_15-58-37",
+            "content": "@@ -141,16 +141,42 @@\n r.Text()\n+%0A   runes := %5B%5Drune(frase)\n %0A%0A   %0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-23_15-58-41",
+            "content": "@@ -0,0 +1,300 @@\n+package main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0A%0Afunc main() %7B%0A   scanner := bufio.NewScanner(os.Stdin)%0A   scanner.Scan()%0A   frase := scanner.Text()%0A%0A   %0A   vogais := make(%5B%5Dstring, 0)%0A   consoantes := make(%5B%5Dstring, 0)%0A   %0A  %0A   fmt.Print(frase)%0A   fmt.Print(vogais)%0A   fmt.Print(consoantes)%0A    %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-23_15-59-06",
+            "content": "@@ -1,493 +0,0 @@\n-package main%0A%0Aimport (%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0A%0Afunc main() %7B%0A   scanner := bufio.NewScanner(os.Stdin)%0A   scanner.Scan()%0A   frase := scanner.Text()%0A%0A   %0A   vogais := make(%5B%5Drune, 0)%0A   consoantes := make(%5B%5Drune, 0)%0A   %0A    for _, letra := range frase %7B%0A        switch letra %7B%0A        case 'a', 'e', 'i', 'o', 'u':%0A            vogais = append(vogais, letra)%0A        default:%0A            consoantes = append(consoantes, letra)%0A        %7D%0A%0A    %7D%0A    fmt.Print(vogais)%0A    fmt.Print(consoantes)%0A%7D%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2026-06-23_16-02-40",
+            "content": "@@ -454,23 +454,15 @@\n int(\n-string(\n vogais)\n-)\n %0A   \n@@ -476,15 +476,8 @@\n int(\n-string(\n cons\n@@ -483,12 +483,11 @@\n soantes)\n-)\n %0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_16-03-23",
+            "content": "@@ -470,26 +470,8 @@\n s))%0A\n-    fmt.Println()%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_16-03-35",
+            "content": "@@ -441,34 +441,32 @@\n  %7D%0A    fmt.Print\n-ln\n (string(vogais))\n@@ -482,16 +482,32 @@\n Println(\n+)%0A    fmt.Print(\n string(c\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-23_16-04-09",
+            "content": "@@ -372,86 +372,8 @@\n lt:%0A\n-            if letra %3E= 'a' && letra %3C= 'z' %7C%7C letra %3E= 'A' && letra %3C= 'Z' %7B%0A\n     \n@@ -506,10 +506,8 @@\n tes))%0A%7D%0A\n-%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_16-06-27",
+            "content": "@@ -519,32 +519,34 @@\n  %7D%0A    fmt.Print\n+ln\n (string(vogais))\n@@ -559,16 +559,18 @@\n mt.Print\n+ln\n (string(\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-23_16-06-43",
+            "content": "@@ -368,16 +368,94 @@\n efault:%0A\n+            if letra %3E= 'a' && letra %3C= 'z' %7C%7C letra %3E= 'A' && letra %3C= 'Z' %7B%0A\n         \n@@ -496,16 +496,26 @@\n , letra)\n+%0A        %7D\n %0A%0A    %7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-23_16-07-34",
+            "content": "@@ -422,18 +422,8 @@\n tra)\n-%0A        %7D\n %0A%0A  \n@@ -431,34 +431,32 @@\n  %7D%0A    fmt.Print\n-ln\n (string(vogais))\n@@ -473,10 +473,8 @@\n rint\n-ln\n (str\n@@ -492,8 +492,10 @@\n tes))%0A%7D%0A\n+%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_16-08-10",
+            "content": "@@ -355,40 +355,8 @@\n ra)%0A\n-        case ' ' :%0A            %0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-23_16-09-34",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n\nfunc main() {\n   scanner := bufio.NewScanner(os.Stdin)\n   scanner.Scan()\n   frase := scanner.Text()\n\n   \n   vogais := make([]rune, 0)\n   consoantes := make([]rune, 0)\n   \n    for _, letra := range frase {\n        switch letra {\n        case 'a', 'e', 'i', 'o', 'u':\n            vogais = append(vogais, letra)\n        case ' ' :\n            \n        default:\n            consoantes = append(consoantes, letra)\n        }\n\n    }\n    fmt.Println(string(vogais))\n    fmt.Println(string(consoantes))\n}\n",
+            "lines": "32"
+        }
+    ]
+}

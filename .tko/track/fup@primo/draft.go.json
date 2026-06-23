@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-05-05_16-30-20",
-            "content": "\npackage main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -1,8 +1,9 @@\n+%0A\n package \n@@ -24,504 +24,53 @@\n mt%22%0A\n-%0Afunc primo(n int) bool %7B%0A    if n %3C= 1 %7B %0A        return false //retornar falso se for igual ou menor que um%0A    %7D%0A    for i := 2; i*i %3C= n; i++ %7B //o i := 2 significa que o c%C3%B3digo vai procurar de 2 em 2 at%C3%A9 aparecer a ra%C3%ADz de n%0A        if n%25i == 0 %7B //no caso, se acharmos um divisor...%0A            return false //retornar falso%0A        %7D%0A    %0A    %7D%0A    return true%0A%7D %0Afunc main() %7B%0A    var n int%0A    fmt.Scan(&n)%0A    if primo(n)%7B%0A        fmt.Println(1)%0A    %7D else %7B%0A        fmt.Println(0)%0A    %7D\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "6"
+        },
+        {
+            "label": "2026-06-23_17-07-37",
+            "content": "package main\nimport \"fmt\"\n\nfunc primo(n int) bool {\n    if n <= 1 { \n        return false //retornar falso se for igual ou menor que um\n    }\n    for i := 2; i*i <= n; i++ { //o i := 2 significa que o c\u00f3digo vai procurar de 2 em 2 at\u00e9 aparecer a ra\u00edz de n\n        if n%i == 0 { //no caso, se acharmos um divisor...\n            return false //retornar falso\n        }\n    \n    }\n    return true\n} \nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    if primo(n){\n        fmt.Println(1)\n    } else {\n        fmt.Println(0)\n    }\n}\n",
+            "lines": "24"
         }
     ]
 }

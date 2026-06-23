@@ -22,7 +22,12 @@
         },
         {
             "label": "2026-06-22_17-53-11",
-            "content": "package main\nimport \"fmt\"\n\nfunc primo(n int) bool {\n    if n <= 1 {\n        return false\n    }\n    for i := 2; i*i <= n; i++ {\n        if n%i == 0 {\n            return false\n        }\n    \n    }\n    return true\n} \nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    if primo(n){\n        fmt.Println(1)\n    } else {\n        fmt.Println(0)\n    }\n}\n",
+            "content": "@@ -60,17 +60,16 @@\n n %3C= 1 %7B\n- \n %0A       \n@@ -85,233 +85,68 @@\n alse\n- //retornar falso se for igual ou menor que um%0A    %7D%0A    for i := 2; i*i %3C= n; i++ %7B //o i := 2 significa que o c%C3%B3digo vai procurar de 2 em 2 at%C3%A9 aparecer a ra%C3%ADz de n%0A        if n%25i == 0 %7B //no caso, se acharmos um divisor...\n+%0A    %7D%0A    for i := 2; i*i %3C= n; i++ %7B%0A        if n%25i == 0 %7B\n %0A   \n@@ -170,25 +170,8 @@\n alse\n- //retornar falso\n %0A   \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-23_17-07-03",
+            "content": "package main\nimport \"fmt\"\n\nfunc primo(n int) bool {\n    if n <= 1 { \n        return false //retornar falso se for igual ou menor que um\n    }\n    for i := 2; i*i <= n; i++ { //o i := 2 significa que o c\u00f3digo vai procurar de 2 em 2 at\u00e9 aparecer a ra\u00edz de n\n        if n%i == 0 { //no caso, se acharmos um divisor...\n            return false //retornar falso\n        }\n    \n    }\n    return true\n} \nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    if primo(n){\n        fmt.Println(1)\n    } else {\n        fmt.Println(0)\n    }\n}\n",
             "lines": "24"
         }
     ]

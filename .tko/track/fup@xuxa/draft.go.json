@@ -27,8 +27,13 @@
         },
         {
             "label": "2026-06-22_17-11-26",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n    runes := []rune(frase)\n\n    for i := len(runes)-1; i >= 0; i-- {\n        fmt.Print(string(runes[i]))\n    }\n    fmt.Println()\n    \n\n}\n",
+            "content": "@@ -40,16 +40,19 @@\n %09%22os%22%0A)%0A\n+%0A%0A%0A\n func mai\n@@ -102,450 +102,160 @@\n din)\n- //definimos a vari%C3%A1vel scanner como o novo scanner%0A    scanner.Scan() //ele escaneia o texto dentro do buffer %0A    frase := scanner.Text() //guarda a linha lida dentro da vari%C3%A1vel frase%0A    runes := %5B%5Drune(frase) //converte a frase para um vetor de runa%0A%0A    for i := len(runes)-1; i %3E= 0; i-- %7B //aqui %C3%A9 um for decresente, pois precisamos ordenar a palavra%0A        fmt.Print(string(runes%5Bi%5D)) //convertemos as runas para string e imprimimos\n+%0A    scanner.Scan()%0A    frase := scanner.Text()%0A    runes := %5B%5Drune(frase)%0A%0A    for i := len(runes)-1; i %3E= 0; i-- %7B%0A        fmt.Print(string(runes%5Bi%5D))\n %0A   \n",
             "lines": "23"
+        },
+        {
+            "label": "2026-06-23_15-36-13",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin) //definimos a vari\u00e1vel scanner como o novo scanner\n    scanner.Scan() //ele escaneia o texto dentro do buffer \n    frase := scanner.Text() //guarda a linha lida dentro da vari\u00e1vel frase\n    runes := []rune(frase) //converte a frase para um vetor de runa\n\n    for i := len(runes)-1; i >= 0; i-- { //aqui \u00e9 um for decresente, pois precisamos ordenar a palavra\n        fmt.Print(string(runes[i])) //convertemos as runas para string e imprimimos\n    }\n    fmt.Println()\n    \n\n}\n",
+            "lines": "20"
         }
     ]
 }

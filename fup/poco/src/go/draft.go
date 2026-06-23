@@ -3,34 +3,32 @@ package main
 import "fmt"
 
 func main() {
-	var prof, salto, escorrg, i2, i3 int
-	fmt.Scan(&prof)
-	fmt.Scan(&salto)
-	fmt.Scan(&escorrg)
+	var P, S, E int
 
-	i3 = 0
+	fmt.Scan(&P)
+	fmt.Scan(&S)
+	fmt.Scan(&E)
 
-	for i := 0; i <= prof; {
-		i2 = salto + i3
-		if i2 >= prof {
-			fmt.Printf("%d saiu\n", i3)
-			break
-		}
-		if i2 < 0 {
-			fmt.Printf("%d morreu\n", i2)
-			break
-		}
+	pos := 0
+	salto := S
 
-		fmt.Printf("%d %d\n", i3, i2)
+	for {
+		topo := pos + salto
 
-		i3 = i2 - escorrg
-
-		if i3 < 0 {
-			fmt.Printf("%d morreu\n", i3)
+		if topo >= P {
+			fmt.Printf("%d saiu\n", pos)
 			break
 		}
 
-		i = i3
-		salto = salto - 10
+		fmt.Printf("%d %d\n", pos, topo)
+
+		pos = topo - E
+
+		if pos < 0 {
+			fmt.Printf("%d morreu\n", pos)
+			break
+		}
+
+		salto -= 10
 	}
 }
