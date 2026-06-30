@@ -7,7 +7,7 @@ func main() {
     scanner := bufio.NewScanner(os.Stdin)
     scanner.Scan()
     frase := scanner.Text()
-    junto := strings.Fields(frase, string) []string
+    junto := strings.Join(frase, )
 
     fmt.Println(junto)
 }

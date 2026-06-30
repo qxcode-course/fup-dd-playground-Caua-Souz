@@ -57,8 +57,123 @@
         },
         {
             "label": "2026-06-23_16-46-27",
-            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    palavra := scanner.Text() \n    var ind, qtd int\n    fmt.Scan(&ind)\n    fmt.Scan(&qtd) \n\n    if ind <= 0 || qtd <= 0 || ind >= len(palavra) {\n        fmt.Print(\"\")\n        return\n    }\n\n    substr := \"\"\n    for i := ind ; i < len(palavra) && i < ind+qtd; i++ {\n        substr += string(palavra[i])\n    }\n    fmt.Print(substr)\n\n}\n",
+            "content": "@@ -219,16 +219,17 @@\n if ind %3C\n+=\n  0 %7C%7C qt\n@@ -231,16 +231,17 @@\n %7C%7C qtd %3C\n+=\n  0 %7C%7C in\n@@ -307,27 +307,43 @@\n   %7D%0A\n+%0A\n     \n+substr := %22%22%0A\n     f\n+or \n i\n-m\n  := ind \n + qt\n@@ -342,120 +342,113 @@\n ind \n-+ qtd%0A        if fim %3E len(palavra)%7B%0A            fim = len(palavra)%0A        %7D%0A        fmt.Print(palavra%5Bind:fim%5D)\n+; i %3C len(palavra) && i %3C ind+qtd; i++ %7B%0A        substr += string(palavra%5Bi%5D)%0A    %7D%0A    fmt.Print(substr)%0A\n %0A%7D%0A\n",
             "lines": "27"
+        },
+        {
+            "label": "2026-06-30_11-56-44",
+            "content": "@@ -230,17 +230,16 @@\n %7C%7C qtd %3C\n-=\n  0 %7C%7C in\n@@ -254,24 +254,24 @@\n (palavra) %7B%0A\n+\n         fmt.\n@@ -305,43 +305,27 @@\n   %7D%0A\n-%0A\n     \n-substr := %22%22%0A\n     f\n-or \n i\n+m\n  := ind \n ; i \n@@ -324,113 +324,120 @@\n ind \n-; i %3C len(palavra) && i %3C ind+qtd; i++ %7B%0A        substr += string(palavra%5Bi%5D)%0A    %7D%0A    fmt.Print(substr)%0A\n++ qtd%0A        if fim %3E len(palavra)%7B%0A            fim = len(palavra)%0A        %7D%0A        fmt.Print(palavra%5Bind:fim%5D)\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_11-58-05",
+            "content": "@@ -40,17 +40,16 @@\n %09%22os%22%0A)%0A\n-%0A\n func mai\n@@ -54,17 +54,20 @@\n ain() %7B%0A\n-%09\n+    \n scanner \n@@ -96,17 +96,20 @@\n .Stdin)%0A\n-%09\n+    \n scanner.\n@@ -115,17 +115,20 @@\n .Scan()%0A\n-%09\n+    \n palavra \n@@ -144,19 +144,22 @@\n r.Text()\n-%0A%0A%09\n+ %0A    \n var ind,\n@@ -167,17 +167,20 @@\n qtd int%0A\n-%09\n+    \n fmt.Scan\n@@ -186,17 +186,20 @@\n n(&ind)%0A\n-%09\n+    \n fmt.Scan\n@@ -204,19 +204,23 @@\n an(&qtd)\n+ \n %0A%0A\n-%09\n+    \n if ind %3C\n@@ -230,16 +230,17 @@\n %7C%7C qtd %3C\n+=\n  0 %7C%7C in\n@@ -259,18 +259,24 @@\n avra) %7B%0A\n-%09%09\n+        \n fmt.Prin\n@@ -285,22 +285,34 @@\n %22%22)%0A\n-%09%09return%0A%09%7D%0A%0A%09\n+        return%0A    %7D%0A%0A    \n subs\n@@ -320,17 +320,20 @@\n r := %22%22%0A\n-%09\n+    \n for i :=\n@@ -336,16 +336,17 @@\n i := ind\n+ \n ; i %3C le\n@@ -382,10 +382,16 @@\n + %7B%0A\n-%09%09\n+        \n subs\n@@ -419,12 +419,18 @@\n i%5D)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n fmt.\n@@ -443,10 +443,11 @@\n substr)%0A\n+%0A\n %7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-30_11-59-12",
+            "content": "@@ -298,17 +298,16 @@\n ind; i %3C\n-=\n  len(pal\n@@ -318,17 +318,16 @@\n ) && i %3C\n-=\n  ind+qtd\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_14-57-37",
+            "content": "@@ -319,16 +319,17 @@\n ) && i %3C\n+=\n  ind+qtd\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_14-57-50",
+            "content": "@@ -298,16 +298,17 @@\n ind; i %3C\n+=\n  len(pal\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_14-57-56",
+            "content": "@@ -298,17 +298,16 @@\n ind; i %3C\n-=\n  len(pal\n@@ -318,17 +318,16 @@\n ) && i %3C\n-=\n  ind+qtd\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_14-58-02",
+            "content": "@@ -271,68 +271,103 @@\n %7D%0A%0A%09\n-fim := ind + qtd%0A%09if fim %3E len(palavra)%7B%0A%09%09fim = len\n+substr := %22%22%0A%09for i := ind; i %3C= len(palavra) && i %3C= ind+qtd; i++ %7B%0A%09%09substr += string\n (palavra\n )%0A%09%7D\n@@ -362,16 +362,19 @@\n (palavra\n+%5Bi%5D\n )%0A%09%7D%0A%09fm\n@@ -385,24 +385,14 @@\n int(\n-palavra%5Bind:fim%5D\n+substr\n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_15-12-12",
+            "content": "@@ -22,49 +22,127 @@\n (%0A%09%22\n-fmt%22%0A)%0A%0Afunc main() %7B%0A%09var palavra string\n+bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0A%0Afunc main() %7B%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09scanner.Scan()%0A%09palavra := scanner.Text()%0A\n %0A%09va\n@@ -167,23 +167,19 @@\n t.Scan(&\n-palavra\n+ind\n )%0A%09fmt.S\n@@ -186,14 +186,8 @@\n can(\n-&ind, \n &qtd\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_15-15-33",
+            "content": "@@ -297,21 +297,6 @@\n m%5D)%0A\n-%09fmt.Println()%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-30_15-15-48",
+            "content": "@@ -293,11 +293,25 @@\n d:fim%5D)%0A\n+%09fmt.Println()\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_15-16-00",
+            "content": "@@ -297,21 +297,7 @@\n m%5D)%0A\n-%09fmt.Println()\n %0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_15-16-14",
+            "content": "@@ -27,19 +27,8 @@\n mt%22%0A\n-%09%22strings%22%0A\n )%0A%0Af\n@@ -125,31 +125,8 @@\n d)%0A%0A\n-%09r := %5B%5Drune(palavra)%0A%0A\n %09if \n@@ -158,17 +158,23 @@\n  %3E= len(\n-r\n+palavra\n ) %7B%0A%09%09fm\n@@ -230,17 +230,23 @@\n m %3E len(\n-r\n+palavra\n )%7B%0A%09%09fim\n@@ -252,17 +252,23 @@\n m = len(\n-r\n+palavra\n )%0A%09%7D%0A%09fm\n@@ -279,16 +279,15 @@\n int(\n-string(r\n+palavra\n %5Bind\n@@ -292,17 +292,16 @@\n nd:fim%5D)\n-)\n %0A%09fmt.Pr\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-06-30_15-20-12",
+            "content": "@@ -23,16 +23,27 @@\n %0A%09%22fmt%22%0A\n+%09%22strings%22%0A\n )%0A%0Afunc \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-30_15-20-27",
+            "content": "@@ -175,16 +175,17 @@\n %7C%7C ind %3E\n+=\n  len(r) \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-30_15-21-24",
+            "content": "@@ -27,23 +27,8 @@\n mt%22%0A\n-%09%22bufio%22%0A%09%22os%22%0A\n )%0A%0Af\n@@ -44,46 +44,8 @@\n ) %7B%0A\n-%09scanner := bufio.NewReader(os.Stdin)%0A\n %09var\n@@ -87,46 +87,45 @@\n fmt.\n-Fs\n+S\n can(\n-scanner, &ind, &qtd, &palavra\n+&palavra)%0A%09fmt.Scan(&ind, &qtd\n )%0A\n-%09\n %0A%09r \n@@ -175,17 +175,16 @@\n %7C%7C ind %3E\n-=\n  len(r) \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-30_15-24-39",
+            "content": "@@ -341,23 +341,17 @@\n (string(\n-palavra\n+r\n %5Bind:fim\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_15-25-20",
+            "content": "@@ -341,17 +341,23 @@\n (string(\n-r\n+palavra\n %5Bind:fim\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_15-25-59",
+            "content": "@@ -23,16 +23,31 @@\n %0A%09%22fmt%22%0A\n+%09%22bufio%22%0A%09%22os%22%0A\n )%0A%0Afunc \n@@ -55,16 +55,54 @@\n ain() %7B%0A\n+%09scanner := bufio.NewReader(os.Stdin)%0A\n %09var pal\n@@ -140,45 +140,46 @@\n fmt.\n-S\n+Fs\n can(\n-&palavra)%0A%09fmt.Scan(&ind, &qtd\n+scanner, &ind, &qtd, &palavra\n )%0A\n+%09\n %0A%09r \n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_15-27-02",
+            "content": "@@ -121,16 +121,38 @@\n  &qtd)%0A%0A\n+%09r := %5B%5Drune(palavra)%0A\n %0A%09if ind\n@@ -181,23 +181,17 @@\n  %3E= len(\n-palavra\n+r\n ) %7B%0A%09%09fm\n@@ -247,23 +247,17 @@\n m %3E len(\n-palavra\n+r\n )%7B%0A%09%09fim\n@@ -263,23 +263,17 @@\n m = len(\n-palavra\n+r\n )%0A%09%7D%0A%09fm\n@@ -280,23 +280,24 @@\n t.Print(\n-palavra\n+string(r\n %5Bind:fim\n@@ -298,16 +298,17 @@\n nd:fim%5D)\n+)\n %0A%09fmt.Pr\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-30_15-29-42",
+            "content": "@@ -27,23 +27,8 @@\n mt%22%0A\n-%09%22bufio%22%0A%09%22os%22%0A\n )%0A%0Af\n@@ -44,45 +44,8 @@\n ) %7B%0A\n-%09leitor := bufio.NewReader(os.Stdin)%0A\n %09var\n@@ -93,46 +93,37 @@\n an(&\n-ind, &qtd\n+palavra\n )%0A%09fmt.\n-Fs\n+S\n can(\n-leitor, &palavra\n+&ind, &qtd\n )%0A%0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-30_15-39-05",
+            "content": "@@ -42,19 +42,8 @@\n os%22%0A\n-%09%22strconv%22%0A\n )%0A%0Af\n@@ -60,52 +60,13 @@\n  %7B%0A%09\n-var texto string%0A%09ind := 0%0A%09qtd := 0%0A%09scanne\n+leito\n r :=\n@@ -79,13 +79,12 @@\n .New\n-Scann\n+Read\n er(o\n@@ -97,303 +97,241 @@\n n)%0A%09\n-scanner.Scan()%0A%09texto = scanner.Text()%0A%09scanner.Scan()%0A%09indt := %22%22%0A%09qtdt := %22%22%0A%09indt = scanner.Text()%0A%09scanner.Scan()%0A%09qtdt = scanner.Text()%0A%09ind,_ = strconv.Atoi(indt)%0A%09qtd,_ =strconv.Atoi(qtdt)%0A%09runas := %5B%5Drune(texto)%0A%09j := 0%0A%09for i := ind; i %3C len(runas); i++ %7B%0A%09%09if j == qtd %7B%0A%09%09%09break%0A%09\n+var palavra string%0A%09var ind, qtd int%0A%09fmt.Scan(&ind, &qtd)%0A%09fmt.Fscan(leitor, &palavra)%0A%0A%0A%09if ind %3C 0 %7C%7C qtd %3C 0 %7C%7C ind %3E= len(palavra) %7B%0A%09%09fmt.Print(%22%22)%0A%09%09return%0A%09%7D%0A%0A%09fim := ind + qtd%0A%09if fim %3E len(palavra)%7B%0A%09%09fim = len(palavra)%0A\n %09%7D%0A\n-%09\n %09fmt\n@@ -341,31 +341,25 @@\n int(\n-%22%25c%22,runas%5Bi%5D)%0A%09%09j++%0A%09%7D\n+palavra%5Bind:fim%5D)\n %0A%09fm\n@@ -368,14 +368,12 @@\n Println(\n-%22%22\n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-30_15-52-20",
+            "content": "@@ -449,17 +449,16 @@\n mt.Print\n-f\n (%22%25c%22,ru\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-30_15-52-41",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"bufio\"\n\t\"os\"\n\t\"strconv\"\n)\n\nfunc main() {\n\tvar texto string\n\tind := 0\n\tqtd := 0\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\ttexto = scanner.Text()\n\tscanner.Scan()\n\tindt := \"\"\n\tqtdt := \"\"\n\tindt = scanner.Text()\n\tscanner.Scan()\n\tqtdt = scanner.Text()\n\tind,_ = strconv.Atoi(indt)\n\tqtd,_ =strconv.Atoi(qtdt)\n\trunas := []rune(texto)\n\tj := 0\n\tfor i := ind; i < len(runas); i++ {\n\t\tif j == qtd {\n\t\t\tbreak\n\t\t}\n\t\tfmt.Printf(\"%c\",runas[i])\n\t\tj++\n\t}\n\tfmt.Println(\"\")\n}\n",
+            "lines": "35"
         }
     ]
 }

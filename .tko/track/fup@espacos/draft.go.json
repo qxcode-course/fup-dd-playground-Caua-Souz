@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_15-08-55",
+            "content": "package main\nimport \"fmt\"\nimport \"bufio\"\nimport \"os\"\nimport \"strings\"\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    texto := scanner.Text()\n    textomodificad := strings.Join(strings.Fields(texto), \" \")\n    fmt.Println(textomodificad)\n}\n",
+            "lines": "12"
+        }
+    ]
+}

@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-06-23_17-08-27",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -23,170 +23,21 @@\n mt%22%0A\n-import %22bufio%22%0Aimport %22os%22%0Aimport %22unicode%22%0A%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    texto := %5B%5Drune(scanner.Text())%0A%0A    %0A\n+func main() %7B\n %0A   \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-30_12-03-27",
+            "content": "@@ -184,204 +184,8 @@\n     \n-for i, c := range texto %7B%0A        if unicode.IsUpper(c)%7B%0A            texto%5Bi%5D = unicode.ToLower(c)%0A        %7D else if unicode.IsLower(c) %7B%0A            texto%5Bi%5D =unicode.ToUpper(c)%0A        %7D%0A    %7D%0A%0A\n %0A%0A  \n@@ -202,21 +202,23 @@\n tln(\n-string(texto)\n+%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-30_12-06-17",
+            "content": "@@ -240,42 +240,8 @@\n (c)%7B\n- //verifica se a letra %C3%A9 maiuscula\n %0A   \n@@ -282,43 +282,8 @@\n r(c)\n- //se sim, transformar em miniscula\n %0A   \n@@ -321,42 +321,8 @@\n c) %7B\n- //mesma coisa caso seja minuscula\n %0A   \n@@ -375,20 +375,19 @@\n %7D%0A    %7D%0A\n-    \n+%0A%0A%0A\n     fmt.\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-30_12-10-14",
+            "content": "package main\nimport \"fmt\"\nimport \"bufio\"\nimport \"os\"\nimport \"unicode\"\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    texto := []rune(scanner.Text())\n\n    for i, c := range texto {\n        if unicode.IsUpper(c){ //verifica se a letra \u00e9 maiuscula\n            texto[i] = unicode.ToLower(c) //se sim, transformar em miniscula\n        } else if unicode.IsLower(c) { //mesma coisa caso seja minuscula\n            texto[i] =unicode.ToUpper(c)\n        }\n    }\n        fmt.Println(string(texto))\n}\n",
+            "lines": "20"
         }
     ]
 }

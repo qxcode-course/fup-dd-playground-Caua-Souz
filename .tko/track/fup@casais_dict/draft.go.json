@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-24_15-24-18",
+            "content": "@@ -330,16 +330,17 @@\n lteiros%5B\n+-\n especie%5D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-24_15-24-39",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n    solteiros := make(map[int]int)\n    casais := 0\n\n    for i := 0 ; i < n ; i++ {\n        var especie int\n        fmt.Scan(&especie)\n        if solteiros[-especie] > 0 {\n            solteiros[-especie]--\n            casais++\n\n        } else {\n            solteiros[especie]++\n        }\n    }\n    fmt.Println(casais)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

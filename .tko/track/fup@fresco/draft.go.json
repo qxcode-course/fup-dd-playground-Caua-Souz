@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_12-10-30",
+            "content": "@@ -199,17 +199,34 @@\n ds(frase\n-)\n+, string) %5B%5Dstring\n %0A%0A    fm\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-30_16-30-44",
+            "content": "package main\nimport \"fmt\"\nimport \"bufio\"\nimport \"os\"\nimport \"strings\"\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n    junto := strings.Fields(frase)\n\n    fmt.Println(junto)\n}\n",
+            "lines": "13"
+        }
+    ]
+}

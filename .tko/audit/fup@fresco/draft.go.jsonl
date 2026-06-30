@@ -10,3 +10,6 @@
 {"ts":1782233675,"hash":"8c3ff8ff116f2f1b5723872990316236bcada90fb8195c5fb50a280457552b7e","mode":"diff","ops":[{"tag":"replace","a1":10,"a2":11,"text":"    junto := string\n"}]}
 {"ts":1782233698,"hash":"4f8a45836f380d40391ac05f6c0d6032766772788d9e3c469d90b27cd091558c","mode":"full","content":"H4sIAGS6OmoC/02OwQ7CIBBE73wF6QkSwweYePVoTOrNeMB2adCyNLBEE+O/S6FaOTHzZnZ30t1dD8Cdtsism3wg3hhHzU9ck7F+lT6u/0jB4pANk7ArI4TkL8bzi51GhMC3O14GqAM82uoJH1VLvUX5n1QzFdUyQUeYq192gictrO6c4fkSEoIo4cpuCcmXXj1M7S2MfayRzeJKVnc4UsesaURRepK92QeAfsksDgEAAA=="}
 {"ts":1782233738,"hash":"49dd9fcb269a724dbed4a0697a6710fbc92f4b3af01f9b55fb4670892da1a336","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":11,"text":"    junto := strings.Fields(frase string) []string\n"}]}
+{"ts":1782836927,"hash":"e49fbf8fef7423aeb8137d3eaf90bb7f9e9100d039b8dfc492ee1580c02ce873","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    junto := strings.Fields(frase, string)\n"}]}
+{"ts":1782837036,"hash":"2f5dabb4f31bced16f65930bc5a67a7adc57e381f1bb14093336242f7d5cef74","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    junto := strings.Fields(frase, \" \")\n"}]}
+{"ts":1782837066,"hash":"e4225a112af8c6dbb05ddf16429926ff63118d534fe5d772833f2d7b9c2cb112","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    junto := strings.Join(frase, \" \")\n"}]}

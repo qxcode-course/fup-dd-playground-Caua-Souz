@@ -1,0 +1,3 @@
+{"ts":1782831020,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIAK7XQ2oC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1782831382,"hash":"8e86fd866e54450e5694029e3c7a1e8d4e9fa249e02d5dbbe23bdf39fe269d39","mode":"diff","ops":[{"tag":"insert","a1":2,"a2":2,"text":"import \"bufio\"\n"}]}
+{"ts":1782831402,"hash":"8d499686fb8b708d86ec2a2326c23be4d69f65fd63a0982f24b3e7650fc4024c","mode":"diff","ops":[{"tag":"insert","a1":3,"a2":3,"text":"import \"os\"\n"},{"tag":"insert","a1":4,"a2":4,"text":"    scanner := bufio.New\n"}]}

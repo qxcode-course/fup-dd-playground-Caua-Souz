@@ -1,27 +1,35 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
+	"bufio"
 	"os"
+	"strconv"
 )
+
 func main() {
-    scanner := bufio.NewScanner(os.Stdin)
-    scanner.Scan()
-    palavra := scanner.Text() 
-    var ind, qtd int
-    fmt.Scan(&ind)
-    fmt.Scan(&qtd) 
-
-    if ind <= 0 || qtd <= 0 || ind >= len(palavra) {
-        fmt.Print("")
-        return
-    }
-
-    substr := ""
-    for i := ind ; i < len(palavra) && i < ind+qtd; i++ {
-        substr += string(palavra[i])
-    }
-    fmt.Print(substr)
-
+	var texto string
+	ind := 0
+	qtd := 0
+	scanner := bufio.NewScanner(os.Stdin)
+	scanner.Scan()
+	texto = scanner.Text()
+	scanner.Scan()
+	indt := ""
+	qtdt := ""
+	indt = scanner.Text()
+	scanner.Scan()
+	qtdt = scanner.Text()
+	ind,_ = strconv.Atoi(indt)
+	qtd,_ =strconv.Atoi(qtdt)
+	runas := []rune(texto)
+	j := 0
+	for i := ind; i < len(runas); i++ {
+		if j == qtd {
+			break
+		}
+		fmt.Printf("%c",runas[i])
+		j++
+	}
+	fmt.Println("")
 }

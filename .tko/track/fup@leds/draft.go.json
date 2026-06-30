@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-06-23_14-47-43",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,429 +41,35 @@\n     \n-var num int%0A    fmt.Scan(&num)%0A%0A    leds := map%5Brune%5Dint %7B%0A        '1':2,%0A        '2':5,%0A        '3':5,%0A        '4':4,%0A        '5':5,%0A        '6':6,%0A        '7':3,%0A        '8':7,%0A        '9':6,%0A        '0':6,%0A    %7D%0A%0A    for i := 0; i %3C num ; i++ %7B%0A        var str string%0A        fmt.Scan(&str)%0A        total := 0%0A%0A        for _, v := range str %7B%0A            total += leds%5Bv%5D%0A            fmt.Println(total)%0A        %7D%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-30_16-19-01",
+            "content": "@@ -440,22 +440,8 @@\n tln(\n-%22%25d leds %5Cn%22, \n tota\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-30_16-20-09",
+            "content": "@@ -433,17 +433,18 @@\n mt.Print\n-f\n+ln\n (%22%25d led\n@@ -444,16 +444,17 @@\n %22%25d leds\n+ \n %5Cn%22, tot\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-30_16-20-31",
+            "content": "@@ -416,22 +416,16 @@\n %5Bv%5D%0A    \n-    %7D%0A\n         \n@@ -455,16 +455,26 @@\n  total)%0A\n+        %7D%0A\n     %7D%0A%0A%7D\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-30_16-20-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num int\n    fmt.Scan(&num)\n\n    leds := map[rune]int {\n        '1':2,\n        '2':5,\n        '3':5,\n        '4':4,\n        '5':5,\n        '6':6,\n        '7':3,\n        '8':7,\n        '9':6,\n        '0':6,\n    }\n\n    for i := 0; i < num ; i++ {\n        var str string\n        fmt.Scan(&str)\n        total := 0\n\n        for _, v := range str {\n            total += leds[v]\n        }\n        fmt.Printf(\"%d leds\\n\", total)\n    }\n\n}\n",
+            "lines": "31"
         }
     ]
 }
