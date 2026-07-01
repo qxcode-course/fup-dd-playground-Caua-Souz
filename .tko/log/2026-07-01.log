@@ -1,0 +1,78 @@
+2026-07-01 15:22:43, MOVE, v:1, k:fup@fresco, mode:PICK
+2026-07-01 15:22:48, EXEC, v:1, k:fup@fresco, mode:FULL, size:13, fail:COMP
+2026-07-01 15:24:46, MOVE, v:1, k:fup@fresco, mode:BACK
+2026-07-01 15:24:50, MOVE, v:1, k:fup@mario, mode:DOWN
+2026-07-01 15:24:51, MOVE, v:1, k:fup@mario, mode:PICK
+2026-07-01 15:25:13, MOVE, v:1, k:fup@mario, mode:PICK
+2026-07-01 15:25:14, EXEC, v:1, k:fup@mario, mode:FULL, rate:0, size:5
+2026-07-01 15:26:04, MOVE, v:1, k:fup@mario, mode:BACK
+2026-07-01 15:26:33, MOVE, v:1, k:fup@substring, mode:PICK
+2026-07-01 15:26:34, EXEC, v:1, k:fup@substring, mode:FULL, rate:100
+2026-07-01 15:29:12, MOVE, v:1, k:fup@substring, mode:BACK
+2026-07-01 15:30:03, MOVE, v:1, k:fup@numeros, mode:DOWN
+2026-07-01 15:30:04, MOVE, v:1, k:fup@numeros, mode:PICK
+2026-07-01 15:30:05, EXEC, v:1, k:fup@numeros, mode:FULL, rate:0, size:5
+2026-07-01 15:25:14, MOVE, v:1, k:fup@mario, mode:EDIT
+2026-07-01 15:26:34, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-07-01 15:30:03, MOVE, v:1, k:fup@numeros, mode:EDIT
+2026-07-01 15:30:03, MOVE, v:1, k:fup@numeros, mode:EDIT
+2026-07-01 15:30:05, MOVE, v:1, k:fup@numeros, mode:EDIT
+2026-07-01 15:34:49, MOVE, v:1, k:fup@numeros, mode:BACK
+2026-07-01 15:34:58, MOVE, v:1, k:fup@gagueira, mode:DOWN
+2026-07-01 15:34:58, MOVE, v:1, k:fup@gagueira, mode:PICK
+2026-07-01 15:34:42, MOVE, v:1, k:fup@numeros, mode:EDIT
+2026-07-01 15:34:58, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-07-01 15:34:58, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-07-01 15:36:42, MOVE, v:1, k:fup@gagueira, mode:BACK
+2026-07-01 15:38:19, MOVE, v:1, k:fup@amora, mode:PICK
+2026-07-01 15:38:20, EXEC, v:1, k:fup@amora, mode:FULL, size:8, fail:COMP
+2026-07-01 15:39:24, MOVE, v:1, k:fup@amora, mode:BACK
+2026-07-01 15:39:28, MOVE, v:1, k:fup@amora, mode:PICK
+2026-07-01 15:39:28, EXEC, v:1, k:fup@amora, mode:FULL, rate:0, size:10
+2026-07-01 15:36:34, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-07-01 15:38:34, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-07-01 15:39:28, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-07-01 15:45:05, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-07-01 15:46:02, EXEC, v:1, k:fup@amora, mode:FULL, rate:100, size:21
+2026-07-01 15:46:04, EXEC, v:1, k:fup@amora, mode:FULL, rate:100
+2026-07-01 15:47:46, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-07-01 15:46:04, MOVE, v:1, k:fup@amora, mode:EDIT
+2026-07-01 15:53:45, MOVE, v:1, k:fup@amora, mode:BACK
+2026-07-01 15:54:13, SELF, v:1, k:fup@amora, self:1, rate:100, study:22, concept:1
+2026-07-01 15:55:07, MOVE, v:1, k:fup@silabas, mode:DOWN
+2026-07-01 15:55:08, MOVE, v:1, k:fup@silabas, mode:PICK
+2026-07-01 15:55:09, EXEC, v:1, k:fup@silabas, mode:FULL, rate:0, size:5
+2026-07-01 15:55:38, MOVE, v:1, k:fup@silabas, mode:BACK
+2026-07-01 15:55:59, MOVE, v:1, k:fup@gagueira, mode:PICK
+2026-07-01 15:56:00, EXEC, v:1, k:fup@gagueira, mode:FULL, size:9, fail:COMP
+2026-07-01 15:55:07, MOVE, v:1, k:fup@silabas, mode:EDIT
+2026-07-01 15:55:07, MOVE, v:1, k:fup@silabas, mode:EDIT
+2026-07-01 15:55:09, MOVE, v:1, k:fup@silabas, mode:EDIT
+2026-07-01 15:58:52, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-07-01 16:03:56, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-07-01 16:04:07, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:0, size:18
+2026-07-01 16:04:41, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:0, size:18
+2026-07-01 16:05:45, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:0, size:19
+2026-07-01 16:06:43, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:100, size:20
+2026-07-01 16:08:50, MOVE, v:1, k:fup@gagueira, mode:BACK
+2026-07-01 16:09:11, SELF, v:1, k:fup@gagueira, self:1, rate:100, study:14, friend:Cesario, concept:1
+2026-07-01 16:43:58, MOVE, v:1, k:fup@coluna, mode:DOWN
+2026-07-01 16:43:59, MOVE, v:1, k:fup@coluna, mode:PICK
+2026-07-01 16:45:47, MOVE, v:1, k:fup@coluna, mode:PICK
+2026-07-01 16:46:11, MOVE, v:1, k:fup@coluna, mode:PICK
+2026-07-01 16:46:12, EXEC, v:1, k:fup@coluna, mode:FULL, rate:0, size:5
+2026-07-01 16:47:20, MOVE, v:1, k:fup@coluna, mode:BACK
+2026-07-01 16:47:28, MOVE, v:1, k:fup@bingo, mode:DOWN
+2026-07-01 16:47:28, MOVE, v:1, k:fup@bingo, mode:PICK
+2026-07-01 16:47:47, MOVE, v:1, k:fup@bingo, mode:PICK
+2026-07-01 16:47:48, EXEC, v:1, k:fup@bingo, mode:FULL, rate:0, size:5
+2026-07-01 16:49:42, MOVE, v:1, k:fup@bingo, mode:BACK
+2026-07-01 16:51:20, MOVE, v:1, k:fup@identificando, mode:DOWN
+2026-07-01 16:51:21, MOVE, v:1, k:fup@identificando, mode:PICK
+2026-07-01 16:51:38, EXEC, v:1, k:fup@identificando, mode:FULL, rate:0, size:5
+2026-07-01 16:47:47, MOVE, v:1, k:fup@bingo, mode:EDIT
+2026-07-01 16:51:20, MOVE, v:1, k:fup@identificando, mode:EDIT
+2026-07-01 16:51:20, MOVE, v:1, k:fup@identificando, mode:EDIT
+2026-07-01 16:51:38, MOVE, v:1, k:fup@identificando, mode:EDIT
+2026-07-01 16:54:42, MOVE, v:1, k:fup@identificando, mode:EDIT
+2026-07-01 17:06:50, MOVE, v:1, k:fup@identificando, mode:BACK

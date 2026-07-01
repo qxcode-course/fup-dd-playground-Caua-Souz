@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-01_15-38-20",
+            "content": "@@ -106,32 +106,8 @@\n in)%0A\n-    scanner.Scan()%0A    %0A\n     \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-07-01_15-39-28",
+            "content": "@@ -129,261 +129,40 @@\n     \n-texto := scanner.Text()%0A%0A    scanner.Scan()%0A    substring := scanner.Text()%0A    cont := 0%0A%0A    for i := 0; i %3C= len(texto)-len(substring); i++ %7B%0A        if texto%5Bi:i+len(substring)%5D == substring %7B%0A            cont++%0A        %7D%0A    %7D%0A%0A    fmt.Println(cont\n+%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-07-01_15-46-02",
+            "content": "package main\nimport \"fmt\"\nimport \"bufio\"\nimport \"os\"\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    texto := scanner.Text()\n\n    scanner.Scan()\n    substring := scanner.Text()\n    cont := 0\n\n    for i := 0; i <= len(texto)-len(substring); i++ {\n        if texto[i:i+len(substring)] == substring {\n            cont++\n        }\n    }\n\n    fmt.Println(cont)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

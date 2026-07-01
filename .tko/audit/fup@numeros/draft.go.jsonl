@@ -1,0 +1,4 @@
+{"ts":1782919803,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIAH8yRWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1782920005,"hash":"be2b4fe11f1e7a124cd656485781f61abd1dd4803051566fad9c01158d6aedb2","mode":"diff","ops":[{"tag":"insert","a1":2,"a2":2,"text":"import \n"}]}
+{"ts":1782920027,"hash":"8fe998cd0dfd706197effca5a0380343fe3f78ad9ab5381e0738868be4c3643e","mode":"diff","ops":[{"tag":"replace","a1":2,"a2":3,"text":"import \"bufio\"\nimport \"os\"\nimport \"str\"\n"}]}
+{"ts":1782920067,"hash":"5bf230208d1d2176f0995ab523238f3556fafd1ebc58b6dd3761990d6367c507","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"import \"strconv\"\nimport \"strings\"\nimport \"unicode\"\n"},{"tag":"insert","a1":6,"a2":6,"text":"    leitor := \n"}]}

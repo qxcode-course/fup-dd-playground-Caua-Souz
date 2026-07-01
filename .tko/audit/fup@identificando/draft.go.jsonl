@@ -1,0 +1,7 @@
+{"ts":1782924680,"hash":"db3b03f6fbe0dc132b6c32a2c7aa83378f95cb6a1a54ff9c1f1243dd3ad41413","mode":"full","content":"H4sIAItFRWoC/ytITM5OTE9VyE3MzOPKzC3ILypRUErLLVHiSivNSwYLa2gqVHMpAAFQWC+gKDOvJCdPQ8kjNScnX0chPL8oJ0VRSZOrlgsAdYpEcEsAAAA="}
+{"ts":1782924803,"hash":"98ceb8c209fc65ad397ecbf01eb3b92fd4ee5a0baaef6909ff94d9995a3a9787","mode":"diff","ops":[{"tag":"insert","a1":2,"a2":2,"text":"import \"bufio\"\nimport \"os\"\nimport \"\"\n"}]}
+{"ts":1782924825,"hash":"1cc77653c96d8b2b135dbe0d09b7e7b3f6d93151fb8ae7b38f166476cd3f8522","mode":"diff","ops":[{"tag":"replace","a1":4,"a2":5,"text":"import \"strings\"\nimport \"unicode\"\n"},{"tag":"insert","a1":6,"a2":6,"text":"    scanner := \n"}]}
+{"ts":1782924859,"hash":"dbd88d5e0d482fa3e92257a53e3e03fcd27324be8666e92fc1f42594f38b59d1","mode":"diff","ops":[{"tag":"replace","a1":7,"a2":8,"text":"    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    \n"}]}
+{"ts":1782925463,"hash":"9d4b5afd6afbed523f574253c8e0130059ef30d1831b874687d8fbcbaa714b79","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    linha := scanner.Text()\n"}]}
+{"ts":1782925502,"hash":"207a2067a04191debd9b5df9e0132e61d4c83503ad9616e9fa4ed66e4d02d6a5","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    linha := scanner.Split(scanner.Text())\n"}]}
+{"ts":1782925581,"hash":"ca87ed6906fab4691ebb0a76c63cabdfd4825204e0cd5cb987f9dc16c6de316c","mode":"diff","ops":[{"tag":"replace","a1":9,"a2":10,"text":"    linha := scanner.Split(scanner.Text(), \"\")\n    var result []string\n\n    \n"}]}

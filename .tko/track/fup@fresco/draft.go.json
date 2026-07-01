@@ -7,7 +7,12 @@
         },
         {
             "label": "2026-06-30_16-30-44",
-            "content": "package main\nimport \"fmt\"\nimport \"bufio\"\nimport \"os\"\nimport \"strings\"\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n    junto := strings.Fields(frase)\n\n    fmt.Println(junto)\n}\n",
+            "content": "@@ -191,20 +191,20 @@\n ngs.\n-Join\n+Fields\n (frase\n-, \n )%0A%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-07-01_15-22-48",
+            "content": "package main\nimport \"fmt\"\nimport \"bufio\"\nimport \"os\"\nimport \"strings\"\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n    junto := strings.Join(frase, )\n\n    fmt.Println(junto)\n}\n",
             "lines": "13"
         }
     ]
