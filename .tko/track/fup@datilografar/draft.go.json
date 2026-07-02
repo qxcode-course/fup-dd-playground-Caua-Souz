@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-02_14-37-12",
+            "content": "@@ -23,220 +23,21 @@\n mt%22%0A\n-import %22strings%22%0Afunc main() %7B%0A    var tecla string%0A    var n string%0A    fmt.Scan(&tecla)%0A    fmt.Scan(&n)%0A%0A    var res strings.Builder%0A%0A    for _, c := range n %7B%0A        if string(c) != tecla %7B%0A%0A        %7D%0A%0A    %7D\n+func main() %7B\n %0A   \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-02_15-09-30",
+            "content": "@@ -217,37 +217,8 @@\n la %7B\n-%0A            res.WriteRune(c)\n %0A%0A  \n@@ -221,24 +221,25 @@\n %0A%0A        %7D%0A\n+%0A\n     %7D%0A    re\n@@ -240,136 +240,35 @@\n     \n-resw := strings.TrimLeft(res.String(), %220%22)%0A%0A    if resw == %22%22%7B%0A        fmt.Println(%220%22)%0A    %7D else %7B%0A        fmt.Println(resw)%0A%7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-07-02_15-13-14",
+            "content": "package main\nimport \"fmt\"\nimport \"strings\"\nfunc main() {\n    var tecla string\n    var n string\n    fmt.Scan(&tecla)\n    fmt.Scan(&n)\n\n    var res strings.Builder\n\n    for _, c := range n {\n        if string(c) != tecla {\n            res.WriteRune(c)\n\n        }\n    }\n    resw := strings.TrimLeft(res.String(), \"0\")\n\n    if resw == \"\"{\n        fmt.Println(\"0\")\n    } else {\n        fmt.Println(resw)\n}\n}\n",
+            "lines": "25"
+        }
+    ]
+}
