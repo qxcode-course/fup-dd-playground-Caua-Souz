@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-07-01_16-51-38",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -23,227 +23,21 @@\n mt%22%0A\n-import %22bufio%22%0Aimport %22os%22%0Aimport %22strings%22%0Aimport %22unicode%22%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    linha := scanner.Split(scanner.Text(), %22%22)%0A    var result %5B%5Dstring%0A%0A    for _, \n+func main() %7B\n %0A   \n",
             "lines": "5"
+        },
+        {
+            "label": "2026-07-06_13-01-15",
+            "content": "package main\nimport \"fmt\"\nimport \"bufio\"\nimport \"os\"\nimport \"strings\"\nimport \"unicode\"\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    linha := scanner.Split(scanner.Text(), \"\")\n    var result []string\n\n    for _, \n    fmt.Println(\"Hello, World!\")\n}\n",
+            "lines": "15"
         }
     ]
 }

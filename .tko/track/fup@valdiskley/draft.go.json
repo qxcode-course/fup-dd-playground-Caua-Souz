@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_13-11-19",
+            "content": "@@ -102,165 +102,34 @@\n t)%0A%0A\n-    ind := int(letra%5B0%5D - 'a')%0A    ind2 := (ind + rot)%0A%0A    if ind2%3C 0 %7B%0A        ind2 += 26%0A    %7D%0A    result := byte(ind2 + 'a')%0A    fmt.Printf(%22%25c%5Cn%22, resul\n+%0A    fmt.Println(letra, ro\n t)%0A%7D\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-07-06_13-14-45",
+            "content": "@@ -156,13 +156,8 @@\n rot)\n- %25 26\n %0A%0A  \n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-07-06_13-15-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var letra string\n    var rot int\n    fmt.Scan(&letra, &rot)\n\n    ind := int(letra[0] - 'a')\n    ind2 := (ind + rot) % 26\n\n    if ind2< 0 {\n        ind2 += 26\n    }\n    result := byte(ind2 + 'a')\n    fmt.Printf(\"%c\\n\", result)\n}\n",
+            "lines": "16"
+        }
+    ]
+}

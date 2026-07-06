@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_13-02-49",
+            "content": "@@ -10,334 +10,66 @@\n ain%0A\n-%0A\n import \n-(%0A%09%22bufio%22%0A%09%22fmt%22%0A%09%22os%22%0A)%0Afunc main() %7B%0A    leitor := bufio.NewScanner(os.Stdin)%0A    leitor.Scan()%0A    frase := leitor.Text()%0A%0A    leitor.Scan()%0A    letra := leitor.Text()%0A    cont := 0%0A%0A    for i := 0; i %3C len(frase); i++%7B%0A        if string(frase%5Bi%5D) == letra %7B%0A            cont++%0A        %7D%0A    %7D%0A    fmt.Println(cont\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_13-07-12",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\nfunc main() {\n    leitor := bufio.NewScanner(os.Stdin)\n    leitor.Scan()\n    frase := leitor.Text()\n\n    leitor.Scan()\n    letra := leitor.Text()\n    cont := 0\n\n    for i := 0; i < len(frase); i++{\n        if string(frase[i]) == letra {\n            cont++\n        }\n    }\n    fmt.Println(cont)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

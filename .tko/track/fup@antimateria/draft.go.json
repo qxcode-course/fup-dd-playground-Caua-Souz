@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-06_13-18-18",
+            "content": "@@ -23,411 +23,53 @@\n mt%22%0A\n-import %22bufio%22%0Aimport %22os%22%0Afunc main() %7B%0A    leitor := bufio.NewReader(os.Stdin)%0A    var palv1, palv2 string //palavra a, palavra b%0A    fmt.Fscanln(leitor, &palv1)%0A    fmt.Fscan(leitor, &palv2)%0A%0A    A := %5B%5Drune(palv1)%0A    B := %5B%5Drune(palv2)%0A%0A    for len(A) %3E 0 && len(B) %3E 0 && A%5Blen(A) - 1%5D == B%5B0%5D %7B%0A        A = A%5B:len(A)-1%5D%0A        B = B%5B1:%5D%0A    %7D%0A    result := append(A, B...)%0A    fmt.Println(result\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-07-06_13-28-30",
+            "content": "@@ -420,22 +420,14 @@\n tln(\n-string(\n result)\n-)\n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-07-06_13-28-55",
+            "content": "package main\nimport \"fmt\"\nimport \"bufio\"\nimport \"os\"\nfunc main() {\n    leitor := bufio.NewReader(os.Stdin)\n    var palv1, palv2 string //palavra a, palavra b\n    fmt.Fscanln(leitor, &palv1)\n    fmt.Fscan(leitor, &palv2)\n\n    A := []rune(palv1)\n    B := []rune(palv2)\n\n    for len(A) > 0 && len(B) > 0 && A[len(A) - 1] == B[0] {\n        A = A[:len(A)-1]\n        B = B[1:]\n    }\n    result := append(A, B...)\n    fmt.Println(string(result))\n}\n",
+            "lines": "20"
+        }
+    ]
+}
